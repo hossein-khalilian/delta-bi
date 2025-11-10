@@ -1,0 +1,99 @@
+table_name: "\u062A\u0645\u0627\u0633 \u0627\u0645\u0644\u0627\u06A9 \u062B\u0628\u062A\
+  \ \u0634\u062F\u0647 \u06CC\u06A9 \u0645\u0627\u0647 \u0627\u062E\u06CC\u0631 11/06/2025\
+  \ 13:21:27"
+main_dttm_col: null
+description: null
+default_endpoint: null
+offset: 0
+cache_timeout: null
+catalog: null
+schema: dbo
+sql: "WITH NewDeposits AS (\n    SELECT *,\n           ROW_NUMBER() OVER (ORDER BY\
+  \ CreatedTime) AS rn\n    FROM Deposits\n    WHERE CreatedTime >= DATEADD(MONTH,\
+  \ -1, GETDATE())\n)\nSELECT\n    d.Id AS DepositId,\n    c.Id AS CallId,\n    c.CreatedTime\
+  \ AS CallDate,\n    c.Count AS CallCount\nFROM NewDeposits d\nLEFT JOIN DepositCalls\
+  \ c ON d.Id = c.DepositId\nWHERE d.CreatedTime >= DATEADD(MONTH, -1, GETDATE());\n"
+params: null
+template_params: null
+filter_select_enabled: true
+fetch_values_predicate: null
+extra: null
+normalize_columns: false
+always_filter_main_dttm: false
+uuid: 564ab9db-5fe7-4ef3-9362-d445afc2b64f
+metrics:
+- metric_name: CountCallId
+  verbose_name: "\u062A\u0639\u062F\u0627\u062F \u062A\u0645\u0627\u0633: "
+  metric_type: null
+  expression: COUNT(DISTINCT CallId)
+  description: null
+  d3format: null
+  currency: null
+  extra:
+    warning_markdown: ''
+  warning_text: null
+- metric_name: count
+  verbose_name: COUNT(*)
+  metric_type: count
+  expression: COUNT(*)
+  description: null
+  d3format: null
+  currency: null
+  extra:
+    warning_markdown: ''
+  warning_text: null
+columns:
+- column_name: CallDate
+  verbose_name: null
+  is_dttm: true
+  is_active: true
+  type: DATETIME
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: CallCount
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: INT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: CallId
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: INT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: DepositId
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: INT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+version: 1.0.0
+database_uuid: f4e48a97-c7df-4d67-a5cd-961d0435e140

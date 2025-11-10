@@ -1,0 +1,91 @@
+slice_name: "\u062A\u0648\u0632\u06CC\u0639 \u062F\u0633\u062A\u0647\u200C\u0628\u0646\
+  \u062F\u06CC \u0627\u0645\u0644\u0627\u06A9 \u062F\u0631 1 \u0633\u0644 \u0627\u062E\
+  \u06CC\u0631"
+description: null
+certified_by: null
+certification_details: null
+viz_type: echarts_timeseries_bar
+params:
+  datasource: 11__table
+  viz_type: echarts_timeseries_bar
+  slice_id: 32
+  x_axis: BaseInfoTitle
+  x_axis_sort: DepositPercentage
+  x_axis_sort_asc: false
+  metrics:
+  - DepositPercentage
+  groupby: []
+  contributionMode: column
+  adhoc_filters:
+  - clause: WHERE
+    comparator: No filter
+    expressionType: SIMPLE
+    operator: TEMPORAL_RANGE
+    subject: CreatedTime
+  row_limit: '6'
+  truncate_metric: true
+  show_empty_columns: true
+  annotation_layers: []
+  orientation: vertical
+  x_axis_title: "\u0646\u0648\u0639 \u0645\u0644\u06A9"
+  x_axis_title_margin: 30
+  y_axis_title: "\u062F\u0631\u0635\u062F \u0622\u06AF\u0647\u06CC \u0647\u0627\u06CC\
+    \ \u0645\u0631\u0628\u0648\u0637\u0647"
+  y_axis_title_margin: 30
+  y_axis_title_position: Top
+  sort_series_type: sum
+  sort_series_ascending: false
+  color_scheme: redToYellow
+  time_shift_color: true
+  show_value: true
+  only_total: true
+  show_legend: false
+  legendType: scroll
+  legendOrientation: top
+  x_axis_time_format: smart_date
+  y_axis_format: SMART_NUMBER
+  y_axis_bounds:
+  - null
+  - null
+  truncateXAxis: true
+  rich_tooltip: true
+  showTooltipTotal: true
+  tooltipTimeFormat: smart_date
+  extra_form_data: {}
+  dashboards:
+  - 9
+query_context: "{\"datasource\":{\"id\":11,\"type\":\"table\"},\"force\":false,\"\
+  queries\":[{\"filters\":[{\"col\":\"CreatedTime\",\"op\":\"TEMPORAL_RANGE\",\"val\"\
+  :\"No filter\"}],\"extras\":{\"having\":\"\",\"where\":\"\"},\"applied_time_extras\"\
+  :{},\"columns\":[{\"columnType\":\"BASE_AXIS\",\"sqlExpression\":\"BaseInfoTitle\"\
+  ,\"label\":\"BaseInfoTitle\",\"expressionType\":\"SQL\"}],\"metrics\":[\"DepositPercentage\"\
+  ],\"orderby\":[[\"DepositPercentage\",false]],\"annotation_layers\":[],\"row_limit\"\
+  :6,\"series_columns\":[],\"series_limit\":0,\"order_desc\":true,\"url_params\":{},\"\
+  custom_params\":{},\"custom_form_data\":{},\"time_offsets\":[],\"post_processing\"\
+  :[{\"operation\":\"pivot\",\"options\":{\"index\":[\"BaseInfoTitle\"],\"columns\"\
+  :[],\"aggregates\":{\"DepositPercentage\":{\"operator\":\"mean\"}},\"drop_missing_columns\"\
+  :false}},{\"operation\":\"contribution\",\"options\":{\"orientation\":\"column\"\
+  ,\"time_shifts\":[]}},{\"operation\":\"sort\",\"options\":{\"by\":\"DepositPercentage\"\
+  ,\"ascending\":false}},{\"operation\":\"flatten\"}]}],\"form_data\":{\"datasource\"\
+  :\"11__table\",\"viz_type\":\"echarts_timeseries_bar\",\"slice_id\":32,\"x_axis\"\
+  :\"BaseInfoTitle\",\"x_axis_sort\":\"DepositPercentage\",\"x_axis_sort_asc\":false,\"\
+  metrics\":[\"DepositPercentage\"],\"groupby\":[],\"contributionMode\":\"column\"\
+  ,\"adhoc_filters\":[{\"clause\":\"WHERE\",\"comparator\":\"No filter\",\"expressionType\"\
+  :\"SIMPLE\",\"operator\":\"TEMPORAL_RANGE\",\"subject\":\"CreatedTime\"}],\"row_limit\"\
+  :\"6\",\"truncate_metric\":true,\"show_empty_columns\":true,\"annotation_layers\"\
+  :[],\"orientation\":\"vertical\",\"x_axis_title\":\"\u0646\u0648\u0639 \u0645\u0644\
+  \u06A9\",\"x_axis_title_margin\":30,\"y_axis_title\":\"\u062F\u0631\u0635\u062F\
+  \ \u0622\u06AF\u0647\u06CC \u0647\u0627\u06CC \u0645\u0631\u0628\u0648\u0637\u0647\
+  \",\"y_axis_title_margin\":30,\"y_axis_title_position\":\"Top\",\"sort_series_type\"\
+  :\"sum\",\"sort_series_ascending\":false,\"color_scheme\":\"redToYellow\",\"time_shift_color\"\
+  :true,\"show_value\":true,\"only_total\":true,\"show_legend\":false,\"legendType\"\
+  :\"scroll\",\"legendOrientation\":\"top\",\"x_axis_time_format\":\"smart_date\"\
+  ,\"y_axis_format\":\"SMART_NUMBER\",\"y_axis_bounds\":[null,null],\"truncateXAxis\"\
+  :true,\"rich_tooltip\":true,\"showTooltipTotal\":true,\"tooltipTimeFormat\":\"smart_date\"\
+  ,\"extra_form_data\":{},\"dashboards\":[9],\"force\":false,\"result_format\":\"\
+  json\",\"result_type\":\"full\"},\"result_format\":\"json\",\"result_type\":\"full\"\
+  }"
+cache_timeout: null
+uuid: 56e8645c-b1c4-4ee8-8fb7-0c82f200bd1a
+version: 1.0.0
+dataset_uuid: cdbc8966-884d-497e-ab64-b8f19f7561e7

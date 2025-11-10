@@ -1,0 +1,92 @@
+slice_name: "\u067E\u0631\u062A\u0645\u0627\u0633 \u062A\u0631\u06CC\u0646 \u0627\u0645\
+  \u0644\u0627\u06A9 \u0647\u0641\u062A\u0647 \u0627\u062E\u06CC\u0631"
+description: null
+certified_by: null
+certification_details: null
+viz_type: echarts_timeseries_bar
+params:
+  datasource: 39__table
+  viz_type: echarts_timeseries_bar
+  slice_id: 48
+  x_axis: DepositId
+  xAxisForceCategorical: true
+  x_axis_sort: CallNumbers
+  x_axis_sort_asc: false
+  metrics:
+  - CallNumbers
+  groupby: []
+  adhoc_filters:
+  - clause: WHERE
+    comparator: 'DATEADD(DATETIME("now"), -7, day) : now'
+    datasourceWarning: false
+    expressionType: SIMPLE
+    filterOptionName: filter_tbftcoesiid_ct231okrak
+    isExtra: false
+    isNew: false
+    operator: TEMPORAL_RANGE
+    sqlExpression: null
+    subject: CallDate
+  row_limit: 10
+  truncate_metric: true
+  show_empty_columns: true
+  annotation_layers: []
+  orientation: vertical
+  x_axis_title: "\u06A9\u062F \u0645\u0644\u06A9"
+  x_axis_title_margin: 30
+  y_axis_title: "\u062A\u0639\u062F\u0627\u062F \u062A\u0645\u0627\u0633"
+  y_axis_title_margin: 30
+  y_axis_title_position: Top
+  sort_series_type: sum
+  color_scheme: redToYellow
+  time_shift_color: true
+  show_value: true
+  only_total: true
+  show_legend: false
+  legendType: scroll
+  legendOrientation: top
+  x_axis_time_format: smart_date
+  y_axis_format: ',d'
+  y_axis_bounds:
+  - null
+  - null
+  truncateXAxis: true
+  rich_tooltip: true
+  showTooltipTotal: true
+  tooltipTimeFormat: smart_date
+  extra_form_data: {}
+  dashboards:
+  - 9
+query_context: "{\"datasource\":{\"id\":39,\"type\":\"table\"},\"force\":false,\"\
+  queries\":[{\"filters\":[{\"col\":\"CallDate\",\"op\":\"TEMPORAL_RANGE\",\"val\"\
+  :\"DATEADD(DATETIME(\\\"now\\\"), -7, day) : now\"}],\"extras\":{\"having\":\"\"\
+  ,\"where\":\"\"},\"applied_time_extras\":{},\"columns\":[{\"columnType\":\"BASE_AXIS\"\
+  ,\"sqlExpression\":\"DepositId\",\"label\":\"DepositId\",\"expressionType\":\"SQL\"\
+  }],\"metrics\":[\"CallNumbers\"],\"orderby\":[[\"CallNumbers\",false]],\"annotation_layers\"\
+  :[],\"row_limit\":10,\"series_columns\":[],\"series_limit\":0,\"order_desc\":true,\"\
+  url_params\":{},\"custom_params\":{},\"custom_form_data\":{},\"time_offsets\":[],\"\
+  post_processing\":[{\"operation\":\"pivot\",\"options\":{\"index\":[\"DepositId\"\
+  ],\"columns\":[],\"aggregates\":{\"CallNumbers\":{\"operator\":\"mean\"}},\"drop_missing_columns\"\
+  :false}},{\"operation\":\"sort\",\"options\":{\"by\":\"CallNumbers\",\"ascending\"\
+  :false}},{\"operation\":\"flatten\"}]}],\"form_data\":{\"datasource\":\"39__table\"\
+  ,\"viz_type\":\"echarts_timeseries_bar\",\"slice_id\":48,\"x_axis\":\"DepositId\"\
+  ,\"xAxisForceCategorical\":true,\"x_axis_sort\":\"CallNumbers\",\"x_axis_sort_asc\"\
+  :false,\"metrics\":[\"CallNumbers\"],\"groupby\":[],\"adhoc_filters\":[{\"clause\"\
+  :\"WHERE\",\"comparator\":\"DATEADD(DATETIME(\\\"now\\\"), -7, day) : now\",\"datasourceWarning\"\
+  :false,\"expressionType\":\"SIMPLE\",\"filterOptionName\":\"filter_tbftcoesiid_ct231okrak\"\
+  ,\"isExtra\":false,\"isNew\":false,\"operator\":\"TEMPORAL_RANGE\",\"sqlExpression\"\
+  :null,\"subject\":\"CallDate\"}],\"row_limit\":10,\"truncate_metric\":true,\"show_empty_columns\"\
+  :true,\"annotation_layers\":[],\"orientation\":\"vertical\",\"x_axis_title\":\"\u06A9\
+  \u062F \u0645\u0644\u06A9\",\"x_axis_title_margin\":30,\"y_axis_title\":\"\u062A\
+  \u0639\u062F\u0627\u062F \u062A\u0645\u0627\u0633\",\"y_axis_title_margin\":30,\"\
+  y_axis_title_position\":\"Top\",\"sort_series_type\":\"sum\",\"color_scheme\":\"\
+  redToYellow\",\"time_shift_color\":true,\"show_value\":true,\"only_total\":true,\"\
+  show_legend\":false,\"legendType\":\"scroll\",\"legendOrientation\":\"top\",\"x_axis_time_format\"\
+  :\"smart_date\",\"y_axis_format\":\",d\",\"y_axis_bounds\":[null,null],\"truncateXAxis\"\
+  :true,\"rich_tooltip\":true,\"showTooltipTotal\":true,\"tooltipTimeFormat\":\"smart_date\"\
+  ,\"extra_form_data\":{},\"dashboards\":[9],\"force\":false,\"result_format\":\"\
+  json\",\"result_type\":\"full\"},\"result_format\":\"json\",\"result_type\":\"full\"\
+  }"
+cache_timeout: null
+uuid: 8f00be0a-75b3-45f6-90a0-34b286027b74
+version: 1.0.0
+dataset_uuid: 04a29b46-3bd1-4eed-80aa-b06a4a920aff

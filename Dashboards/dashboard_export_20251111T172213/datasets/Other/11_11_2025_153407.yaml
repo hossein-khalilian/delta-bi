@@ -1,0 +1,125 @@
+table_name: "\u0628\u0627\u0632\u062F\u06CC\u062F \u0648 \u062A\u0645\u0627\u0633\
+  \ \u0627\u0645\u0644\u0627\u06A9 \u0645\u0627\u0647 \u0627\u062E\u06CC\u0631 \u0648\
+  \ \u0633\u0631\u0648\u06CC\u0633 \u0648\u06CC\u0698\u0647 11/11/2025 15:34:07"
+main_dttm_col: LastVisitDate
+description: null
+default_endpoint: null
+offset: 0
+cache_timeout: null
+catalog: null
+schema: dbo
+sql: "WITH NewDeposits AS (\n    SELECT *\n    FROM Deposits\n    WHERE CreatedTime\
+  \ >= DATEADD(MONTH, -1, GETDATE())\n),\nVisitAgg AS (\n    SELECT \n        DepositId,\n\
+  \        SUM(Count) AS VisitSum,\n        MAX(CreatedTime) AS LastVisitDate\n  \
+  \  FROM (\n        SELECT DISTINCT Id, DepositId, Count, CreatedTime\n        FROM\
+  \ DepositVisits\n    ) dv\n    GROUP BY DepositId\n),\nCallAgg AS (\n    SELECT\
+  \ \n        DepositId,\n        SUM(Count) AS CallSum,\n        MAX(CreatedTime)\
+  \ AS LastCallDate\n    FROM (\n        SELECT DISTINCT Id, DepositId, Count, CreatedTime\n\
+  \        FROM DepositCalls\n    ) dc\n    GROUP BY DepositId\n),\nServiceBase AS\
+  \ (\n    SELECT \n        ds.DepositId,\n        ds.ServiceTypeId,\n        CASE\n\
+  \            WHEN ds.ServiceTypeId = 1291 THEN 'Update'\n            WHEN ds.ServiceTypeId\
+  \ = 1292 THEN 'Showcase'\n            WHEN ds.ServiceTypeId = 1293 THEN 'Increase\
+  \ View'\n            WHEN ds.ServiceTypeId = 1295 THEN 'Special and Update'\n  \
+  \          ELSE 'Other'\n        END AS ServiceName\n    FROM DepositServices ds\n\
+  ),\nServiceFlag AS (\n    SELECT\n        DepositId,\n        MAX(CASE WHEN ServiceTypeId\
+  \ IN (1291,1292,1293,1295) THEN 1 ELSE 0 END) AS HasSpecial\n    FROM ServiceBase\n\
+  \    GROUP BY DepositId\n)\nSELECT\n    d.Id AS DepositId,\n    ISNULL(v.VisitSum,\
+  \ 0) AS VisitSum,\n    ISNULL(c.CallSum, 0) AS CallSum,\n    v.LastVisitDate,\n\
+  \    c.LastCallDate,\n    CASE\n        WHEN sf.HasSpecial = 0 THEN 'non'\n    \
+  \    ELSE sb.ServiceName\n    END AS FinalService\nFROM NewDeposits d\nLEFT JOIN\
+  \ VisitAgg v ON d.Id = v.DepositId\nLEFT JOIN CallAgg c ON d.Id = c.DepositId\n\
+  LEFT JOIN ServiceFlag sf ON d.Id = sf.DepositId\nLEFT JOIN ServiceBase sb ON d.Id\
+  \ = sb.DepositId \n    AND sb.ServiceTypeId IN (1291,1292,1293,1295) \n"
+params: null
+template_params: null
+filter_select_enabled: true
+fetch_values_predicate: null
+extra: null
+normalize_columns: false
+always_filter_main_dttm: false
+uuid: 7808da20-d361-4693-861f-d7f0f54cfb23
+metrics:
+- metric_name: count
+  verbose_name: COUNT(*)
+  metric_type: count
+  expression: COUNT(*)
+  description: null
+  d3format: null
+  currency: null
+  extra: {}
+  warning_text: null
+columns:
+- column_name: LastVisitDate
+  verbose_name: null
+  is_dttm: true
+  is_active: true
+  type: DATETIME
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: CallSum
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: INT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: DepositId
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: INT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: FinalService
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: VisitSum
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: INT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: LastCallDate
+  verbose_name: null
+  is_dttm: true
+  is_active: true
+  type: null
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+version: 1.0.0
+database_uuid: f4e48a97-c7df-4d67-a5cd-961d0435e140

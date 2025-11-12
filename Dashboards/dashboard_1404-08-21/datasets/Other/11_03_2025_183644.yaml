@@ -1,0 +1,115 @@
+table_name: " \u0641\u0639\u0627\u0644\u06CC\u062A \u0622\u0698\u0627\u0646\u0633\
+  \ \u0647\u0627\u06CC \u0628\u0631\u062A\u0631 11/03/2025 18:36:44"
+main_dttm_col: null
+description: null
+default_endpoint: null
+offset: 0
+cache_timeout: null
+catalog: null
+schema: dbo
+sql: "SELECT \n    a.Id AS AgencyId,\n    a.Name AS AgencyName,\n    u.UserId,\n \
+  \   d.Id AS DepositId,\n    d.CreatedTime\nFROM Agencies AS a\nINNER JOIN [usr].[Users]\
+  \ AS u ON u.AgencyId = a.Id\nINNER JOIN Deposits AS d ON d.UserId = u.UserId\nWHERE\
+  \ \n    d.CreatedTime >= DATEADD(YEAR, -1, GETDATE());\n"
+params: null
+template_params: null
+filter_select_enabled: true
+fetch_values_predicate: null
+extra: null
+normalize_columns: false
+always_filter_main_dttm: false
+uuid: 4b409ceb-ace2-41e1-bea6-ac2b79ada2bb
+metrics:
+- metric_name: count
+  verbose_name: COUNT(*)
+  metric_type: count
+  expression: COUNT(*)
+  description: null
+  d3format: null
+  currency: null
+  extra:
+    warning_markdown: ''
+  warning_text: null
+columns:
+- column_name: Month
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: null
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: "CASE \n    WHEN MONTH(\"CreatedTime\") = 1 THEN '10)Dey'\n    WHEN\
+    \ MONTH(\"CreatedTime\") = 2 THEN '11)Bahman'\n    WHEN MONTH(\"CreatedTime\"\
+    ) = 3 THEN '12)Esfand'\n    WHEN MONTH(\"CreatedTime\") = 4 THEN '01)Farvardin'\n\
+    \    WHEN MONTH(\"CreatedTime\") = 5 THEN '02)Ordibehesht'\n    WHEN MONTH(\"\
+    CreatedTime\") = 6 THEN '03)Khordad'\n    WHEN MONTH(\"CreatedTime\") = 7 THEN\
+    \ '04)Tir'\n    WHEN MONTH(\"CreatedTime\") = 8 THEN '05)Mordad'\n    WHEN MONTH(\"\
+    CreatedTime\") = 9 THEN '06)Shahrivar'\n    WHEN MONTH(\"CreatedTime\") = 10 THEN\
+    \ '07)Mehr'\n    WHEN MONTH(\"CreatedTime\") = 11 THEN '08)Aban'\n    WHEN MONTH(\"\
+    CreatedTime\") = 12 THEN '09)Azar'\nEND\n"
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: CreatedTime
+  verbose_name: null
+  is_dttm: true
+  is_active: true
+  type: DATETIME
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: AgencyName
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: AgencyId
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: INT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: DepositId
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: INT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: UserId
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: INT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+version: 1.0.0
+database_uuid: f4e48a97-c7df-4d67-a5cd-961d0435e140

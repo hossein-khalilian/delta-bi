@@ -1,0 +1,95 @@
+slice_name: "\u0642\u06CC\u0645\u062A \u0641\u0631\u0648\u0634 500 \u0622\u067E\u0627\
+  \u0631\u062A\u0645\u0627\u0646 \u062C\u062F\u06CC\u062F \u062B\u0628\u062A \u0634\
+  \u062F\u0647 \u062F\u0631 \u062A\u0647\u0631\u0627\u0646"
+description: null
+certified_by: null
+certification_details: null
+viz_type: histogram_v2
+params:
+  datasource: 11__table
+  viz_type: histogram_v2
+  slice_id: 33
+  column: PriceNumeric
+  groupby: []
+  adhoc_filters:
+  - clause: WHERE
+    comparator: No filter
+    datasourceWarning: false
+    expressionType: SIMPLE
+    filterOptionName: filter_cdm58nw9yx_4jmallwmcsk
+    isExtra: false
+    isNew: false
+    operator: TEMPORAL_RANGE
+    sqlExpression: null
+    subject: CreatedTime
+  - clause: WHERE
+    comparator: '1257'
+    datasourceWarning: false
+    expressionType: SIMPLE
+    filterOptionName: filter_fmr3bu0tayr_yumkyabnwy
+    isExtra: false
+    isNew: false
+    operator: ==
+    operatorId: EQUALS
+    sqlExpression: null
+    subject: PropertyTypeId
+  - clause: WHERE
+    comparator: '6'
+    datasourceWarning: false
+    expressionType: SIMPLE
+    filterOptionName: filter_8l0596f9sze_46bnfmycd5q
+    isExtra: false
+    isNew: false
+    operator: ==
+    operatorId: EQUALS
+    sqlExpression: null
+    subject: DepositCategoryId
+  row_limit: 500
+  bins: 15
+  normalize: false
+  cumulative: false
+  color_scheme: redToYellow
+  show_value: true
+  show_legend: false
+  x_axis_title: "\u0642\u06CC\u0645\u062A \u0622\u067E\u0627\u0631\u062A\u0645\u0627\
+    \u0646"
+  x_axis_format: SMART_NUMBER
+  y_axis_title: "\u062A\u0639\u062F\u0627\u062F \u0622\u067E\u0627\u0631\u062A\u0645\
+    \u0627\u0646 \u0647\u0627\u06CC \u062B\u0628\u062A \u0634\u062F\u0647"
+  y_axis_format: SMART_NUMBER
+  extra_form_data: {}
+  dashboards:
+  - 9
+query_context: "{\"datasource\":{\"id\":11,\"type\":\"table\"},\"force\":false,\"\
+  queries\":[{\"filters\":[{\"col\":\"CreatedTime\",\"op\":\"TEMPORAL_RANGE\",\"val\"\
+  :\"No filter\"},{\"col\":\"PropertyTypeId\",\"op\":\"==\",\"val\":\"1257\"},{\"\
+  col\":\"DepositCategoryId\",\"op\":\"==\",\"val\":\"6\"}],\"extras\":{\"having\"\
+  :\"\",\"where\":\"\"},\"applied_time_extras\":{},\"columns\":[\"PriceNumeric\"],\"\
+  annotation_layers\":[],\"row_limit\":500,\"series_limit\":0,\"order_desc\":true,\"\
+  url_params\":{},\"custom_params\":{},\"custom_form_data\":{},\"post_processing\"\
+  :[{\"operation\":\"histogram\",\"options\":{\"column\":\"PriceNumeric\",\"groupby\"\
+  :[],\"bins\":15,\"cumulative\":false,\"normalize\":false}}]}],\"form_data\":{\"\
+  datasource\":\"11__table\",\"viz_type\":\"histogram_v2\",\"slice_id\":33,\"column\"\
+  :\"PriceNumeric\",\"groupby\":[],\"adhoc_filters\":[{\"clause\":\"WHERE\",\"comparator\"\
+  :\"No filter\",\"datasourceWarning\":false,\"expressionType\":\"SIMPLE\",\"filterOptionName\"\
+  :\"filter_cdm58nw9yx_4jmallwmcsk\",\"isExtra\":false,\"isNew\":false,\"operator\"\
+  :\"TEMPORAL_RANGE\",\"sqlExpression\":null,\"subject\":\"CreatedTime\"},{\"clause\"\
+  :\"WHERE\",\"comparator\":\"1257\",\"datasourceWarning\":false,\"expressionType\"\
+  :\"SIMPLE\",\"filterOptionName\":\"filter_fmr3bu0tayr_yumkyabnwy\",\"isExtra\":false,\"\
+  isNew\":false,\"operator\":\"==\",\"operatorId\":\"EQUALS\",\"sqlExpression\":null,\"\
+  subject\":\"PropertyTypeId\"},{\"clause\":\"WHERE\",\"comparator\":\"6\",\"datasourceWarning\"\
+  :false,\"expressionType\":\"SIMPLE\",\"filterOptionName\":\"filter_8l0596f9sze_46bnfmycd5q\"\
+  ,\"isExtra\":false,\"isNew\":false,\"operator\":\"==\",\"operatorId\":\"EQUALS\"\
+  ,\"sqlExpression\":null,\"subject\":\"DepositCategoryId\"}],\"row_limit\":500,\"\
+  bins\":15,\"normalize\":false,\"cumulative\":false,\"color_scheme\":\"redToYellow\"\
+  ,\"show_value\":true,\"show_legend\":false,\"x_axis_title\":\"\u0642\u06CC\u0645\
+  \u062A \u0622\u067E\u0627\u0631\u062A\u0645\u0627\u0646\",\"x_axis_format\":\"SMART_NUMBER\"\
+  ,\"y_axis_title\":\"\u062A\u0639\u062F\u0627\u062F \u0622\u067E\u0627\u0631\u062A\
+  \u0645\u0627\u0646 \u0647\u0627\u06CC \u062B\u0628\u062A \u0634\u062F\u0647\",\"\
+  y_axis_format\":\"SMART_NUMBER\",\"extra_form_data\":{},\"dashboards\":[9],\"force\"\
+  :false,\"result_format\":\"json\",\"result_type\":\"full\"},\"result_format\":\"\
+  json\",\"result_type\":\"full\"}"
+cache_timeout: null
+uuid: 142aba0d-0349-4b1d-bf22-5aa6275710d3
+version: 1.0.0
+dataset_uuid: cdbc8966-884d-497e-ab64-b8f19f7561e7

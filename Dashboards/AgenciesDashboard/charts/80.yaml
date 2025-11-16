@@ -1,0 +1,51 @@
+slice_name: "\u0622\u0698\u0627\u0646\u0633\u200C\u0647\u0627 \u0628\u0627 \u062D\u062F\
+  \u0627\u0642\u0644 \u06CC\u06A9 \u0622\u06AF\u0647\u06CC \u062B\u0628\u062A \u0634\
+  \u062F\u0647 \u062F\u0631 \u0633\u0627\u0644 \u06AF\u0630\u0634\u062A\u0647"
+description: null
+certified_by: null
+certification_details: null
+viz_type: table
+params:
+  datasource: 53__table
+  viz_type: table
+  slice_id: 80
+  query_mode: raw
+  groupby: []
+  time_grain_sqla: P1D
+  temporal_columns_lookup:
+    LastDepositDate: true
+  all_columns:
+  - LastDepositDate
+  - AgencyName
+  - ManagerPhone
+  - DepositCount
+  percent_metrics: []
+  adhoc_filters:
+  - clause: WHERE
+    comparator: No filter
+    expressionType: SIMPLE
+    operator: TEMPORAL_RANGE
+    subject: LastDepositDate
+  order_by_cols:
+  - '["LastDepositDate", true]'
+  order_desc: true
+  row_limit: 1000
+  server_page_length: 10
+  table_timestamp_format: smart_date
+  allow_render_html: true
+  show_cell_bars: true
+  color_pn: true
+  comparison_color_scheme: Green
+  comparison_type: values
+  extra_form_data: {}
+  dashboards:
+  - 13
+  - 9
+query_context: '{"datasource":{"id":53,"type":"table"},"force":false,"queries":[{"filters":[{"col":"LastDepositDate","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"time_grain_sqla":"P1D","having":"","where":""},"applied_time_extras":{},"columns":["LastDepositDate","AgencyName","ManagerPhone","DepositCount"],"orderby":[["LastDepositDate",true]],"annotation_layers":[],"row_limit":1000,"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"post_processing":[],"time_offsets":[]}],"form_data":{"datasource":"53__table","viz_type":"table","slice_id":80,"query_mode":"raw","groupby":[],"time_grain_sqla":"P1D","temporal_columns_lookup":{"LastDepositDate":true},"all_columns":["LastDepositDate","AgencyName","ManagerPhone","DepositCount"],"percent_metrics":[],"adhoc_filters":[{"clause":"WHERE","comparator":"No
+  filter","expressionType":"SIMPLE","operator":"TEMPORAL_RANGE","subject":"LastDepositDate"}],"order_by_cols":["[\"LastDepositDate\",
+  true]"],"order_desc":true,"row_limit":1000,"server_page_length":10,"table_timestamp_format":"smart_date","allow_render_html":true,"show_cell_bars":true,"color_pn":true,"comparison_color_scheme":"Green","comparison_type":"values","extra_form_data":{},"dashboards":[13,9],"force":false,"result_format":"json","result_type":"full","include_time":false},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 7723f624-aa87-43e6-a4c8-d661436aa14d
+version: 1.0.0
+dataset_uuid: 10682820-4427-48f9-a872-28ab22e34d4b

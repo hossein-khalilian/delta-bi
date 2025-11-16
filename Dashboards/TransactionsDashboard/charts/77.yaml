@@ -1,0 +1,173 @@
+slice_name: "\u0633\u0647\u0645 \u0647\u0631 \u0646\u0648\u0639 \u062A\u0631\u0627\
+  \u06A9\u0646\u0634 \u0627\u0632 \u06A9\u0644 \u062F\u0631\u0622\u0645\u062F (\u06F1\
+  \u06F2 \u0645\u0627\u0647 \u0627\u062E\u06CC\u0631)"
+description: null
+certified_by: null
+certification_details: null
+viz_type: pie
+params:
+  datasource: 27__table
+  viz_type: pie
+  slice_id: 76
+  groupby:
+  - ShortVersionTransactionName
+  metric:
+    aggregate: SUM
+    column:
+      advanced_data_type: null
+      changed_on: '2025-11-02T12:31:01.233857'
+      column_name: Amount
+      created_on: '2025-11-02T12:31:01.233855'
+      description: null
+      expression: null
+      extra: '{"warning_markdown":null}'
+      filterable: true
+      groupby: true
+      id: 463
+      is_active: true
+      is_dttm: false
+      python_date_format: null
+      type: null
+      type_generic: null
+      uuid: b634e258-4336-472f-ac56-2afb8ab98ac3
+      verbose_name: null
+    datasourceWarning: false
+    expressionType: SIMPLE
+    hasCustomLabel: true
+    label: "\u062C\u0645\u0639 \u0645\u0628\u0627\u0644\u063A"
+    optionName: metric_776bw1ps8u_pimnunndvm8
+    sqlExpression: null
+  adhoc_filters:
+  - expressionType: SIMPLE
+    subject: CreatedTime
+    operator: TEMPORAL_RANGE
+    comparator: No filter
+    clause: WHERE
+    sqlExpression: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_vanfu97285f_uaaaioigv5r
+  - expressionType: SIMPLE
+    subject: ChangeStatusId
+    operator: ==
+    operatorId: EQUALS
+    comparator: '1284'
+    clause: WHERE
+    sqlExpression: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_2fyvbfdagq9_8iskmvkgl4u
+  - expressionType: SIMPLE
+    subject: ShortVersionTransactionName
+    operator: '!='
+    operatorId: NOT_EQUALS
+    clause: WHERE
+    sqlExpression: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_3pcda1cmxnc_l2myseimh2c
+  - expressionType: SIMPLE
+    subject: ShortVersionTransactionName
+    operator: '!='
+    operatorId: NOT_EQUALS
+    comparator: Gift
+    clause: WHERE
+    sqlExpression: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_taw7pnfpgan_y6o2bsdmqr
+  - expressionType: SIMPLE
+    subject: ChangeStatusId
+    operator: ==
+    operatorId: EQUALS
+    comparator: 1284
+    clause: WHERE
+    sqlExpression: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_kr29og5jtpj_kguwgirqsn9
+  row_limit: 100
+  sort_by_metric: true
+  color_scheme: redToYellow
+  show_labels_threshold: 5
+  show_legend: true
+  legendType: scroll
+  legendOrientation: top
+  label_type: key
+  number_format: SMART_NUMBER
+  date_format: smart_date
+  show_labels: true
+  labels_outside: true
+  outerRadius: 70
+  innerRadius: 30
+  extra_form_data: {}
+  dashboards:
+  - 16
+query_context: "{\"datasource\":{\"id\":27,\"type\":\"table\"},\"force\":false,\"\
+  queries\":[{\"filters\":[{\"col\":\"CreatedTime\",\"op\":\"TEMPORAL_RANGE\",\"val\"\
+  :\"No filter\"},{\"col\":\"ChangeStatusId\",\"op\":\"==\",\"val\":\"1284\"},{\"\
+  col\":\"ShortVersionTransactionName\",\"op\":\"!=\"},{\"col\":\"ShortVersionTransactionName\"\
+  ,\"op\":\"!=\",\"val\":\"Gift\"},{\"col\":\"ChangeStatusId\",\"op\":\"==\",\"val\"\
+  :1284}],\"extras\":{\"having\":\"\",\"where\":\"\"},\"applied_time_extras\":{},\"\
+  columns\":[\"ShortVersionTransactionName\"],\"metrics\":[{\"aggregate\":\"SUM\"\
+  ,\"column\":{\"advanced_data_type\":null,\"changed_on\":\"2025-11-02T12:31:01.233857\"\
+  ,\"column_name\":\"Amount\",\"created_on\":\"2025-11-02T12:31:01.233855\",\"description\"\
+  :null,\"expression\":null,\"extra\":\"{\\\"warning_markdown\\\":null}\",\"filterable\"\
+  :true,\"groupby\":true,\"id\":463,\"is_active\":true,\"is_dttm\":false,\"python_date_format\"\
+  :null,\"type\":null,\"type_generic\":null,\"uuid\":\"b634e258-4336-472f-ac56-2afb8ab98ac3\"\
+  ,\"verbose_name\":null},\"datasourceWarning\":false,\"expressionType\":\"SIMPLE\"\
+  ,\"hasCustomLabel\":true,\"label\":\"\u062C\u0645\u0639 \u0645\u0628\u0627\u0644\
+  \u063A\",\"optionName\":\"metric_776bw1ps8u_pimnunndvm8\",\"sqlExpression\":null}],\"\
+  orderby\":[[{\"aggregate\":\"SUM\",\"column\":{\"advanced_data_type\":null,\"changed_on\"\
+  :\"2025-11-02T12:31:01.233857\",\"column_name\":\"Amount\",\"created_on\":\"2025-11-02T12:31:01.233855\"\
+  ,\"description\":null,\"expression\":null,\"extra\":\"{\\\"warning_markdown\\\"\
+  :null}\",\"filterable\":true,\"groupby\":true,\"id\":463,\"is_active\":true,\"is_dttm\"\
+  :false,\"python_date_format\":null,\"type\":null,\"type_generic\":null,\"uuid\"\
+  :\"b634e258-4336-472f-ac56-2afb8ab98ac3\",\"verbose_name\":null},\"datasourceWarning\"\
+  :false,\"expressionType\":\"SIMPLE\",\"hasCustomLabel\":true,\"label\":\"\u062C\u0645\
+  \u0639 \u0645\u0628\u0627\u0644\u063A\",\"optionName\":\"metric_776bw1ps8u_pimnunndvm8\"\
+  ,\"sqlExpression\":null},false]],\"annotation_layers\":[],\"row_limit\":100,\"series_limit\"\
+  :0,\"order_desc\":true,\"url_params\":{},\"custom_params\":{},\"custom_form_data\"\
+  :{}}],\"form_data\":{\"datasource\":\"27__table\",\"viz_type\":\"pie\",\"slice_id\"\
+  :76,\"groupby\":[\"ShortVersionTransactionName\"],\"metric\":{\"aggregate\":\"SUM\"\
+  ,\"column\":{\"advanced_data_type\":null,\"changed_on\":\"2025-11-02T12:31:01.233857\"\
+  ,\"column_name\":\"Amount\",\"created_on\":\"2025-11-02T12:31:01.233855\",\"description\"\
+  :null,\"expression\":null,\"extra\":\"{\\\"warning_markdown\\\":null}\",\"filterable\"\
+  :true,\"groupby\":true,\"id\":463,\"is_active\":true,\"is_dttm\":false,\"python_date_format\"\
+  :null,\"type\":null,\"type_generic\":null,\"uuid\":\"b634e258-4336-472f-ac56-2afb8ab98ac3\"\
+  ,\"verbose_name\":null},\"datasourceWarning\":false,\"expressionType\":\"SIMPLE\"\
+  ,\"hasCustomLabel\":true,\"label\":\"\u062C\u0645\u0639 \u0645\u0628\u0627\u0644\
+  \u063A\",\"optionName\":\"metric_776bw1ps8u_pimnunndvm8\",\"sqlExpression\":null},\"\
+  adhoc_filters\":[{\"expressionType\":\"SIMPLE\",\"subject\":\"CreatedTime\",\"operator\"\
+  :\"TEMPORAL_RANGE\",\"comparator\":\"No filter\",\"clause\":\"WHERE\",\"sqlExpression\"\
+  :null,\"isExtra\":false,\"isNew\":false,\"datasourceWarning\":false,\"filterOptionName\"\
+  :\"filter_vanfu97285f_uaaaioigv5r\"},{\"expressionType\":\"SIMPLE\",\"subject\"\
+  :\"ChangeStatusId\",\"operator\":\"==\",\"operatorId\":\"EQUALS\",\"comparator\"\
+  :\"1284\",\"clause\":\"WHERE\",\"sqlExpression\":null,\"isExtra\":false,\"isNew\"\
+  :false,\"datasourceWarning\":false,\"filterOptionName\":\"filter_2fyvbfdagq9_8iskmvkgl4u\"\
+  },{\"expressionType\":\"SIMPLE\",\"subject\":\"ShortVersionTransactionName\",\"\
+  operator\":\"!=\",\"operatorId\":\"NOT_EQUALS\",\"clause\":\"WHERE\",\"sqlExpression\"\
+  :null,\"isExtra\":false,\"isNew\":false,\"datasourceWarning\":false,\"filterOptionName\"\
+  :\"filter_3pcda1cmxnc_l2myseimh2c\"},{\"expressionType\":\"SIMPLE\",\"subject\"\
+  :\"ShortVersionTransactionName\",\"operator\":\"!=\",\"operatorId\":\"NOT_EQUALS\"\
+  ,\"comparator\":\"Gift\",\"clause\":\"WHERE\",\"sqlExpression\":null,\"isExtra\"\
+  :false,\"isNew\":false,\"datasourceWarning\":false,\"filterOptionName\":\"filter_taw7pnfpgan_y6o2bsdmqr\"\
+  },{\"expressionType\":\"SIMPLE\",\"subject\":\"ChangeStatusId\",\"operator\":\"\
+  ==\",\"operatorId\":\"EQUALS\",\"comparator\":1284,\"clause\":\"WHERE\",\"sqlExpression\"\
+  :null,\"isExtra\":false,\"isNew\":false,\"datasourceWarning\":false,\"filterOptionName\"\
+  :\"filter_kr29og5jtpj_kguwgirqsn9\"}],\"row_limit\":100,\"sort_by_metric\":true,\"\
+  color_scheme\":\"redToYellow\",\"show_labels_threshold\":5,\"show_legend\":true,\"\
+  legendType\":\"scroll\",\"legendOrientation\":\"top\",\"label_type\":\"key\",\"\
+  number_format\":\"SMART_NUMBER\",\"date_format\":\"smart_date\",\"show_labels\"\
+  :true,\"labels_outside\":true,\"outerRadius\":70,\"innerRadius\":30,\"extra_form_data\"\
+  :{},\"dashboards\":[16],\"force\":false,\"result_format\":\"json\",\"result_type\"\
+  :\"full\"},\"result_format\":\"json\",\"result_type\":\"full\"}"
+cache_timeout: null
+uuid: b90fcf60-caca-4b90-802a-4c5f58a9a753
+version: 1.0.0
+dataset_uuid: b0b08c31-8c0a-40fc-aba0-40e375aca025

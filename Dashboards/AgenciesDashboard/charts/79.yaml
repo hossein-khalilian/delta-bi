@@ -1,0 +1,49 @@
+slice_name: "\u0622\u0698\u0627\u0646\u0633\u200C\u0647\u0627\u06CC \u062B\u0628\u062A\
+  \ \u0646\u0627\u0645\u06CC \u06CC\u06A9 \u0633\u0627\u0644 \u0627\u062E\u06CC\u0631\
+  \ \u0628\u062F\u0648\u0646 \u0641\u0639\u0627\u0644\u06CC\u062A"
+description: null
+certified_by: null
+certification_details: null
+viz_type: table
+params:
+  datasource: 30__table
+  viz_type: table
+  slice_id: 79
+  query_mode: raw
+  groupby: []
+  temporal_columns_lookup:
+    CreatedTime: true
+  all_columns:
+  - CreatedTime
+  - AgencyName
+  - ManagerPhone
+  - managerName
+  - managerLastName
+  - IsDeleted
+  percent_metrics: []
+  adhoc_filters:
+  - clause: WHERE
+    comparator: No filter
+    expressionType: SIMPLE
+    operator: TEMPORAL_RANGE
+    subject: CreatedTime
+  order_by_cols:
+  - '["CreatedTime", true]'
+  row_limit: 1000
+  table_timestamp_format: smart_date
+  allow_render_html: true
+  show_cell_bars: true
+  color_pn: true
+  comparison_color_scheme: Green
+  extra_form_data: {}
+  dashboards:
+  - 9
+  - 13
+query_context: '{"datasource":{"id":30,"type":"table"},"force":false,"queries":[{"filters":[{"col":"CreatedTime","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":["CreatedTime","AgencyName","ManagerPhone","managerName","managerLastName","IsDeleted"],"orderby":[["CreatedTime",true]],"annotation_layers":[],"row_limit":1000,"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"post_processing":[],"time_offsets":[]}],"form_data":{"datasource":"30__table","viz_type":"table","slice_id":79,"query_mode":"raw","groupby":[],"temporal_columns_lookup":{"CreatedTime":true},"all_columns":["CreatedTime","AgencyName","ManagerPhone","managerName","managerLastName","IsDeleted"],"percent_metrics":[],"adhoc_filters":[{"clause":"WHERE","comparator":"No
+  filter","expressionType":"SIMPLE","operator":"TEMPORAL_RANGE","subject":"CreatedTime"}],"order_by_cols":["[\"CreatedTime\",
+  true]"],"row_limit":1000,"table_timestamp_format":"smart_date","allow_render_html":true,"show_cell_bars":true,"color_pn":true,"comparison_color_scheme":"Green","extra_form_data":{},"dashboards":[9,13],"force":false,"result_format":"json","result_type":"full","include_time":false},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: cacd2774-8fe9-4074-b671-aedbc1be2010
+version: 1.0.0
+dataset_uuid: 36470f3c-645f-41e0-9683-ac9b581e1107

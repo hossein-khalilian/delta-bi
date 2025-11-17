@@ -1,0 +1,14 @@
+database_name: Other
+sqlalchemy_uri: mssql+pymssql://ai:XXXXXXXXXX@48f2ed38-011c-475d-9316-bc6c36839ff7.hsvc.ir:30648/DeltaDB
+cache_timeout: null
+expose_in_sqllab: true
+allow_run_async: false
+allow_ctas: false
+allow_cvas: false
+allow_dml: false
+allow_file_upload: false
+extra:
+  allows_virtual_table_explore: true
+impersonate_user: false
+uuid: f4e48a97-c7df-4d67-a5cd-961d0435e140
+version: 1.0.0

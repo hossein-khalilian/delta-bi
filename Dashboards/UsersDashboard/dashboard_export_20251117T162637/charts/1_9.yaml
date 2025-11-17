@@ -1,0 +1,148 @@
+slice_name: "\u0646\u0631\u062E \u062B\u0628\u062A \u06A9\u0627\u0631\u0628\u0631\u0627\
+  \u0646 \u062C\u062F\u06CC\u062F(1 \u0633\u0627\u0644 \u06AF\u0630\u0634\u062A\u0647\
+  )"
+description: null
+certified_by: null
+certification_details: null
+viz_type: echarts_timeseries_line
+params:
+  datasource: 21__table
+  viz_type: echarts_timeseries_line
+  slice_id: 9
+  x_axis: RegisterDay
+  x_axis_sort_asc: true
+  x_axis_sort_series: name
+  x_axis_sort_series_ascending: true
+  metrics:
+  - expressionType: SIMPLE
+    column:
+      advanced_data_type: null
+      certification_details: null
+      certified_by: null
+      column_name: UserId
+      description: null
+      expression: null
+      filterable: true
+      groupby: true
+      id: 258
+      is_certified: false
+      is_dttm: false
+      python_date_format: null
+      type: INT
+      type_generic: 0
+      verbose_name: null
+      warning_markdown: null
+    aggregate: COUNT_DISTINCT
+    sqlExpression: null
+    datasourceWarning: false
+    hasCustomLabel: true
+    label: "\u062A\u0639\u062F\u0627\u062F \u06A9\u0627\u0631\u0628\u0631\u0627\u0646\
+      \ \u062B\u0628\u062A \u0646\u0627\u0645\u06CC"
+    optionName: metric_t0ddy9kxv4i_nbg8uk3qh7p
+  groupby: []
+  adhoc_filters:
+  - expressionType: SIMPLE
+    subject: RegisteredDate
+    operator: TEMPORAL_RANGE
+    comparator: Last year
+    clause: WHERE
+    sqlExpression: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_xiyoi6y1u2p_5y7laqumr5e
+  order_desc: true
+  row_limit: 50000
+  truncate_metric: true
+  show_empty_columns: true
+  comparison_type: values
+  annotation_layers: []
+  forecastPeriods: 10
+  forecastInterval: 0.8
+  x_axis_title: "\u062A\u0627\u0631\u06CC\u062E"
+  x_axis_title_margin: 30
+  y_axis_title: "\u062A\u0639\u062F\u0627\u062F \u06A9\u0627\u0631\u0628\u0631\u0627\
+    \u0646 \u062B\u0628\u062A \u0646\u0627\u0645\u06CC"
+  y_axis_title_margin: 30
+  y_axis_title_position: Left
+  sort_series_type: sum
+  color_scheme: redToYellow
+  time_shift_color: true
+  seriesType: line
+  only_total: true
+  opacity: 0.2
+  markerSize: 6
+  show_legend: false
+  x_axis_time_format: smart_date
+  rich_tooltip: true
+  showTooltipTotal: true
+  tooltipTimeFormat: smart_date
+  y_axis_format: SMART_NUMBER
+  truncateXAxis: true
+  y_axis_bounds:
+  - null
+  - null
+  extra_form_data: {}
+  dashboards:
+  - 5
+  - 9
+query_context: "{\"datasource\":{\"id\":21,\"type\":\"table\"},\"force\":false,\"\
+  queries\":[{\"filters\":[{\"col\":\"RegisteredDate\",\"op\":\"TEMPORAL_RANGE\",\"\
+  val\":\"Last year\"}],\"extras\":{\"having\":\"\",\"where\":\"\"},\"applied_time_extras\"\
+  :{},\"columns\":[{\"columnType\":\"BASE_AXIS\",\"sqlExpression\":\"RegisterDay\"\
+  ,\"label\":\"RegisterDay\",\"expressionType\":\"SQL\"}],\"metrics\":[{\"expressionType\"\
+  :\"SIMPLE\",\"column\":{\"advanced_data_type\":null,\"certification_details\":null,\"\
+  certified_by\":null,\"column_name\":\"UserId\",\"description\":null,\"expression\"\
+  :null,\"filterable\":true,\"groupby\":true,\"id\":258,\"is_certified\":false,\"\
+  is_dttm\":false,\"python_date_format\":null,\"type\":\"INT\",\"type_generic\":0,\"\
+  verbose_name\":null,\"warning_markdown\":null},\"aggregate\":\"COUNT_DISTINCT\"\
+  ,\"sqlExpression\":null,\"datasourceWarning\":false,\"hasCustomLabel\":true,\"label\"\
+  :\"\u062A\u0639\u062F\u0627\u062F \u06A9\u0627\u0631\u0628\u0631\u0627\u0646 \u062B\
+  \u0628\u062A \u0646\u0627\u0645\u06CC\",\"optionName\":\"metric_t0ddy9kxv4i_nbg8uk3qh7p\"\
+  }],\"orderby\":[[{\"expressionType\":\"SIMPLE\",\"column\":{\"advanced_data_type\"\
+  :null,\"certification_details\":null,\"certified_by\":null,\"column_name\":\"UserId\"\
+  ,\"description\":null,\"expression\":null,\"filterable\":true,\"groupby\":true,\"\
+  id\":258,\"is_certified\":false,\"is_dttm\":false,\"python_date_format\":null,\"\
+  type\":\"INT\",\"type_generic\":0,\"verbose_name\":null,\"warning_markdown\":null},\"\
+  aggregate\":\"COUNT_DISTINCT\",\"sqlExpression\":null,\"datasourceWarning\":false,\"\
+  hasCustomLabel\":true,\"label\":\"\u062A\u0639\u062F\u0627\u062F \u06A9\u0627\u0631\
+  \u0628\u0631\u0627\u0646 \u062B\u0628\u062A \u0646\u0627\u0645\u06CC\",\"optionName\"\
+  :\"metric_t0ddy9kxv4i_nbg8uk3qh7p\"},false]],\"annotation_layers\":[],\"row_limit\"\
+  :50000,\"series_columns\":[],\"series_limit\":0,\"order_desc\":true,\"url_params\"\
+  :{},\"custom_params\":{},\"custom_form_data\":{},\"time_offsets\":[],\"post_processing\"\
+  :[{\"operation\":\"pivot\",\"options\":{\"index\":[\"RegisterDay\"],\"columns\"\
+  :[],\"aggregates\":{\"\u062A\u0639\u062F\u0627\u062F \u06A9\u0627\u0631\u0628\u0631\
+  \u0627\u0646 \u062B\u0628\u062A \u0646\u0627\u0645\u06CC\":{\"operator\":\"mean\"\
+  }},\"drop_missing_columns\":false}},{\"operation\":\"flatten\"}]}],\"form_data\"\
+  :{\"datasource\":\"21__table\",\"viz_type\":\"echarts_timeseries_line\",\"slice_id\"\
+  :9,\"x_axis\":\"RegisterDay\",\"x_axis_sort_asc\":true,\"x_axis_sort_series\":\"\
+  name\",\"x_axis_sort_series_ascending\":true,\"metrics\":[{\"expressionType\":\"\
+  SIMPLE\",\"column\":{\"advanced_data_type\":null,\"certification_details\":null,\"\
+  certified_by\":null,\"column_name\":\"UserId\",\"description\":null,\"expression\"\
+  :null,\"filterable\":true,\"groupby\":true,\"id\":258,\"is_certified\":false,\"\
+  is_dttm\":false,\"python_date_format\":null,\"type\":\"INT\",\"type_generic\":0,\"\
+  verbose_name\":null,\"warning_markdown\":null},\"aggregate\":\"COUNT_DISTINCT\"\
+  ,\"sqlExpression\":null,\"datasourceWarning\":false,\"hasCustomLabel\":true,\"label\"\
+  :\"\u062A\u0639\u062F\u0627\u062F \u06A9\u0627\u0631\u0628\u0631\u0627\u0646 \u062B\
+  \u0628\u062A \u0646\u0627\u0645\u06CC\",\"optionName\":\"metric_t0ddy9kxv4i_nbg8uk3qh7p\"\
+  }],\"groupby\":[],\"adhoc_filters\":[{\"expressionType\":\"SIMPLE\",\"subject\"\
+  :\"RegisteredDate\",\"operator\":\"TEMPORAL_RANGE\",\"comparator\":\"Last year\"\
+  ,\"clause\":\"WHERE\",\"sqlExpression\":null,\"isExtra\":false,\"isNew\":false,\"\
+  datasourceWarning\":false,\"filterOptionName\":\"filter_xiyoi6y1u2p_5y7laqumr5e\"\
+  }],\"order_desc\":true,\"row_limit\":50000,\"truncate_metric\":true,\"show_empty_columns\"\
+  :true,\"comparison_type\":\"values\",\"annotation_layers\":[],\"forecastPeriods\"\
+  :10,\"forecastInterval\":0.8,\"x_axis_title\":\"\u062A\u0627\u0631\u06CC\u062E\"\
+  ,\"x_axis_title_margin\":30,\"y_axis_title\":\"\u062A\u0639\u062F\u0627\u062F \u06A9\
+  \u0627\u0631\u0628\u0631\u0627\u0646 \u062B\u0628\u062A \u0646\u0627\u0645\u06CC\
+  \",\"y_axis_title_margin\":30,\"y_axis_title_position\":\"Left\",\"sort_series_type\"\
+  :\"sum\",\"color_scheme\":\"redToYellow\",\"time_shift_color\":true,\"seriesType\"\
+  :\"line\",\"only_total\":true,\"opacity\":0.2,\"markerSize\":6,\"show_legend\":false,\"\
+  x_axis_time_format\":\"smart_date\",\"rich_tooltip\":true,\"showTooltipTotal\":true,\"\
+  tooltipTimeFormat\":\"smart_date\",\"y_axis_format\":\"SMART_NUMBER\",\"truncateXAxis\"\
+  :true,\"y_axis_bounds\":[null,null],\"extra_form_data\":{},\"dashboards\":[5,9],\"\
+  force\":false,\"result_format\":\"json\",\"result_type\":\"full\"},\"result_format\"\
+  :\"json\",\"result_type\":\"full\"}"
+cache_timeout: null
+uuid: 1d924d79-71e8-4d48-b0ef-4927382b8de1
+version: 1.0.0
+dataset_uuid: 3809f7f9-b56e-4ab1-8f0d-77ef364ef8a8

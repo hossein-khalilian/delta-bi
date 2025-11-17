@@ -1,0 +1,118 @@
+table_name: "\u0622\u0698\u0627\u0646\u0633\u200C\u0647\u0627 \u0628\u0627 \u062D\u062F\
+  \u0627\u0642\u0644 \u06CC\u06A9 \u0622\u06AF\u0647\u06CC \u062F\u0631 \u06CC\u06A9\
+  \ \u0633\u0627\u0644 \u0627\u062E\u06CC\u0631 11/16/2025 17:19:54"
+main_dttm_col: LastDepositDate
+description: null
+default_endpoint: null
+offset: 0
+cache_timeout: null
+catalog: null
+schema: dbo
+sql: "SELECT\n    a.Id AS AgencyId,\n    a.Name AS AgencyName,\n    a.Phone AS AgencyPhone,\n\
+  \    MAX(m.PhoneNumber) AS ManagerPhone,\n    COUNT(d.Id) AS DepositCount,\n   \
+  \ MAX(d.CreatedTime) AS LastDepositDate\nFROM\n    Agencies a\nINNER JOIN\n    usr.Users\
+  \ u ON a.Id = u.AgencyId\nINNER JOIN\n    Deposits d ON u.UserId = d.UserId\nOUTER\
+  \ APPLY (\n    SELECT TOP 1 PhoneNumber\n    FROM usr.Users m\n    WHERE m.UserId\
+  \ = a.ManagerId\n) m\nWHERE\n    u.AgencyId IS NOT NULL\n    AND d.CreatedTime >=\
+  \ DATEFROMPARTS(YEAR(GETDATE()) - 1, 1, 1)\n    AND d.StatusId != 1254\nGROUP BY\n\
+  \    a.Id,\n    a.Name,\n    a.Phone\nHAVING\n    COUNT(d.Id) >= 1\n"
+params: null
+template_params: null
+filter_select_enabled: true
+fetch_values_predicate: null
+extra: null
+normalize_columns: false
+always_filter_main_dttm: false
+uuid: 10682820-4427-48f9-a872-28ab22e34d4b
+metrics:
+- metric_name: count
+  verbose_name: COUNT(*)
+  metric_type: count
+  expression: COUNT(*)
+  description: null
+  d3format: null
+  currency: null
+  extra:
+    warning_markdown: ''
+  warning_text: null
+columns:
+- column_name: LastDepositDate
+  verbose_name: null
+  is_dttm: true
+  is_active: true
+  type: DATETIME
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: AgencyName
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: AgencyPhone
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: AgencyId
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: INT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: DepositCount
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: INT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: ManagerPhone
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+version: 1.0.0
+database_uuid: f4e48a97-c7df-4d67-a5cd-961d0435e140

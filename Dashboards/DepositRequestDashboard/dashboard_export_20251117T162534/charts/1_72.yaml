@@ -1,0 +1,109 @@
+slice_name: "\u062A\u0648\u0632\u06CC\u0639 \u062F\u0631\u062E\u0648\u0627\u0633\u062A\
+  \u200C\u0647\u0627 \u0628\u0631 \u0627\u0633\u0627\u0633 \u0628\u0627\u0632\u0647\
+  \ \u0642\u06CC\u0645\u062A\u06CC \u0645\u0648\u0631\u062F \u0646\u0638\u0631(1 \u0633\
+  \u0627\u0644 \u0627\u062E\u06CC\u0631)"
+description: null
+certified_by: null
+certification_details: null
+viz_type: histogram_v2
+params:
+  datasource: 25__table
+  viz_type: histogram_v2
+  slice_id: 72
+  column: PriceNumeric
+  groupby: []
+  adhoc_filters:
+  - clause: WHERE
+    comparator: No filter
+    datasourceWarning: false
+    expressionType: SIMPLE
+    filterOptionName: filter_itm3h1tftpb_7b0q80ci89o
+    isExtra: false
+    isNew: false
+    operator: TEMPORAL_RANGE
+    sqlExpression: null
+    subject: CreatedTime
+  - clause: WHERE
+    comparator: 1
+    datasourceWarning: false
+    expressionType: SIMPLE
+    filterOptionName: filter_l3tk8qqzc4_3bd83zmezd1
+    isExtra: false
+    isNew: false
+    operator: ==
+    operatorId: EQUALS
+    sqlExpression: null
+    subject: CityId
+  - clause: WHERE
+    comparator: unknown
+    datasourceWarning: false
+    expressionType: SIMPLE
+    filterOptionName: filter_26rdsorfjha_l7b91ocb0is
+    isExtra: false
+    isNew: false
+    operator: '!='
+    operatorId: NOT_EQUALS
+    sqlExpression: null
+    subject: Type
+  - clause: WHERE
+    comparator: Apartment
+    datasourceWarning: false
+    expressionType: SIMPLE
+    filterOptionName: filter_u0ew3kywra_2rd3omjxd18
+    isExtra: false
+    isNew: false
+    operator: ==
+    operatorId: EQUALS
+    sqlExpression: null
+    subject: Type
+  row_limit: 10000
+  bins: 10
+  normalize: true
+  cumulative: false
+  color_scheme: redToYellow
+  show_value: true
+  show_legend: false
+  x_axis_title: "\u0642\u06CC\u0645\u062A \u062F\u0631\u062E\u0648\u0627\u0633\u062A\
+    \u06CC"
+  x_axis_format: SMART_NUMBER
+  y_axis_title: "\u062F\u0631\u0635\u062F \u062F\u0631\u062E\u0648\u0627\u0633\u062A"
+  y_axis_format: ',.1%'
+  extra_form_data: {}
+  dashboards:
+  - 14
+query_context: "{\"datasource\":{\"id\":25,\"type\":\"table\"},\"force\":false,\"\
+  queries\":[{\"filters\":[{\"col\":\"CreatedTime\",\"op\":\"TEMPORAL_RANGE\",\"val\"\
+  :\"No filter\"},{\"col\":\"CityId\",\"op\":\"==\",\"val\":1},{\"col\":\"Type\",\"\
+  op\":\"!=\",\"val\":\"unknown\"},{\"col\":\"Type\",\"op\":\"==\",\"val\":\"Apartment\"\
+  }],\"extras\":{\"having\":\"\",\"where\":\"\"},\"applied_time_extras\":{},\"columns\"\
+  :[\"PriceNumeric\"],\"annotation_layers\":[],\"row_limit\":10000,\"series_limit\"\
+  :0,\"order_desc\":true,\"url_params\":{},\"custom_params\":{},\"custom_form_data\"\
+  :{},\"post_processing\":[{\"operation\":\"histogram\",\"options\":{\"column\":\"\
+  PriceNumeric\",\"groupby\":[],\"bins\":10,\"cumulative\":false,\"normalize\":true}}]}],\"\
+  form_data\":{\"datasource\":\"25__table\",\"viz_type\":\"histogram_v2\",\"slice_id\"\
+  :72,\"column\":\"PriceNumeric\",\"groupby\":[],\"adhoc_filters\":[{\"clause\":\"\
+  WHERE\",\"comparator\":\"No filter\",\"datasourceWarning\":false,\"expressionType\"\
+  :\"SIMPLE\",\"filterOptionName\":\"filter_itm3h1tftpb_7b0q80ci89o\",\"isExtra\"\
+  :false,\"isNew\":false,\"operator\":\"TEMPORAL_RANGE\",\"sqlExpression\":null,\"\
+  subject\":\"CreatedTime\"},{\"clause\":\"WHERE\",\"comparator\":1,\"datasourceWarning\"\
+  :false,\"expressionType\":\"SIMPLE\",\"filterOptionName\":\"filter_l3tk8qqzc4_3bd83zmezd1\"\
+  ,\"isExtra\":false,\"isNew\":false,\"operator\":\"==\",\"operatorId\":\"EQUALS\"\
+  ,\"sqlExpression\":null,\"subject\":\"CityId\"},{\"clause\":\"WHERE\",\"comparator\"\
+  :\"unknown\",\"datasourceWarning\":false,\"expressionType\":\"SIMPLE\",\"filterOptionName\"\
+  :\"filter_26rdsorfjha_l7b91ocb0is\",\"isExtra\":false,\"isNew\":false,\"operator\"\
+  :\"!=\",\"operatorId\":\"NOT_EQUALS\",\"sqlExpression\":null,\"subject\":\"Type\"\
+  },{\"clause\":\"WHERE\",\"comparator\":\"Apartment\",\"datasourceWarning\":false,\"\
+  expressionType\":\"SIMPLE\",\"filterOptionName\":\"filter_u0ew3kywra_2rd3omjxd18\"\
+  ,\"isExtra\":false,\"isNew\":false,\"operator\":\"==\",\"operatorId\":\"EQUALS\"\
+  ,\"sqlExpression\":null,\"subject\":\"Type\"}],\"row_limit\":10000,\"bins\":10,\"\
+  normalize\":true,\"cumulative\":false,\"color_scheme\":\"redToYellow\",\"show_value\"\
+  :true,\"show_legend\":false,\"x_axis_title\":\"\u0642\u06CC\u0645\u062A \u062F\u0631\
+  \u062E\u0648\u0627\u0633\u062A\u06CC\",\"x_axis_format\":\"SMART_NUMBER\",\"y_axis_title\"\
+  :\"\u062F\u0631\u0635\u062F \u062F\u0631\u062E\u0648\u0627\u0633\u062A\",\"y_axis_format\"\
+  :\",.1%\",\"extra_form_data\":{},\"dashboards\":[14],\"force\":false,\"result_format\"\
+  :\"json\",\"result_type\":\"full\"},\"result_format\":\"json\",\"result_type\":\"\
+  full\"}"
+cache_timeout: null
+uuid: fcfd28f2-7eaa-40e9-b764-278892971fa9
+version: 1.0.0
+dataset_uuid: 06fd26b8-7c59-446b-a151-69fadef3675d

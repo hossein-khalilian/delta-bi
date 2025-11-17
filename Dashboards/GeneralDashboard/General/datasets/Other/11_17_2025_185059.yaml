@@ -1,0 +1,82 @@
+table_name: "\u06A9\u0627\u0631\u0628\u0631\u0627\u0646+\u0645\u0644\u06A9 \u062B\u0628\
+  \u062A \u0634\u062F\u0647+ \u0646\u0642\u0634 \u06A9\u0627\u0631\u0628\u0631 11/17/2025\
+  \ 18:50:59"
+main_dttm_col: null
+description: null
+default_endpoint: null
+offset: 0
+cache_timeout: null
+catalog: null
+schema: dbo
+sql: "SELECT\n  u.UserId,\n  d.Id,\n  r.DisplayName,\n  d.CreatedTime\nFROM usr.[Users]\
+  \ u\nLEFT JOIN usr.[UserRoles] ur ON u.UserId = ur.UserId\nLEFT JOIN usr.[Roles]\
+  \ r ON r.Id = ur.RoleId\nLEFT JOIN Deposits d ON d.UserId= ur.UserId \n"
+params: null
+template_params: null
+filter_select_enabled: true
+fetch_values_predicate: null
+extra: null
+normalize_columns: false
+always_filter_main_dttm: false
+uuid: 8edcd313-5cae-4f17-b908-c8caa2655dc7
+metrics:
+- metric_name: count
+  verbose_name: COUNT(*)
+  metric_type: count
+  expression: COUNT(*)
+  description: null
+  d3format: null
+  currency: null
+  extra: null
+  warning_text: null
+columns:
+- column_name: UserId
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: INT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: CreatedTime
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: null
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: DisplayName
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: null
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: Id
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: null
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+version: 1.0.0
+database_uuid: f4e48a97-c7df-4d67-a5cd-961d0435e140

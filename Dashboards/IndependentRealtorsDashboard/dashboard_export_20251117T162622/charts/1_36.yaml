@@ -1,0 +1,52 @@
+slice_name: "\u0645\u0634\u0627\u0648\u0631\u0627\u0646 \u062B\u0628\u062A\u200C\u0646\
+  \u0627\u0645\u200C\u0634\u062F\u0647 \u0628\u062F\u0648\u0646 \u0622\u06AF\u0647\
+  \u06CC (1 \u0633\u0627\u0644 \u0627\u062E\u06CC\u0631)"
+description: null
+certified_by: null
+certification_details: null
+viz_type: table
+params:
+  datasource: 29__table
+  viz_type: table
+  slice_id: 36
+  query_mode: raw
+  groupby:
+  - Name
+  temporal_columns_lookup:
+    RegisteredDate: true
+  all_columns:
+  - FullName
+  - PhoneNumber
+  - RegisteredDate
+  percent_metrics: []
+  adhoc_filters:
+  - clause: WHERE
+    comparator: No filter
+    expressionType: SIMPLE
+    operator: TEMPORAL_RANGE
+    subject: RegisteredDate
+  order_by_cols:
+  - '["RegisteredDate", true]'
+  row_limit: 1000
+  table_timestamp_format: smart_date
+  page_length: 0
+  include_search: false
+  allow_rearrange_columns: false
+  allow_render_html: true
+  show_cell_bars: true
+  align_pn: false
+  color_pn: true
+  comparison_color_scheme: Green
+  conditional_formatting: []
+  extra_form_data: {}
+  dashboards:
+  - 9
+  - 12
+query_context: '{"datasource":{"id":29,"type":"table"},"force":false,"queries":[{"filters":[{"col":"RegisteredDate","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":["FullName","PhoneNumber","RegisteredDate"],"orderby":[["RegisteredDate",true]],"annotation_layers":[],"row_limit":1000,"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"post_processing":[],"time_offsets":[]}],"form_data":{"datasource":"29__table","viz_type":"table","slice_id":36,"query_mode":"raw","groupby":["Name"],"temporal_columns_lookup":{"RegisteredDate":true},"all_columns":["FullName","PhoneNumber","RegisteredDate"],"percent_metrics":[],"adhoc_filters":[{"clause":"WHERE","comparator":"No
+  filter","expressionType":"SIMPLE","operator":"TEMPORAL_RANGE","subject":"RegisteredDate"}],"order_by_cols":["[\"RegisteredDate\",
+  true]"],"row_limit":1000,"table_timestamp_format":"smart_date","page_length":0,"include_search":false,"allow_rearrange_columns":false,"allow_render_html":true,"show_cell_bars":true,"align_pn":false,"color_pn":true,"comparison_color_scheme":"Green","conditional_formatting":[],"extra_form_data":{},"dashboards":[9,12],"force":false,"result_format":"json","result_type":"full","include_time":false},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 3f64685d-3e94-410c-8380-e260460bd76b
+version: 1.0.0
+dataset_uuid: 6cc05e50-73c2-4245-9d11-917eaad46865

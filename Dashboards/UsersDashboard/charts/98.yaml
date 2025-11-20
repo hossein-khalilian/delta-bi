@@ -1,0 +1,103 @@
+slice_name: "\u0633\u0647\u0645 \u06A9\u0627\u0631\u0628\u0631\u0627\u0646 \u0639\u0627\
+  \u062F\u06CC \u062B\u0628\u062A\u200C\u06A9\u0646\u0646\u062F\u0647 \u0645\u0644\
+  \u06A9 \u062F\u0631 \u0645\u0642\u0627\u0628\u0644 \u06A9\u0627\u0631\u0628\u0631\
+  \u0627\u0646 \u063A\u06CC\u0631 \u0641\u0639\u0627\u0644"
+description: null
+certified_by: null
+certification_details: null
+viz_type: sunburst_v2
+params:
+  datasource: 60__table
+  viz_type: sunburst_v2
+  slice_id: 98
+  columns:
+  - UserType
+  metric:
+    aggregate: COUNT_DISTINCT
+    column:
+      advanced_data_type: null
+      changed_on: '2025-11-18T15:34:18.559142'
+      column_name: UserId
+      created_on: '2025-11-18T15:34:18.559131'
+      description: null
+      expression: null
+      extra: '{}'
+      filterable: true
+      groupby: true
+      id: 854
+      is_active: true
+      is_dttm: false
+      python_date_format: null
+      type: INT
+      type_generic: 0
+      uuid: c70f2b92-a119-4331-b3b9-b72ae280f83e
+      verbose_name: null
+    datasourceWarning: false
+    expressionType: SIMPLE
+    hasCustomLabel: true
+    label: "\u062A\u0639\u062F\u0627\u062F \u06A9\u0627\u0631\u0628\u0631"
+    optionName: metric_78vcehe2rza_y4m6v4gbofj
+    sqlExpression: null
+  adhoc_filters:
+  - clause: WHERE
+    comparator: No filter
+    expressionType: SIMPLE
+    operator: TEMPORAL_RANGE
+    subject: RegisteredDate
+  row_limit: 10000
+  sort_by_metric: true
+  color_scheme: redToYellow
+  linear_color_scheme: superset_seq_1
+  show_labels: true
+  show_labels_threshold: '0'
+  show_total: false
+  label_type: key
+  number_format: ',d'
+  date_format: smart_date
+  extra_form_data: {}
+  dashboards:
+  - 17
+query_context: "{\"datasource\":{\"id\":60,\"type\":\"table\"},\"force\":false,\"\
+  queries\":[{\"filters\":[{\"col\":\"RegisteredDate\",\"op\":\"TEMPORAL_RANGE\",\"\
+  val\":\"No filter\"}],\"extras\":{\"having\":\"\",\"where\":\"\"},\"applied_time_extras\"\
+  :{},\"columns\":[\"UserType\"],\"metrics\":[{\"aggregate\":\"COUNT_DISTINCT\",\"\
+  column\":{\"advanced_data_type\":null,\"changed_on\":\"2025-11-18T15:34:18.559142\"\
+  ,\"column_name\":\"UserId\",\"created_on\":\"2025-11-18T15:34:18.559131\",\"description\"\
+  :null,\"expression\":null,\"extra\":\"{}\",\"filterable\":true,\"groupby\":true,\"\
+  id\":854,\"is_active\":true,\"is_dttm\":false,\"python_date_format\":null,\"type\"\
+  :\"INT\",\"type_generic\":0,\"uuid\":\"c70f2b92-a119-4331-b3b9-b72ae280f83e\",\"\
+  verbose_name\":null},\"datasourceWarning\":false,\"expressionType\":\"SIMPLE\",\"\
+  hasCustomLabel\":true,\"label\":\"\u062A\u0639\u062F\u0627\u062F \u06A9\u0627\u0631\
+  \u0628\u0631\",\"optionName\":\"metric_78vcehe2rza_y4m6v4gbofj\",\"sqlExpression\"\
+  :null}],\"orderby\":[[{\"aggregate\":\"COUNT_DISTINCT\",\"column\":{\"advanced_data_type\"\
+  :null,\"changed_on\":\"2025-11-18T15:34:18.559142\",\"column_name\":\"UserId\",\"\
+  created_on\":\"2025-11-18T15:34:18.559131\",\"description\":null,\"expression\"\
+  :null,\"extra\":\"{}\",\"filterable\":true,\"groupby\":true,\"id\":854,\"is_active\"\
+  :true,\"is_dttm\":false,\"python_date_format\":null,\"type\":\"INT\",\"type_generic\"\
+  :0,\"uuid\":\"c70f2b92-a119-4331-b3b9-b72ae280f83e\",\"verbose_name\":null},\"datasourceWarning\"\
+  :false,\"expressionType\":\"SIMPLE\",\"hasCustomLabel\":true,\"label\":\"\u062A\u0639\
+  \u062F\u0627\u062F \u06A9\u0627\u0631\u0628\u0631\",\"optionName\":\"metric_78vcehe2rza_y4m6v4gbofj\"\
+  ,\"sqlExpression\":null},false]],\"annotation_layers\":[],\"row_limit\":10000,\"\
+  series_limit\":0,\"order_desc\":true,\"url_params\":{},\"custom_params\":{},\"custom_form_data\"\
+  :{}}],\"form_data\":{\"datasource\":\"60__table\",\"viz_type\":\"sunburst_v2\",\"\
+  slice_id\":98,\"columns\":[\"UserType\"],\"metric\":{\"aggregate\":\"COUNT_DISTINCT\"\
+  ,\"column\":{\"advanced_data_type\":null,\"changed_on\":\"2025-11-18T15:34:18.559142\"\
+  ,\"column_name\":\"UserId\",\"created_on\":\"2025-11-18T15:34:18.559131\",\"description\"\
+  :null,\"expression\":null,\"extra\":\"{}\",\"filterable\":true,\"groupby\":true,\"\
+  id\":854,\"is_active\":true,\"is_dttm\":false,\"python_date_format\":null,\"type\"\
+  :\"INT\",\"type_generic\":0,\"uuid\":\"c70f2b92-a119-4331-b3b9-b72ae280f83e\",\"\
+  verbose_name\":null},\"datasourceWarning\":false,\"expressionType\":\"SIMPLE\",\"\
+  hasCustomLabel\":true,\"label\":\"\u062A\u0639\u062F\u0627\u062F \u06A9\u0627\u0631\
+  \u0628\u0631\",\"optionName\":\"metric_78vcehe2rza_y4m6v4gbofj\",\"sqlExpression\"\
+  :null},\"adhoc_filters\":[{\"clause\":\"WHERE\",\"comparator\":\"No filter\",\"\
+  expressionType\":\"SIMPLE\",\"operator\":\"TEMPORAL_RANGE\",\"subject\":\"RegisteredDate\"\
+  }],\"row_limit\":10000,\"sort_by_metric\":true,\"color_scheme\":\"redToYellow\"\
+  ,\"linear_color_scheme\":\"superset_seq_1\",\"show_labels\":true,\"show_labels_threshold\"\
+  :\"0\",\"show_total\":false,\"label_type\":\"key\",\"number_format\":\",d\",\"date_format\"\
+  :\"smart_date\",\"extra_form_data\":{},\"dashboards\":[17],\"force\":false,\"result_format\"\
+  :\"json\",\"result_type\":\"full\"},\"result_format\":\"json\",\"result_type\":\"\
+  full\"}"
+cache_timeout: null
+uuid: 13259b92-f4cd-4c7b-88de-51c79517804b
+version: 1.0.0
+dataset_uuid: 3fa1065b-78aa-4707-818a-40db66ae921d

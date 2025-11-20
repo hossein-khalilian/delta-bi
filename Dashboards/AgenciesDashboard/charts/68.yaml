@@ -1,0 +1,145 @@
+slice_name: "\u062F\u0647 \u0622\u0698\u0627\u0646\u0633 \u0628\u0631\u062A\u0631\
+  \ \u0627\u0632 \u0646\u0638\u0631 \u062A\u0639\u062F\u0627\u062F \u0622\u06AF\u0647\
+  \u06CC \u0628\u0627 \u062D\u062F\u0627\u0642\u0644 \u0633\u0647 \u0645\u0627\u0647\
+  \ \u0639\u062F\u0645 \u0641\u0639\u0627\u0644\u06CC\u062A"
+description: null
+certified_by: null
+certification_details: null
+viz_type: echarts_timeseries_bar
+params:
+  datasource: 50__table
+  viz_type: echarts_timeseries_bar
+  slice_id: 68
+  x_axis: Name
+  x_axis_sort: "\u062A\u0639\u062F\u0627\u062F \u0622\u06AF\u0647\u06CC \u062B\u0628\
+    \u062A \u0634\u062F\u0647"
+  x_axis_sort_asc: false
+  metrics:
+  - aggregate: SUM
+    column:
+      advanced_data_type: null
+      certification_details: null
+      certified_by: null
+      column_name: TotalDeposits
+      description: null
+      expression: null
+      filterable: true
+      groupby: true
+      id: 717
+      is_certified: false
+      is_dttm: false
+      python_date_format: null
+      type: INT
+      type_generic: 0
+      verbose_name: null
+      warning_markdown: null
+    datasourceWarning: false
+    expressionType: SIMPLE
+    hasCustomLabel: true
+    label: "\u062A\u0639\u062F\u0627\u062F \u0622\u06AF\u0647\u06CC \u062B\u0628\u062A\
+      \ \u0634\u062F\u0647"
+    optionName: metric_dl5xehz6pp_bz2jerx1e2
+    sqlExpression: null
+  groupby: []
+  adhoc_filters:
+  - clause: WHERE
+    comparator: ' : DATEADD(DATETIME("now"), -3, month)'
+    datasourceWarning: false
+    expressionType: SIMPLE
+    filterOptionName: filter_lxwbxup1wj_qg9fvgqes8q
+    isExtra: false
+    isNew: false
+    operator: TEMPORAL_RANGE
+    sqlExpression: null
+    subject: LastDepositDate
+  row_limit: 10
+  truncate_metric: true
+  show_empty_columns: true
+  annotation_layers: []
+  orientation: vertical
+  x_axis_title_margin: 15
+  y_axis_title: "\u062A\u0639\u062F\u0627\u062F \u0622\u06AF\u0647\u06CC \u062B\u0628\
+    \u062A \u0634\u062F\u0647"
+  y_axis_title_margin: 30
+  y_axis_title_position: Top
+  sort_series_type: sum
+  color_scheme: redToYellow
+  time_shift_color: true
+  show_value: true
+  only_total: true
+  show_legend: false
+  legendType: scroll
+  legendOrientation: top
+  x_axis_time_format: smart_date
+  xAxisLabelRotation: 45
+  y_axis_format: SMART_NUMBER
+  y_axis_bounds:
+  - null
+  - null
+  truncateXAxis: true
+  rich_tooltip: true
+  showTooltipTotal: true
+  tooltipTimeFormat: smart_date
+  extra_form_data: {}
+  dashboards:
+  - 9
+  - 13
+query_context: "{\"datasource\":{\"id\":50,\"type\":\"table\"},\"force\":false,\"\
+  queries\":[{\"filters\":[{\"col\":\"LastDepositDate\",\"op\":\"TEMPORAL_RANGE\"\
+  ,\"val\":\" : DATEADD(DATETIME(\\\"now\\\"), -3, month)\"}],\"extras\":{\"having\"\
+  :\"\",\"where\":\"\"},\"applied_time_extras\":{},\"columns\":[{\"columnType\":\"\
+  BASE_AXIS\",\"sqlExpression\":\"Name\",\"label\":\"Name\",\"expressionType\":\"\
+  SQL\"}],\"metrics\":[{\"aggregate\":\"SUM\",\"column\":{\"advanced_data_type\":null,\"\
+  certification_details\":null,\"certified_by\":null,\"column_name\":\"TotalDeposits\"\
+  ,\"description\":null,\"expression\":null,\"filterable\":true,\"groupby\":true,\"\
+  id\":717,\"is_certified\":false,\"is_dttm\":false,\"python_date_format\":null,\"\
+  type\":\"INT\",\"type_generic\":0,\"verbose_name\":null,\"warning_markdown\":null},\"\
+  datasourceWarning\":false,\"expressionType\":\"SIMPLE\",\"hasCustomLabel\":true,\"\
+  label\":\"\u062A\u0639\u062F\u0627\u062F \u0622\u06AF\u0647\u06CC \u062B\u0628\u062A\
+  \ \u0634\u062F\u0647\",\"optionName\":\"metric_dl5xehz6pp_bz2jerx1e2\",\"sqlExpression\"\
+  :null}],\"orderby\":[[{\"aggregate\":\"SUM\",\"column\":{\"advanced_data_type\"\
+  :null,\"certification_details\":null,\"certified_by\":null,\"column_name\":\"TotalDeposits\"\
+  ,\"description\":null,\"expression\":null,\"filterable\":true,\"groupby\":true,\"\
+  id\":717,\"is_certified\":false,\"is_dttm\":false,\"python_date_format\":null,\"\
+  type\":\"INT\",\"type_generic\":0,\"verbose_name\":null,\"warning_markdown\":null},\"\
+  datasourceWarning\":false,\"expressionType\":\"SIMPLE\",\"hasCustomLabel\":true,\"\
+  label\":\"\u062A\u0639\u062F\u0627\u062F \u0622\u06AF\u0647\u06CC \u062B\u0628\u062A\
+  \ \u0634\u062F\u0647\",\"optionName\":\"metric_dl5xehz6pp_bz2jerx1e2\",\"sqlExpression\"\
+  :null},false]],\"annotation_layers\":[],\"row_limit\":10,\"series_columns\":[],\"\
+  series_limit\":0,\"order_desc\":true,\"url_params\":{},\"custom_params\":{},\"custom_form_data\"\
+  :{},\"time_offsets\":[],\"post_processing\":[{\"operation\":\"pivot\",\"options\"\
+  :{\"index\":[\"Name\"],\"columns\":[],\"aggregates\":{\"\u062A\u0639\u062F\u0627\
+  \u062F \u0622\u06AF\u0647\u06CC \u062B\u0628\u062A \u0634\u062F\u0647\":{\"operator\"\
+  :\"mean\"}},\"drop_missing_columns\":false}},{\"operation\":\"sort\",\"options\"\
+  :{\"by\":\"\u062A\u0639\u062F\u0627\u062F \u0622\u06AF\u0647\u06CC \u062B\u0628\u062A\
+  \ \u0634\u062F\u0647\",\"ascending\":false}},{\"operation\":\"flatten\"}]}],\"form_data\"\
+  :{\"datasource\":\"50__table\",\"viz_type\":\"echarts_timeseries_bar\",\"slice_id\"\
+  :68,\"x_axis\":\"Name\",\"x_axis_sort\":\"\u062A\u0639\u062F\u0627\u062F \u0622\u06AF\
+  \u0647\u06CC \u062B\u0628\u062A \u0634\u062F\u0647\",\"x_axis_sort_asc\":false,\"\
+  metrics\":[{\"aggregate\":\"SUM\",\"column\":{\"advanced_data_type\":null,\"certification_details\"\
+  :null,\"certified_by\":null,\"column_name\":\"TotalDeposits\",\"description\":null,\"\
+  expression\":null,\"filterable\":true,\"groupby\":true,\"id\":717,\"is_certified\"\
+  :false,\"is_dttm\":false,\"python_date_format\":null,\"type\":\"INT\",\"type_generic\"\
+  :0,\"verbose_name\":null,\"warning_markdown\":null},\"datasourceWarning\":false,\"\
+  expressionType\":\"SIMPLE\",\"hasCustomLabel\":true,\"label\":\"\u062A\u0639\u062F\
+  \u0627\u062F \u0622\u06AF\u0647\u06CC \u062B\u0628\u062A \u0634\u062F\u0647\",\"\
+  optionName\":\"metric_dl5xehz6pp_bz2jerx1e2\",\"sqlExpression\":null}],\"groupby\"\
+  :[],\"adhoc_filters\":[{\"clause\":\"WHERE\",\"comparator\":\" : DATEADD(DATETIME(\\\
+  \"now\\\"), -3, month)\",\"datasourceWarning\":false,\"expressionType\":\"SIMPLE\"\
+  ,\"filterOptionName\":\"filter_lxwbxup1wj_qg9fvgqes8q\",\"isExtra\":false,\"isNew\"\
+  :false,\"operator\":\"TEMPORAL_RANGE\",\"sqlExpression\":null,\"subject\":\"LastDepositDate\"\
+  }],\"row_limit\":10,\"truncate_metric\":true,\"show_empty_columns\":true,\"annotation_layers\"\
+  :[],\"orientation\":\"vertical\",\"x_axis_title_margin\":15,\"y_axis_title\":\"\u062A\
+  \u0639\u062F\u0627\u062F \u0622\u06AF\u0647\u06CC \u062B\u0628\u062A \u0634\u062F\
+  \u0647\",\"y_axis_title_margin\":30,\"y_axis_title_position\":\"Top\",\"sort_series_type\"\
+  :\"sum\",\"color_scheme\":\"redToYellow\",\"time_shift_color\":true,\"show_value\"\
+  :true,\"only_total\":true,\"show_legend\":false,\"legendType\":\"scroll\",\"legendOrientation\"\
+  :\"top\",\"x_axis_time_format\":\"smart_date\",\"xAxisLabelRotation\":45,\"y_axis_format\"\
+  :\"SMART_NUMBER\",\"y_axis_bounds\":[null,null],\"truncateXAxis\":true,\"rich_tooltip\"\
+  :true,\"showTooltipTotal\":true,\"tooltipTimeFormat\":\"smart_date\",\"extra_form_data\"\
+  :{},\"dashboards\":[9,13],\"force\":false,\"result_format\":\"json\",\"result_type\"\
+  :\"full\"},\"result_format\":\"json\",\"result_type\":\"full\"}"
+cache_timeout: null
+uuid: d4d7958a-5955-481a-893f-a1eebd4700b6
+version: 1.0.0
+dataset_uuid: 3f55cf03-e891-4413-b21d-ee85b7f3f5d5

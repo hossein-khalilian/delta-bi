@@ -1,0 +1,111 @@
+table_name: "\u06A9\u0627\u0631\u0628\u0631\u0627\u0646 \u0639\u0627\u062F\u06CC \u0648\
+  \ \u0627\u0645\u0644\u0627\u06A9 \u062B\u0628\u062A \u0634\u062F\u0634\u0627\u0646\
+  \ 11/18/2025 18:58:38"
+main_dttm_col: RegisteredDate
+description: null
+default_endpoint: null
+offset: 0
+cache_timeout: null
+catalog: null
+schema: dbo
+sql: "SELECT DISTINCT\n    u.UserId,\n    u.RegisteredDate,\n    r.DisplayName,\n\
+  \    u.CityId,\n    COUNT(d.Id) AS DepositCount\nFROM usr.[Users] u\nLEFT JOIN usr.[UserRoles]\
+  \ ur \n    ON u.UserId = ur.UserId\nLEFT JOIN usr.[Roles] r \n    ON r.Id = ur.RoleId\n\
+  LEFT JOIN Deposits d \n    ON d.UserId = u.UserId\nWHERE r.DisplayName = N'\u06A9\
+  \u0627\u0631\u0628\u0631 \u0639\u0627\u062F\u06CC'\nGROUP BY u.UserId,\nu.RegisteredDate,\n\
+  \    r.DisplayName,\n    u.CityId;\n"
+params: null
+template_params: null
+filter_select_enabled: true
+fetch_values_predicate: null
+extra: null
+normalize_columns: false
+always_filter_main_dttm: false
+uuid: 3fa1065b-78aa-4707-818a-40db66ae921d
+metrics:
+- metric_name: count
+  verbose_name: COUNT(*)
+  metric_type: count
+  expression: COUNT(*)
+  description: null
+  d3format: null
+  currency: null
+  extra:
+    warning_markdown: ''
+  warning_text: null
+columns:
+- column_name: UserType
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: null
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: "CASE\n        WHEN DepositCount > 0 THEN N'Active User'\n        ELSE\
+    \ N'Visitor'\n    END "
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: RegisteredDate
+  verbose_name: null
+  is_dttm: true
+  is_active: true
+  type: DATETIME
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: DepositCount
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: INT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: DisplayName
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: UserId
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: INT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: CityId
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: null
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+version: 1.0.0
+database_uuid: f4e48a97-c7df-4d67-a5cd-961d0435e140

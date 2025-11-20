@@ -1,6 +1,6 @@
 dashboard_title: "\u062F\u0627\u0634\u0628\u0648\u0631\u062F \u062A\u062D\u0644\u06CC\
-  \u0644\u06CC \u0622\u06AF\u0647\u06CC \u0647\u0627\u06CC \u0627\u062E\u06CC\u0631\
-  \ \u062F\u0644\u062A\u0627"
+  \u0644\u06CC \u0622\u06AF\u0647\u06CC\u200C\u0647\u0627\u06CC \u0627\u062E\u06CC\
+  \u0631 \u062F\u0644\u062A\u0627"
 description: null
 css: ''
 slug: null
@@ -16,8 +16,8 @@ position:
       chartId: 31
       height: 50
       sliceName: "\u0631\u0648\u0646\u062F \u0631\u0648\u0632\u0627\u0646\u0647 \u062B\
-        \u0628\u062A \u0622\u06AF\u0647\u06CC \u062F\u0631 \u06CC\u06A9 \u0633\u0627\
-        \u0644 \u0627\u062E\u06CC\u0631"
+        \u0628\u062A \u0622\u06AF\u0647\u06CC(1 \u0633\u0627\u0644 \u0627\u062E\u06CC\
+        \u0631)"
       uuid: d0781eca-4e25-45e2-ab4f-df1804e1472f
       width: 4
     parents:
@@ -31,8 +31,9 @@ position:
     meta:
       chartId: 32
       height: 50
-      sliceName: "\u062A\u0631\u06A9\u06CC\u0628 \u0646\u0648\u0639 \u0645\u0644\u06A9\
-        \ \u062F\u0631 \u06F1\u06F2 \u0645\u0627\u0647 \u0627\u062E\u06CC\u0631"
+      sliceName: "\u062A\u0631\u06A9\u06CC\u0628 \u0646\u0648\u0639 \u0622\u06AF\u0647\
+        \u06CC\u200C\u0647\u0627\u06CC \u062B\u0628\u062A \u0634\u062F\u0647(1 \u0633\
+        \u0627\u0644 \u0627\u062E\u06CC\u0631)"
       uuid: 56e8645c-b1c4-4ee8-8fb7-0c82f200bd1a
       width: 4
     parents:
@@ -48,7 +49,7 @@ position:
       height: 50
       sliceName: "\u0627\u0644\u06AF\u0648\u06CC \u062B\u0628\u062A \u0622\u06AF\u0647\
         \u06CC \u0628\u0631 \u0627\u0633\u0627\u0633 \u0631\u0648\u0632 \u0647\u0641\
-        \u062A\u0647"
+        \u062A\u0647(1 \u0633\u0627\u0644 \u0627\u062E\u06CC\u0631)"
       uuid: 9ff71a0e-dd50-4ece-b819-dea26296c035
       width: 4
     parents:
@@ -63,14 +64,114 @@ position:
       chartId: 28
       height: 50
       sliceName: "\u0631\u0648\u0646\u062F \u062A\u063A\u06CC\u06CC\u0631 \u062A\u0631\
-        \u06A9\u06CC\u0628 \u0646\u0648\u0639 \u0645\u0644\u06A9 \u062F\u0631 \u06F1\
-        \u06F2 \u0645\u0627\u0647 \u0627\u062E\u06CC\u0631"
+        \u06A9\u06CC\u0628 \u0646\u0648\u0639 \u0645\u0644\u06A9 \u062F\u0631(1 \u0633\
+        \u0627\u0644 \u0627\u062E\u06CC\u0631)"
       uuid: f99e421a-cf1e-45aa-b1bd-9dd463f9fcb6
       width: 8
     parents:
     - ROOT_ID
     - GRID_ID
     - ROW-Ti2z8B7VGnxSo37vRngDO
+    type: CHART
+  CHART-explore-91-1:
+    children: []
+    id: CHART-explore-91-1
+    meta:
+      chartId: 91
+      height: 50
+      sliceName: "\u062A\u0648\u0632\u06CC\u0639 \u0622\u067E\u0627\u0631\u062A\u0645\
+        \u0627\u0646\u200C\u0647\u0627\u06CC \u062B\u0628\u062A \u0634\u062F\u0647\
+        \ \u0628\u0631 \u0627\u0633\u0627\u0633 \u0634\u0647\u0631(1 \u0633\u0627\u0644\
+        \ \u0627\u062E\u06CC\u0631)"
+      uuid: 37fbd750-2eb5-4202-ae83-9ff5641448e8
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-6XbAijDCE0_GY_swJtNfL
+    type: CHART
+  CHART-explore-92-1:
+    children: []
+    id: CHART-explore-92-1
+    meta:
+      chartId: 92
+      height: 50
+      sliceName: "\u062A\u0648\u0632\u06CC\u0639 \u0628\u0627\u063A\u200C\u0647\u0627\
+        \u06CC \u062B\u0628\u062A \u0634\u062F\u0647 \u0628\u0631 \u0627\u0633\u0627\
+        \u0633 \u0634\u0647\u0631(1 \u0633\u0627\u0644 \u0627\u062E\u06CC\u0631)"
+      uuid: fe8444e9-9679-4a4d-8fd2-0df3f1a25086
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-GbjrEYn7AOV4cAQiEHRTd
+    type: CHART
+  CHART-explore-93-1:
+    children: []
+    id: CHART-explore-93-1
+    meta:
+      chartId: 93
+      height: 50
+      sliceName: "\u062A\u0648\u0632\u06CC\u0639 \u0622\u067E\u0627\u0631\u062A\u0645\
+        \u0627\u0646\u200C\u0647\u0627\u06CC \u0627\u062F\u0627\u0631\u06CC \u062B\
+        \u0628\u062A \u0634\u062F\u0647 \u0628\u0631 \u0627\u0633\u0627\u0633 \u0634\
+        \u0647\u0631(1 \u0633\u0627\u0644 \u0627\u062E\u06CC\u0631)"
+      uuid: cc555caf-5b11-4481-8404-1e58e98ecfce
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-GbjrEYn7AOV4cAQiEHRTd
+    type: CHART
+  CHART-explore-94-1:
+    children: []
+    id: CHART-explore-94-1
+    meta:
+      chartId: 94
+      height: 50
+      sliceName: "\u062A\u0648\u0632\u06CC\u0639 \u0645\u0633\u062A\u063A\u0644\u0627\
+        \u062A \u062B\u0628\u062A \u0634\u062F\u0647 \u0628\u0631 \u0627\u0633\u0627\
+        \u0633 \u0634\u0647\u0631(1 \u0633\u0627\u0644 \u0627\u062E\u06CC\u0631)"
+      uuid: ad8768d8-7cf4-4b63-bf07-67667bff361b
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-WKvX1PP7FBZsZm2vEOgNt
+    type: CHART
+  CHART-explore-96-1:
+    children: []
+    id: CHART-explore-96-1
+    meta:
+      chartId: 96
+      height: 50
+      sliceName: "\u062A\u0648\u0632\u06CC\u0639 \u062E\u0627\u0646\u0647\u200C\u0647\
+        \u0627\u06CC \u062B\u0628\u062A \u0634\u062F\u0647 \u0628\u0631 \u0627\u0633\
+        \u0627\u0633 \u0634\u0647\u0631(1 \u0633\u0627\u0644 \u0627\u062E\u06CC\u0631\
+        )"
+      uuid: a5605f24-e79e-4730-968f-fd2b8245a4a5
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-6XbAijDCE0_GY_swJtNfL
+    type: CHART
+  CHART-explore-97-1:
+    children: []
+    id: CHART-explore-97-1
+    meta:
+      chartId: 97
+      height: 50
+      sliceName: "\u062A\u0648\u0632\u06CC\u0639 \u0645\u063A\u0627\u0632\u0647\u200C\
+        \u0647\u0627\u06CC \u062B\u0628\u062A \u0634\u062F\u0647 \u0628\u0631 \u0627\
+        \u0633\u0627\u0633 \u0634\u0647\u0631(1 \u0633\u0627\u0644 \u0627\u062E\u06CC\
+        \u0631)"
+      uuid: 4891a2f3-726a-44f7-b0f8-466bf5004327
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-GbjrEYn7AOV4cAQiEHRTd
     type: CHART
   CHART-fLar9N5vtbbDYJN7C4HZ8:
     children: []
@@ -79,7 +180,8 @@ position:
       chartId: 30
       height: 50
       sliceName: "\u0627\u0644\u06AF\u0648\u06CC \u0633\u0627\u0639\u062A\u06CC \u062B\
-        \u0628\u062A \u0622\u06AF\u0647\u06CC\u200C\u0647\u0627"
+        \u0628\u062A \u0622\u06AF\u0647\u06CC\u200C\u0647\u0627(1 \u0633\u0627\u0644\
+        \ \u0627\u062E\u06CC\u0631)"
       uuid: ccb360a6-ce66-4942-be2b-21578e917b64
       width: 4
     parents:
@@ -94,8 +196,8 @@ position:
       chartId: 35
       height: 50
       sliceName: "\u0631\u0648\u0646\u062F \u0645\u0627\u0647\u0627\u0646\u0647 \u062B\
-        \u0628\u062A \u0622\u06AF\u0647\u06CC\u200C\u0647\u0627 \u062F\u0631 \u06CC\
-        \u06A9 \u0633\u0627\u0644 \u0627\u062E\u06CC\u0631"
+        \u0628\u062A \u0622\u06AF\u0647\u06CC\u200C\u0647\u0627(1 \u0633\u0627\u0644\
+        \ \u0627\u062E\u06CC\u0631)"
       uuid: a74ebe04-bda4-479c-8dfd-9da3906a0110
       width: 4
     parents:
@@ -111,8 +213,8 @@ position:
       height: 50
       sliceName: "\u062A\u0648\u0632\u06CC\u0639 \u0622\u067E\u0627\u0631\u062A\u0645\
         \u0627\u0646\u200C\u0647\u0627 \u0628\u0631 \u0627\u0633\u0627\u0633 \u0645\
-        \u062D\u0644\u0647 (\u06F1\u06F2 \u0645\u0627\u0647 \u0627\u062E\u06CC\u0631\
-        )"
+        \u062D\u0644\u0647 \u062A\u0647\u0631\u0627\u0646(1 \u0633\u0627\u0644 \u0627\
+        \u062E\u06CC\u0631)"
       uuid: 0f74a543-142e-4362-a430-a239e277ade1
       width: 4
     parents:
@@ -212,6 +314,8 @@ position:
     - HEADER-bFYNRnyzCqUN-7Qfx9E4L
     - DIVIDER-Y27zVRBFbUQhFallks5Az
     - ROW-6XbAijDCE0_GY_swJtNfL
+    - ROW-GbjrEYn7AOV4cAQiEHRTd
+    - ROW-WKvX1PP7FBZsZm2vEOgNt
     - DIVIDER-fxHJGn5F8Bjh7BIlvHzAy
     - HEADER-_tiTFrQvZp8SX2T61lsSd
     - DIVIDER-VU3Q5_VtlzrB2aI8Xf05k
@@ -274,8 +378,8 @@ position:
     id: HEADER_ID
     meta:
       text: "\u062F\u0627\u0634\u0628\u0648\u0631\u062F \u062A\u062D\u0644\u06CC\u0644\
-        \u06CC \u0622\u06AF\u0647\u06CC \u0647\u0627\u06CC \u0627\u062E\u06CC\u0631\
-        \ \u062F\u0644\u062A\u0627"
+        \u06CC \u0622\u06AF\u0647\u06CC\u200C\u0647\u0627\u06CC \u0627\u062E\u06CC\
+        \u0631 \u062F\u0644\u062A\u0627"
     type: HEADER
   ROOT_ID:
     children:
@@ -295,7 +399,21 @@ position:
   ROW-6XbAijDCE0_GY_swJtNfL:
     children:
     - CHART-lXKp7VryhVCq-8SEf_Xoo
+    - CHART-explore-96-1
+    - CHART-explore-91-1
     id: ROW-6XbAijDCE0_GY_swJtNfL
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-GbjrEYn7AOV4cAQiEHRTd:
+    children:
+    - CHART-explore-92-1
+    - CHART-explore-93-1
+    - CHART-explore-97-1
+    id: ROW-GbjrEYn7AOV4cAQiEHRTd
     meta:
       background: BACKGROUND_TRANSPARENT
     parents:
@@ -335,6 +453,16 @@ position:
     - ROOT_ID
     - GRID_ID
     type: ROW
+  ROW-WKvX1PP7FBZsZm2vEOgNt:
+    children:
+    - CHART-explore-94-1
+    id: ROW-WKvX1PP7FBZsZm2vEOgNt
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
 metadata:
   chart_configuration:
     '7':
@@ -349,6 +477,12 @@ metadata:
         - 32
         - 33
         - 35
+        - 91
+        - 92
+        - 93
+        - 94
+        - 96
+        - 97
     '28':
       id: 28
       crossFilters:
@@ -361,6 +495,12 @@ metadata:
         - 32
         - 33
         - 35
+        - 91
+        - 92
+        - 93
+        - 94
+        - 96
+        - 97
     '29':
       id: 29
       crossFilters:
@@ -373,6 +513,12 @@ metadata:
         - 32
         - 33
         - 35
+        - 91
+        - 92
+        - 93
+        - 94
+        - 96
+        - 97
     '30':
       id: 30
       crossFilters:
@@ -385,6 +531,12 @@ metadata:
         - 32
         - 33
         - 35
+        - 91
+        - 92
+        - 93
+        - 94
+        - 96
+        - 97
     '31':
       id: 31
       crossFilters:
@@ -397,6 +549,12 @@ metadata:
         - 32
         - 33
         - 35
+        - 91
+        - 92
+        - 93
+        - 94
+        - 96
+        - 97
     '32':
       id: 32
       crossFilters:
@@ -409,6 +567,12 @@ metadata:
         - 31
         - 33
         - 35
+        - 91
+        - 92
+        - 93
+        - 94
+        - 96
+        - 97
     '35':
       id: 35
       crossFilters:
@@ -421,6 +585,120 @@ metadata:
         - 31
         - 32
         - 33
+        - 91
+        - 92
+        - 93
+        - 94
+        - 96
+        - 97
+    '91':
+      id: 91
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 7
+        - 28
+        - 29
+        - 30
+        - 31
+        - 32
+        - 33
+        - 35
+        - 92
+        - 93
+        - 94
+        - 96
+        - 97
+    '92':
+      id: 92
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 7
+        - 28
+        - 29
+        - 30
+        - 31
+        - 32
+        - 33
+        - 35
+        - 91
+        - 93
+        - 94
+        - 96
+        - 97
+    '93':
+      id: 93
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 7
+        - 28
+        - 29
+        - 30
+        - 31
+        - 32
+        - 33
+        - 35
+        - 91
+        - 92
+        - 94
+        - 96
+        - 97
+    '94':
+      id: 94
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 7
+        - 28
+        - 29
+        - 30
+        - 31
+        - 32
+        - 33
+        - 35
+        - 91
+        - 92
+        - 93
+        - 96
+        - 97
+    '96':
+      id: 96
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 7
+        - 28
+        - 29
+        - 30
+        - 31
+        - 32
+        - 33
+        - 35
+        - 91
+        - 92
+        - 93
+        - 94
+        - 97
+    '97':
+      id: 97
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 7
+        - 28
+        - 29
+        - 30
+        - 31
+        - 32
+        - 33
+        - 35
+        - 91
+        - 92
+        - 93
+        - 94
+        - 96
   global_chart_configuration:
     scope:
       rootPath:
@@ -435,17 +713,58 @@ metadata:
     - 32
     - 33
     - 35
+    - 91
+    - 92
+    - 93
+    - 94
+    - 96
+    - 97
   map_label_colors:
-    "\u062F\u0631\u0635\u062F \u0622\u06AF\u0647\u06CC \u062B\u0628\u062A \u0634\u062F\u0647": '#90042A'
+    "\u062A\u0647\u0631\u0627\u0646": '#90042A'
+    "\u0645\u062D\u0645\u0648\u062F\u0622\u0628\u0627\u062F": '#D60039'
+    "\u0645\u0634\u0647\u062F": '#D1353B'
+    "\u0627\u0635\u0641\u0647\u0627\u0646": '#E45233'
+    "\u0631\u0648\u06CC\u0627\u0646": '#F47028'
+    "\u06A9\u0631\u062C": '#FE8E17'
+    "\u06A9\u0631\u062F\u0627\u0646": '#FFAD00'
+    "\u062A\u0646\u06A9\u0627\u0628\u0646": '#FFCC00'
+    "\u0646\u0648\u0631": '#FFE601'
+    "\u062F\u0645\u0627\u0648\u0646\u062F": '#FFF46D'
     "\u062A\u0639\u062F\u0627\u062F \u0622\u06AF\u0647\u06CC \u062B\u0628\u062A \u0634\u062F\u0647": '#90042A'
-    "\u062A\u0639\u062F\u0627\u062F \u0622\u06AF\u0647\u06CC": '#90042A'
     "\u062A\u0639\u062F\u0627\u062F \u0622\u06AF\u0647\u06CC \u0647\u0627": '#90042A'
-    "\u062F\u0631\u0635\u062F \u0622\u06AF\u0647\u06CC \u0647\u0627": '#90042A'
-    buy: '#D60039'
-    rent: '#D1353B'
+    "\u062F\u0631\u0635\u062F \u0622\u06AF\u0647\u06CC \u062B\u0628\u062A \u0634\u062F\u0647": '#90042A'
+    "\u062A\u0639\u062F\u0627\u062F \u0622\u06AF\u0647\u06CC": '#90042A'
+    "\u067E\u0631\u062F\u06CC\u0633": '#D60039'
+    "\u06A9\u06CC\u0634": '#E45233'
+    "\u067E\u0631\u0646\u062F": '#FFAD00'
+    "\u0627\u0646\u062F\u06CC\u0634\u0647": '#FFCC00'
+    "\u0634\u06CC\u0631\u0627\u0632": '#FFE601'
+    "\u0631\u0634\u062A": '#FFF46D'
+    "\u0633\u0627\u0631\u06CC": '#D60039'
+    "\u0631\u0627\u0645\u0633\u0631": '#D1353B'
+    "\u0644\u0648\u0627\u0633\u0627\u0646\u0627\u062A": '#E45233'
+    "\u0642\u0627\u0626\u0645 \u0634\u0647\u0631": '#FFCC00'
+    "\u0645\u0644\u0627\u0631\u062F": '#E45233'
+    "\u062A\u0628\u0631\u06CC\u0632": '#FFAD00'
+    "\u0642\u0645": '#FFE601'
   shared_label_colors:
+  - "\u0627\u0635\u0641\u0647\u0627\u0646"
+  - "\u062A\u0646\u06A9\u0627\u0628\u0646"
+  - "\u062A\u0647\u0631\u0627\u0646"
   - "\u062F\u0631\u0635\u062F \u0622\u06AF\u0647\u06CC \u062B\u0628\u062A \u0634\u062F\
     \u0647"
+  - "\u062F\u0645\u0627\u0648\u0646\u062F"
+  - "\u0631\u0627\u0645\u0633\u0631"
+  - "\u0631\u0634\u062A"
+  - "\u0633\u0627\u0631\u06CC"
+  - "\u0634\u06CC\u0631\u0627\u0632"
+  - "\u0642\u0627\u0626\u0645 \u0634\u0647\u0631"
+  - "\u0642\u0645"
+  - "\u0645\u0634\u0647\u062F"
+  - "\u067E\u0631\u062F\u06CC\u0633"
+  - "\u067E\u0631\u0646\u062F"
+  - "\u06A9\u0631\u062C"
+  - "\u06A9\u06CC\u0634"
   color_scheme: ''
   refresh_frequency: 0
   color_scheme_domain: []

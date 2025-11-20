@@ -1,6 +1,6 @@
-table_name: "\u0622\u0698\u0627\u0646\u0633\u200C\u0647\u0627 \u0628\u0627 \u062D\u062F\
-  \u0627\u0642\u0644 \u06CC\u06A9 \u0622\u06AF\u0647\u06CC \u062F\u0631 \u06CC\u06A9\
-  \ \u0633\u0627\u0644 \u0627\u062E\u06CC\u0631 11/16/2025 17:19:54"
+table_name: "|\u0622\u0698\u0627\u0646\u0633+ \u062A\u0627\u0631\u06CC\u062E \u0627\
+  \u062E\u0631\u06CC\u0646 \u0645\u0644\u06A9+ \u0645\u0648\u062C\u0648\u062F\u06CC\
+  \ \u06A9\u06CC\u0641 \u067E\u0648\u0644 11/16/2025 17:19:54"
 main_dttm_col: LastDepositDate
 description: null
 default_endpoint: null
@@ -10,12 +10,14 @@ catalog: null
 schema: dbo
 sql: "SELECT\n    a.Id AS AgencyId,\n    a.Name AS AgencyName,\n    a.Phone AS AgencyPhone,\n\
   \    MAX(m.PhoneNumber) AS ManagerPhone,\n    COUNT(d.Id) AS DepositCount,\n   \
-  \ MAX(d.CreatedTime) AS LastDepositDate\nFROM\n    Agencies a\nINNER JOIN\n    usr.Users\
-  \ u ON a.Id = u.AgencyId\nINNER JOIN\n    Deposits d ON u.UserId = d.UserId\nOUTER\
-  \ APPLY (\n    SELECT TOP 1 PhoneNumber\n    FROM usr.Users m\n    WHERE m.UserId\
-  \ = a.ManagerId\n) m\nWHERE\n    u.AgencyId IS NOT NULL\n    AND d.CreatedTime >=\
-  \ DATEFROMPARTS(YEAR(GETDATE()) - 1, 1, 1)\n    AND d.StatusId != 1254\nGROUP BY\n\
-  \    a.Id,\n    a.Name,\n    a.Phone\nHAVING\n    COUNT(d.Id) >= 1\n"
+  \ MAX(d.CreatedTime) AS LastDepositDate,\n    MAX(w.Balance) AS AgencyWalletBalance\
+  \  \nFROM Agencies a\nINNER JOIN usr.Users u \n        ON a.Id = u.AgencyId\nINNER\
+  \ JOIN Deposits d \n        ON u.UserId = d.UserId\n\nLEFT JOIN Owners o\n     \
+  \   ON o.AgencyId = a.Id\n\nLEFT JOIN Wallets w\n        ON w.OwnerId = o.Id\n\n\
+  OUTER APPLY (\n    SELECT TOP 1 PhoneNumber\n    FROM usr.Users m\n    WHERE m.UserId\
+  \ = a.ManagerId\n) m\n\nWHERE\n    u.AgencyId IS NOT NULL\n    AND d.CreatedTime\
+  \ >= DATEFROMPARTS(YEAR(GETDATE()) - 1, 1, 1)\n    AND d.StatusId != 1254\n\nGROUP\
+  \ BY\n    a.Id,\n    a.Name,\n    a.Phone\n\nHAVING\n    COUNT(d.Id) >= 1;\n"
 params: null
 template_params: null
 filter_select_enabled: true
@@ -106,6 +108,19 @@ columns:
   is_dttm: false
   is_active: true
   type: STRING
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: AgencyWalletBalance
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: null
   advanced_data_type: null
   groupby: true
   filterable: true

@@ -1,0 +1,68 @@
+slice_name: "\u062A\u062D\u0644\u06CC\u0644 \u0645\u0627\u0644\u06CC \u06A9\u0627\u0631\
+  \u0628\u0631\u0627\u0646 \u0628\u0627 \u0628\u06CC\u0634\u062A\u0631\u06CC\u0646\
+  \ \u0645\u0628\u0644\u063A \u0647\u0632\u06CC\u0646\u0647 \u0634\u062F\u0647 \u062F\
+  \u0631 \u062F\u0648\u0631\u0647 \u0646\u06CC\u0645\u200C\u0633\u0627\u0644\u0647"
+description: null
+certified_by: null
+certification_details: null
+viz_type: table
+params:
+  datasource: 34__table
+  viz_type: table
+  slice_id: 43
+  query_mode: aggregate
+  groupby:
+  - FullName
+  - PhoneNumber
+  temporal_columns_lookup:
+    CreatedTime: true
+  metrics:
+  - SumAmount
+  all_columns: []
+  percent_metrics: []
+  adhoc_filters:
+  - clause: WHERE
+    comparator: No filter
+    datasourceWarning: false
+    expressionType: SIMPLE
+    filterOptionName: filter_g7p02fhsmwn_llkdnjj3gi
+    isExtra: false
+    isNew: false
+    operator: TEMPORAL_RANGE
+    sqlExpression: null
+    subject: CreatedTime
+  - clause: WHERE
+    comparator: '1284'
+    datasourceWarning: false
+    expressionType: SIMPLE
+    filterOptionName: filter_hef50oivled_h9kik4ejc0m
+    isExtra: false
+    isNew: false
+    operator: ==
+    operatorId: EQUALS
+    sqlExpression: null
+    subject: ChangeStatusId
+  order_by_cols: []
+  order_desc: true
+  row_limit: 10
+  server_page_length: 10
+  table_timestamp_format: smart_date
+  page_length: 10
+  include_search: true
+  allow_render_html: true
+  show_cell_bars: true
+  color_pn: true
+  comparison_color_scheme: Green
+  conditional_formatting: []
+  comparison_type: values
+  extra_form_data: {}
+  dashboards:
+  - 9
+  - 16
+query_context: '{"datasource":{"id":34,"type":"table"},"force":false,"queries":[{"filters":[{"col":"CreatedTime","op":"TEMPORAL_RANGE","val":"No
+  filter"},{"col":"ChangeStatusId","op":"==","val":"1284"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":["FullName","PhoneNumber"],"metrics":["SumAmount"],"orderby":[["SumAmount",false]],"annotation_layers":[],"row_limit":10,"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"post_processing":[],"time_offsets":[]}],"form_data":{"datasource":"34__table","viz_type":"table","slice_id":43,"query_mode":"aggregate","groupby":["FullName","PhoneNumber"],"temporal_columns_lookup":{"CreatedTime":true},"metrics":["SumAmount"],"all_columns":[],"percent_metrics":[],"adhoc_filters":[{"clause":"WHERE","comparator":"No
+  filter","datasourceWarning":false,"expressionType":"SIMPLE","filterOptionName":"filter_g7p02fhsmwn_llkdnjj3gi","isExtra":false,"isNew":false,"operator":"TEMPORAL_RANGE","sqlExpression":null,"subject":"CreatedTime"},{"clause":"WHERE","comparator":"1284","datasourceWarning":false,"expressionType":"SIMPLE","filterOptionName":"filter_hef50oivled_h9kik4ejc0m","isExtra":false,"isNew":false,"operator":"==","operatorId":"EQUALS","sqlExpression":null,"subject":"ChangeStatusId"}],"order_by_cols":[],"order_desc":true,"row_limit":10,"server_page_length":10,"table_timestamp_format":"smart_date","page_length":10,"include_search":true,"allow_render_html":true,"show_cell_bars":true,"color_pn":true,"comparison_color_scheme":"Green","conditional_formatting":[],"comparison_type":"values","extra_form_data":{},"dashboards":[9,16],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: ea55be29-8394-4a9a-8acb-645367c76dcd
+version: 1.0.0
+dataset_uuid: 58e4b29b-28a6-4c9e-9ba5-8decc255c8c4

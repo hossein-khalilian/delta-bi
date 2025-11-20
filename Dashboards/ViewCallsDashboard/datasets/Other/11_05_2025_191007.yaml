@@ -20,9 +20,11 @@ sql: "WITH NewDeposits AS (\n    SELECT *,\n           ROW_NUMBER() OVER (ORDER 
   \    ) dc\n    GROUP BY DepositId\n)\nSELECT\n    d.Id AS DepositId,\n    u.UserId,\n\
   \    u.AgencyId,\n    u.Name AS FirstName,\n    u.FamilyName AS LastName,\n    u.PhoneNumber,\n\
   \    ISNULL(v.VisitSum, 0) AS VisitSum,\n    ISNULL(c.CallSum, 0) AS CallSum,\n\
-  \    v.LastVisitDate,\n    c.LastCallDate\nFROM NewDeposits d\nLEFT JOIN VisitAgg\
-  \ v ON d.Id = v.DepositId\nLEFT JOIN CallAgg c ON d.Id = c.DepositId\nLEFT JOIN\
-  \ usr.Users u ON u.UserId = d.UserId;"
+  \    v.LastVisitDate,\n    c.LastCallDate,\n    '<a href=\"https://delta.ir/realator/'\
+  \ + CAST(u.UserId AS VARCHAR) + '\" target=\"_blank\">' + u.Name + ' ' + u.FamilyName\
+  \ + '</a>' AS UserNameLink\nFROM NewDeposits d\n    LEFT JOIN VisitAgg v ON d.Id\
+  \ = v.DepositId\n    LEFT JOIN CallAgg c ON d.Id = c.DepositId\n    LEFT JOIN usr.Users\
+  \ u ON u.UserId = d.UserId;"
 params: null
 template_params: null
 filter_select_enabled: true
@@ -74,6 +76,19 @@ metrics:
     warning_markdown: ''
   warning_text: null
 columns:
+- column_name: userUrl
+  verbose_name: FullName
+  is_dttm: false
+  is_active: true
+  type: null
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: '''<a href="https://delta.ir/realator/'' + CAST(u.UserId AS VARCHAR)
+    + ''" target="_blank">'' + u.Name + '' '' + u.FamilyName + ''</a>'''
+  description: null
+  python_date_format: null
+  extra: {}
 - column_name: LastCallDate
   verbose_name: null
   is_dttm: true
@@ -85,8 +100,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: LastVisitDate
   verbose_name: null
   is_dttm: true
@@ -98,8 +112,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: CallSum
   verbose_name: null
   is_dttm: false
@@ -111,8 +124,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: DepositId
   verbose_name: null
   is_dttm: false
@@ -124,8 +136,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: FirstName
   verbose_name: null
   is_dttm: false
@@ -137,8 +148,19 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
+- column_name: UserNameLink
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
 - column_name: LastName
   verbose_name: null
   is_dttm: false
@@ -150,8 +172,19 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
+- column_name: PhoneNumber
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
 - column_name: UserId
   verbose_name: null
   is_dttm: false
@@ -163,8 +196,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: VisitSum
   verbose_name: null
   is_dttm: false
@@ -176,26 +208,12 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: AgencyId
   verbose_name: null
   is_dttm: false
   is_active: true
   type: null
-  advanced_data_type: null
-  groupby: true
-  filterable: true
-  expression: null
-  description: null
-  python_date_format: null
-  extra:
-    warning_markdown: null
-- column_name: PhoneNumber
-  verbose_name: null
-  is_dttm: false
-  is_active: true
-  type: STRING
   advanced_data_type: null
   groupby: true
   filterable: true

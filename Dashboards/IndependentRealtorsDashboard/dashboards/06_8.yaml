@@ -1,0 +1,356 @@
+dashboard_title: "06) \u062F\u0627\u0634\u0628\u0648\u0631\u062F \u062A\u062D\u0644\
+  \u06CC\u0644\u06CC \u0645\u0634\u0627\u0648\u0631\u0627\u0646 \u0645\u0633\u062A\
+  \u0642\u0644 \u062F\u0644\u062A\u0627"
+description: null
+css: ''
+slug: null
+certified_by: null
+certification_details: null
+published: false
+uuid: 6becec02-9d09-43d5-81e1-847054bc6564
+position:
+  CHART--4LX17C-Q_BnnaGDexbhw:
+    children: []
+    id: CHART--4LX17C-Q_BnnaGDexbhw
+    meta:
+      chartId: 53
+      height: 50
+      sliceName: "\u0631\u0648\u0646\u062F \u062B\u0628\u062A\u200C\u0646\u0627\u0645\
+        \ \u0645\u0634\u0627\u0648\u0631\u0627\u0646 \u0645\u0633\u062A\u0642\u0644\
+        \ \u062F\u0631 \u0633\u0627\u06CC\u062A \u0637\u06CC \u06CC\u06A9 \u0633\u0627\
+        \u0644 \u0627\u062E\u06CC\u0631"
+      uuid: 3fff6156-8d14-40ee-904b-7ecea11741ee
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-b_LARu9ncBb0Z09tp-nNX
+    type: CHART
+  CHART--EwytD9bKjB92pGKeesOY:
+    children: []
+    id: CHART--EwytD9bKjB92pGKeesOY
+    meta:
+      chartId: 52
+      height: 50
+      sliceName: "\u0645\u0648\u062F\u0627\u0631 \u0631\u0648\u0646\u062F \u062B\u0628\
+        \u062A \u0622\u06AF\u0647\u06CC \u0645\u0634\u0627\u0648\u0631\u0627\u0646\
+        \ \u0645\u0633\u062A\u0642\u0644 \u0628\u0627 \u0628\u06CC\u0634\u062A\u0631\
+        \u06CC\u0646 \u0641\u0639\u0627\u0644\u06CC\u062A \u0633\u0627\u0644\u0627\
+        \u0646\u0647"
+      uuid: 56d942f2-b4f4-4b06-a7a0-da76dfa4cb3f
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-Bq1-ILOBFe4Li_3IZlSdY
+    type: CHART
+  CHART-2bZhbzwS09QYCz5rWz5n-:
+    children: []
+    id: CHART-2bZhbzwS09QYCz5rWz5n-
+    meta:
+      chartId: 14
+      height: 50
+      sliceName: "\u0622\u062E\u0631\u06CC\u0646 \u0622\u06AF\u0647\u06CC \u062B\u0628\
+        \u062A \u0634\u062F\u0647 \u0645\u0634\u0627\u0648\u0631\u0627\u0646 \u0645\
+        \u0633\u062A\u0642\u0644 \u0628\u0647 \u0647\u0645\u0631\u0627\u0647 \u062C\
+        \u0632\u0626\u06CC\u0627\u062A \u062A\u0645\u0627\u0633 \u0648 \u062A\u0639\
+        \u062F\u0627\u062F \u0622\u06AF\u0647\u06CC"
+      uuid: 7c169e8f-2129-47e9-ad62-3058a62574d6
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-h8eYwdPgMjvvzmR2Lvw_q
+    type: CHART
+  CHART-Jlw0tFDiIKQdnzmAGclAL:
+    children: []
+    id: CHART-Jlw0tFDiIKQdnzmAGclAL
+    meta:
+      chartId: 3
+      height: 50
+      sliceName: "\u0631\u062A\u0628\u0647\u200C\u0628\u0646\u062F\u06CC \u0645\u0634\
+        \u0627\u0648\u0631\u0627\u0646 \u0645\u0633\u062A\u0642\u0644 \u067E\u0631\
+        \u0622\u06AF\u0647\u06CC \u0648\u0644\u06CC \u063A\u06CC\u0631\u0641\u0639\
+        \u0627\u0644 \u0637\u06CC \u0633\u0647 \u0645\u0627\u0647 \u0627\u062E\u06CC\
+        \u0631"
+      uuid: 58687b65-6772-4537-863c-2b6f6d0ba166
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-h8eYwdPgMjvvzmR2Lvw_q
+    type: CHART
+  CHART-explore-99-1:
+    children: []
+    id: CHART-explore-99-1
+    meta:
+      chartId: 59
+      height: 50
+      sliceName: "\u0646\u0645\u0648\u062F\u0627\u0631 \u0645\u062D\u0644\u0647\u200C\
+        \u0647\u0627\u06CC \u0645\u0646\u062A\u062E\u0628 \u0645\u0634\u0627\u0648\
+        \u0631\u06CC\u0646 \u0645\u0633\u062A\u0642\u0644 \u0628\u0631 \u0627\u0633\
+        \u0627\u0633 \u062A\u0639\u062F\u0627\u062F \u0622\u06AF\u0647\u06CC\u200C\
+        \u0647\u0627"
+      uuid: 7de54e59-d3c1-4ff4-a9b3-7a5a1d8c9630
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-Bq1-ILOBFe4Li_3IZlSdY
+    type: CHART
+  CHART-u5P42EdiCOGh1wDzI7Ccu:
+    children: []
+    id: CHART-u5P42EdiCOGh1wDzI7Ccu
+    meta:
+      chartId: 16
+      height: 50
+      sliceName: "\u06AF\u0632\u0627\u0631\u0634 \u062A\u0639\u062F\u0627\u062F \u0622\
+        \u06AF\u0647\u06CC\u200C\u0647\u0627\u06CC \u062B\u0628\u062A\u200C\u0634\u062F\
+        \u0647 \u0628\u0631 \u0627\u0633\u0627\u0633 \u0646\u0642\u0634 \u062F\u0631\
+        \ \u06CC\u06A9\u200C\u0633\u0627\u0644 \u0627\u062E\u06CC\u0631"
+      uuid: 82ef4797-9ae0-43f3-9986-30f146822085
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-Bq1-ILOBFe4Li_3IZlSdY
+    type: CHART
+  CHART-wXNP1mcDLD6qUnKvF-Guy:
+    children: []
+    id: CHART-wXNP1mcDLD6qUnKvF-Guy
+    meta:
+      chartId: 21
+      height: 50
+      sliceName: "\u0645\u0634\u0627\u0648\u0631\u0627\u0646 \u0645\u0633\u062A\u0642\
+        \u0644 \u062B\u0628\u062A\u200C\u0634\u062F\u0647 \u0628\u062F\u0648\u0646\
+        \ \u0641\u0639\u0627\u0644\u06CC\u062A \u062F\u0631 \u06CC\u06A9 \u0633\u0627\
+        \u0644 \u0627\u062E\u06CC\u0631"
+      uuid: 3f64685d-3e94-410c-8380-e260460bd76b
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-h8eYwdPgMjvvzmR2Lvw_q
+    type: CHART
+  DASHBOARD_VERSION_KEY: v2
+  DIVIDER-ET69BoZ4_gLs2jSAgIQBs:
+    children: []
+    id: DIVIDER-ET69BoZ4_gLs2jSAgIQBs
+    meta: {}
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: DIVIDER
+  DIVIDER-GMOKhHHL9KR-LSHHmm5VT:
+    children: []
+    id: DIVIDER-GMOKhHHL9KR-LSHHmm5VT
+    meta: {}
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: DIVIDER
+  DIVIDER-iyyY0ju1X6svc2IsmporT:
+    children: []
+    id: DIVIDER-iyyY0ju1X6svc2IsmporT
+    meta: {}
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: DIVIDER
+  DIVIDER-uO9UFTsuYh4OA71HGHe7p:
+    children: []
+    id: DIVIDER-uO9UFTsuYh4OA71HGHe7p
+    meta: {}
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: DIVIDER
+  GRID_ID:
+    children:
+    - DIVIDER-iyyY0ju1X6svc2IsmporT
+    - HEADER-XeowAQHD8dWgICY8ifmGF
+    - DIVIDER-GMOKhHHL9KR-LSHHmm5VT
+    - ROW-h8eYwdPgMjvvzmR2Lvw_q
+    - ROW-b_LARu9ncBb0Z09tp-nNX
+    - DIVIDER-ET69BoZ4_gLs2jSAgIQBs
+    - HEADER-BKIhqseESewhNTf7oagt4
+    - DIVIDER-uO9UFTsuYh4OA71HGHe7p
+    - ROW-Bq1-ILOBFe4Li_3IZlSdY
+    id: GRID_ID
+    parents:
+    - ROOT_ID
+    type: GRID
+  HEADER-BKIhqseESewhNTf7oagt4:
+    children: []
+    id: HEADER-BKIhqseESewhNTf7oagt4
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      headerSize: MEDIUM_HEADER
+      text: "\u0631\u062A\u0628\u0647 \u0628\u0646\u062F\u06CC \u0648 \u062A\u0645\
+        \u0631\u06A9\u0632 \u0628\u0631 \u0645\u0634\u0627\u0648\u0631\u0627\u0646\
+        \ \u0628\u0631\u062A\u0631"
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: HEADER
+  HEADER-XeowAQHD8dWgICY8ifmGF:
+    children: []
+    id: HEADER-XeowAQHD8dWgICY8ifmGF
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      headerSize: MEDIUM_HEADER
+      text: "\u0648\u0636\u0639\u06CC\u062A \u06A9\u0644\u06CC \u0648 \u0641\u0639\
+        \u0627\u0644\u06CC\u062A \u0645\u0634\u0627\u0648\u0631\u0627\u0646"
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: HEADER
+  HEADER_ID:
+    id: HEADER_ID
+    meta:
+      text: "\u062F\u0627\u0634\u0628\u0648\u0631\u062F \u062A\u062D\u0644\u06CC\u0644\
+        \u06CC \u0645\u0634\u0627\u0648\u0631\u0627\u0646 \u0645\u0633\u062A\u0642\
+        \u0644 \u062F\u0644\u062A\u0627"
+    type: HEADER
+  ROOT_ID:
+    children:
+    - GRID_ID
+    id: ROOT_ID
+    type: ROOT
+  ROW-Bq1-ILOBFe4Li_3IZlSdY:
+    children:
+    - CHART-u5P42EdiCOGh1wDzI7Ccu
+    - CHART--EwytD9bKjB92pGKeesOY
+    - CHART-explore-99-1
+    id: ROW-Bq1-ILOBFe4Li_3IZlSdY
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-b_LARu9ncBb0Z09tp-nNX:
+    children:
+    - CHART--4LX17C-Q_BnnaGDexbhw
+    id: ROW-b_LARu9ncBb0Z09tp-nNX
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-h8eYwdPgMjvvzmR2Lvw_q:
+    children:
+    - CHART-wXNP1mcDLD6qUnKvF-Guy
+    - CHART-Jlw0tFDiIKQdnzmAGclAL
+    - CHART-2bZhbzwS09QYCz5rWz5n-
+    id: ROW-h8eYwdPgMjvvzmR2Lvw_q
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+metadata:
+  chart_configuration:
+    '18':
+      id: 18
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 36
+        - 63
+        - 66
+        - 69
+        - 83
+        - 99
+    '36':
+      id: 36
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 18
+        - 63
+        - 66
+        - 69
+        - 83
+        - 99
+    '63':
+      id: 63
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 18
+        - 36
+        - 66
+        - 69
+        - 83
+        - 99
+    '66':
+      id: 66
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 18
+        - 36
+        - 63
+        - 69
+        - 83
+        - 99
+    '69':
+      id: 69
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 18
+        - 36
+        - 63
+        - 66
+        - 83
+        - 99
+    '83':
+      id: 83
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 18
+        - 36
+        - 63
+        - 66
+        - 69
+        - 99
+    '99':
+      id: 99
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 18
+        - 36
+        - 63
+        - 66
+        - 69
+        - 83
+  global_chart_configuration:
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    chartsInScope:
+    - 18
+    - 36
+    - 63
+    - 66
+    - 69
+    - 83
+    - 99
+  color_scheme: ''
+  refresh_frequency: 0
+  expanded_slices: {}
+  label_colors: {}
+  timed_refresh_immune_slices: []
+  cross_filters_enabled: true
+  native_filter_configuration: []
+  shared_label_colors: []
+  map_label_colors: {}
+  color_scheme_domain: []
+version: 1.0.0

@@ -1,41 +1,68 @@
-slice_name: "\u06AF\u0632\u0627\u0631\u0634 \u0645\u0627\u0647\u0627\u0646\u0647 \u0631\
-  \u0648\u0646\u062F \u0628\u0627\u0632\u062F\u06CC\u062F \u0622\u06AF\u0647\u06CC\
-  \u200C\u0647\u0627"
+slice_name: "\u06AF\u0632\u0627\u0631\u0634 \u0645\u0627\u0647\u0627\u0646\u0647 \u0628\
+  \u0627\u0632\u062F\u06CC\u062F \u0648 \u062A\u0645\u0627\u0633 \u062F\u0631 \u0627\
+  \u0645\u0644\u0627\u06A9 \u067E\u0631\u0628\u0627\u0632\u062F\u06CC\u062F"
 description: null
 certified_by: null
 certification_details: null
-viz_type: echarts_timeseries_line
+viz_type: echarts_timeseries_bar
 params:
-  datasource: 51__table
-  viz_type: echarts_timeseries_line
-  slice_id: 73
-  x_axis: CreatedTime
-  time_grain_sqla: P1D
+  datasource: 36__table
+  viz_type: echarts_timeseries_bar
+  slice_id: 74
+  x_axis: DepositId
+  xAxisForceCategorical: true
+  x_axis_sort_series: sum
+  x_axis_sort_series_ascending: false
   metrics:
-  - aggregate: COUNT_DISTINCT
+  - aggregate: MAX
     column:
       advanced_data_type: null
-      certification_details: null
-      certified_by: null
-      column_name: Id
+      changed_on: '2025-11-16T11:26:48.111708'
+      column_name: VisitSum
+      created_on: '2025-11-16T11:26:48.111706'
       description: null
       expression: null
+      extra: '{}'
       filterable: true
       groupby: true
-      id: 721
-      is_certified: false
+      id: 732
+      is_active: true
       is_dttm: false
       python_date_format: null
       type: INT
       type_generic: 0
+      uuid: 147817f1-74a6-4dce-b7f4-cf1893fca5f3
       verbose_name: null
-      warning_markdown: null
     datasourceWarning: false
     expressionType: SIMPLE
     hasCustomLabel: true
-    label: "\u062A\u0639\u062F\u0627\u062F \u0631\u06A9\u0648\u0631\u062F\u0647\u0627\
-      \u06CC \u0628\u0627\u0632\u062F\u06CC\u062F"
-    optionName: metric_v937muao43n_qxi39ksz83
+    label: "\u062A\u0639\u062F\u0627\u062F \u0628\u0627\u0632\u062F\u06CC\u062F"
+    optionName: metric_0m7fj0qrgxb_4qp1kzfpl9
+    sqlExpression: null
+  - aggregate: MAX
+    column:
+      advanced_data_type: null
+      changed_on: '2025-11-16T11:26:48.111742'
+      column_name: CallSum
+      created_on: '2025-11-16T11:26:48.111740'
+      description: null
+      expression: null
+      extra: '{}'
+      filterable: true
+      groupby: true
+      id: 733
+      is_active: true
+      is_dttm: false
+      python_date_format: null
+      type: INT
+      type_generic: 0
+      uuid: 944a52a6-d593-4ca9-ac7f-f18babae207e
+      verbose_name: null
+    datasourceWarning: false
+    expressionType: SIMPLE
+    hasCustomLabel: true
+    label: "\u062A\u0639\u062F\u0627\u062F \u062A\u0645\u0627\u0633"
+    optionName: metric_tkqzl77tewn_buen9w4ltr9
     sqlExpression: null
   groupby: []
   adhoc_filters:
@@ -43,92 +70,100 @@ params:
     comparator: No filter
     expressionType: SIMPLE
     operator: TEMPORAL_RANGE
-    subject: CreatedTime
-  row_limit: 1000
+    subject: LastVisitDate
+  row_limit: 10
   truncate_metric: true
   show_empty_columns: true
-  comparison_type: values
   annotation_layers: []
-  forecastPeriods: 10
-  forecastInterval: 0.8
+  orientation: vertical
   x_axis_title_margin: 15
   y_axis_title_margin: 30
   y_axis_title_position: Left
   sort_series_type: sum
   color_scheme: redToYellow
   time_shift_color: true
-  seriesType: line
+  show_value: true
   only_total: true
-  opacity: 0.2
-  markerSize: 6
-  show_legend: false
+  show_legend: true
   legendType: scroll
   legendOrientation: top
   x_axis_time_format: smart_date
-  rich_tooltip: true
-  showTooltipTotal: true
-  tooltipTimeFormat: smart_date
-  y_axis_format: SMART_NUMBER
-  truncateXAxis: true
+  y_axis_format: ',d'
+  logAxis: true
   y_axis_bounds:
   - null
   - null
+  truncateXAxis: true
+  rich_tooltip: true
+  showTooltipTotal: true
+  tooltipTimeFormat: smart_date
   extra_form_data: {}
   dashboards:
   - 15
-  - 9
-query_context: "{\"datasource\":{\"id\":51,\"type\":\"table\"},\"force\":false,\"\
-  queries\":[{\"filters\":[{\"col\":\"CreatedTime\",\"op\":\"TEMPORAL_RANGE\",\"val\"\
-  :\"No filter\"}],\"extras\":{\"time_grain_sqla\":\"P1D\",\"having\":\"\",\"where\"\
-  :\"\"},\"applied_time_extras\":{},\"columns\":[{\"timeGrain\":\"P1D\",\"columnType\"\
-  :\"BASE_AXIS\",\"sqlExpression\":\"CreatedTime\",\"label\":\"CreatedTime\",\"expressionType\"\
-  :\"SQL\"}],\"metrics\":[{\"aggregate\":\"COUNT_DISTINCT\",\"column\":{\"advanced_data_type\"\
-  :null,\"certification_details\":null,\"certified_by\":null,\"column_name\":\"Id\"\
-  ,\"description\":null,\"expression\":null,\"filterable\":true,\"groupby\":true,\"\
-  id\":721,\"is_certified\":false,\"is_dttm\":false,\"python_date_format\":null,\"\
-  type\":\"INT\",\"type_generic\":0,\"verbose_name\":null,\"warning_markdown\":null},\"\
-  datasourceWarning\":false,\"expressionType\":\"SIMPLE\",\"hasCustomLabel\":true,\"\
-  label\":\"\u062A\u0639\u062F\u0627\u062F \u0631\u06A9\u0648\u0631\u062F\u0647\u0627\
-  \u06CC \u0628\u0627\u0632\u062F\u06CC\u062F\",\"optionName\":\"metric_v937muao43n_qxi39ksz83\"\
-  ,\"sqlExpression\":null}],\"orderby\":[[{\"aggregate\":\"COUNT_DISTINCT\",\"column\"\
-  :{\"advanced_data_type\":null,\"certification_details\":null,\"certified_by\":null,\"\
-  column_name\":\"Id\",\"description\":null,\"expression\":null,\"filterable\":true,\"\
-  groupby\":true,\"id\":721,\"is_certified\":false,\"is_dttm\":false,\"python_date_format\"\
-  :null,\"type\":\"INT\",\"type_generic\":0,\"verbose_name\":null,\"warning_markdown\"\
-  :null},\"datasourceWarning\":false,\"expressionType\":\"SIMPLE\",\"hasCustomLabel\"\
-  :true,\"label\":\"\u062A\u0639\u062F\u0627\u062F \u0631\u06A9\u0648\u0631\u062F\u0647\
-  \u0627\u06CC \u0628\u0627\u0632\u062F\u06CC\u062F\",\"optionName\":\"metric_v937muao43n_qxi39ksz83\"\
-  ,\"sqlExpression\":null},false]],\"annotation_layers\":[],\"row_limit\":1000,\"\
-  series_columns\":[],\"series_limit\":0,\"order_desc\":true,\"url_params\":{},\"\
-  custom_params\":{},\"custom_form_data\":{},\"time_offsets\":[],\"post_processing\"\
-  :[{\"operation\":\"pivot\",\"options\":{\"index\":[\"CreatedTime\"],\"columns\"\
-  :[],\"aggregates\":{\"\u062A\u0639\u062F\u0627\u062F \u0631\u06A9\u0648\u0631\u062F\
-  \u0647\u0627\u06CC \u0628\u0627\u0632\u062F\u06CC\u062F\":{\"operator\":\"mean\"\
-  }},\"drop_missing_columns\":false}},{\"operation\":\"flatten\"}]}],\"form_data\"\
-  :{\"datasource\":\"51__table\",\"viz_type\":\"echarts_timeseries_line\",\"slice_id\"\
-  :73,\"x_axis\":\"CreatedTime\",\"time_grain_sqla\":\"P1D\",\"metrics\":[{\"aggregate\"\
-  :\"COUNT_DISTINCT\",\"column\":{\"advanced_data_type\":null,\"certification_details\"\
-  :null,\"certified_by\":null,\"column_name\":\"Id\",\"description\":null,\"expression\"\
-  :null,\"filterable\":true,\"groupby\":true,\"id\":721,\"is_certified\":false,\"\
-  is_dttm\":false,\"python_date_format\":null,\"type\":\"INT\",\"type_generic\":0,\"\
-  verbose_name\":null,\"warning_markdown\":null},\"datasourceWarning\":false,\"expressionType\"\
-  :\"SIMPLE\",\"hasCustomLabel\":true,\"label\":\"\u062A\u0639\u062F\u0627\u062F \u0631\
-  \u06A9\u0648\u0631\u062F\u0647\u0627\u06CC \u0628\u0627\u0632\u062F\u06CC\u062F\"\
-  ,\"optionName\":\"metric_v937muao43n_qxi39ksz83\",\"sqlExpression\":null}],\"groupby\"\
-  :[],\"adhoc_filters\":[{\"clause\":\"WHERE\",\"comparator\":\"No filter\",\"expressionType\"\
-  :\"SIMPLE\",\"operator\":\"TEMPORAL_RANGE\",\"subject\":\"CreatedTime\"}],\"row_limit\"\
-  :1000,\"truncate_metric\":true,\"show_empty_columns\":true,\"comparison_type\":\"\
-  values\",\"annotation_layers\":[],\"forecastPeriods\":10,\"forecastInterval\":0.8,\"\
-  x_axis_title_margin\":15,\"y_axis_title_margin\":30,\"y_axis_title_position\":\"\
-  Left\",\"sort_series_type\":\"sum\",\"color_scheme\":\"redToYellow\",\"time_shift_color\"\
-  :true,\"seriesType\":\"line\",\"only_total\":true,\"opacity\":0.2,\"markerSize\"\
-  :6,\"show_legend\":false,\"legendType\":\"scroll\",\"legendOrientation\":\"top\"\
-  ,\"x_axis_time_format\":\"smart_date\",\"rich_tooltip\":true,\"showTooltipTotal\"\
-  :true,\"tooltipTimeFormat\":\"smart_date\",\"y_axis_format\":\"SMART_NUMBER\",\"\
-  truncateXAxis\":true,\"y_axis_bounds\":[null,null],\"extra_form_data\":{},\"dashboards\"\
-  :[15,9],\"force\":false,\"result_format\":\"json\",\"result_type\":\"full\"},\"\
-  result_format\":\"json\",\"result_type\":\"full\"}"
+query_context: '{"datasource": {"id": 36, "type": "table"}, "force": false, "queries":
+  [{"filters": [{"col": "LastVisitDate", "op": "TEMPORAL_RANGE", "val": "No filter"}],
+  "extras": {"having": "", "where": ""}, "applied_time_extras": {}, "columns": [{"columnType":
+  "BASE_AXIS", "sqlExpression": "DepositId", "label": "DepositId", "expressionType":
+  "SQL"}], "metrics": [{"aggregate": "MAX", "column": {"advanced_data_type": null,
+  "changed_on": "2025-11-16T11:26:48.111708", "column_name": "VisitSum", "created_on":
+  "2025-11-16T11:26:48.111706", "description": null, "expression": null, "extra":
+  "{}", "filterable": true, "groupby": true, "id": 732, "is_active": true, "is_dttm":
+  false, "python_date_format": null, "type": "INT", "type_generic": 0, "uuid": "147817f1-74a6-4dce-b7f4-cf1893fca5f3",
+  "verbose_name": null}, "datasourceWarning": false, "expressionType": "SIMPLE", "hasCustomLabel":
+  true, "label": "\u062a\u0639\u062f\u0627\u062f \u0628\u0627\u0632\u062f\u06cc\u062f",
+  "optionName": "metric_0m7fj0qrgxb_4qp1kzfpl9", "sqlExpression": null}, {"aggregate":
+  "MAX", "column": {"advanced_data_type": null, "changed_on": "2025-11-16T11:26:48.111742",
+  "column_name": "CallSum", "created_on": "2025-11-16T11:26:48.111740", "description":
+  null, "expression": null, "extra": "{}", "filterable": true, "groupby": true, "id":
+  733, "is_active": true, "is_dttm": false, "python_date_format": null, "type": "INT",
+  "type_generic": 0, "uuid": "944a52a6-d593-4ca9-ac7f-f18babae207e", "verbose_name":
+  null}, "datasourceWarning": false, "expressionType": "SIMPLE", "hasCustomLabel":
+  true, "label": "\u062a\u0639\u062f\u0627\u062f \u062a\u0645\u0627\u0633", "optionName":
+  "metric_tkqzl77tewn_buen9w4ltr9", "sqlExpression": null}], "orderby": [[{"aggregate":
+  "MAX", "column": {"advanced_data_type": null, "changed_on": "2025-11-16T11:26:48.111708",
+  "column_name": "VisitSum", "created_on": "2025-11-16T11:26:48.111706", "description":
+  null, "expression": null, "extra": "{}", "filterable": true, "groupby": true, "id":
+  732, "is_active": true, "is_dttm": false, "python_date_format": null, "type": "INT",
+  "type_generic": 0, "uuid": "147817f1-74a6-4dce-b7f4-cf1893fca5f3", "verbose_name":
+  null}, "datasourceWarning": false, "expressionType": "SIMPLE", "hasCustomLabel":
+  true, "label": "\u062a\u0639\u062f\u0627\u062f \u0628\u0627\u0632\u062f\u06cc\u062f",
+  "optionName": "metric_0m7fj0qrgxb_4qp1kzfpl9", "sqlExpression": null}, false]],
+  "annotation_layers": [], "row_limit": 10, "series_columns": [], "series_limit":
+  0, "order_desc": true, "url_params": {}, "custom_params": {}, "custom_form_data":
+  {}, "time_offsets": [], "post_processing": [{"operation": "pivot", "options": {"index":
+  ["DepositId"], "columns": [], "aggregates": {"\u062a\u0639\u062f\u0627\u062f \u0628\u0627\u0632\u062f\u06cc\u062f":
+  {"operator": "mean"}, "\u062a\u0639\u062f\u0627\u062f \u062a\u0645\u0627\u0633":
+  {"operator": "mean"}}, "drop_missing_columns": false}}, {"operation": "flatten"}]}],
+  "form_data": {"datasource": "36__table", "viz_type": "echarts_timeseries_bar", "slice_id":
+  74, "x_axis": "DepositId", "xAxisForceCategorical": true, "x_axis_sort_series":
+  "sum", "x_axis_sort_series_ascending": false, "metrics": [{"aggregate": "MAX", "column":
+  {"advanced_data_type": null, "changed_on": "2025-11-16T11:26:48.111708", "column_name":
+  "VisitSum", "created_on": "2025-11-16T11:26:48.111706", "description": null, "expression":
+  null, "extra": "{}", "filterable": true, "groupby": true, "id": 732, "is_active":
+  true, "is_dttm": false, "python_date_format": null, "type": "INT", "type_generic":
+  0, "uuid": "147817f1-74a6-4dce-b7f4-cf1893fca5f3", "verbose_name": null}, "datasourceWarning":
+  false, "expressionType": "SIMPLE", "hasCustomLabel": true, "label": "\u062a\u0639\u062f\u0627\u062f
+  \u0628\u0627\u0632\u062f\u06cc\u062f", "optionName": "metric_0m7fj0qrgxb_4qp1kzfpl9",
+  "sqlExpression": null}, {"aggregate": "MAX", "column": {"advanced_data_type": null,
+  "changed_on": "2025-11-16T11:26:48.111742", "column_name": "CallSum", "created_on":
+  "2025-11-16T11:26:48.111740", "description": null, "expression": null, "extra":
+  "{}", "filterable": true, "groupby": true, "id": 733, "is_active": true, "is_dttm":
+  false, "python_date_format": null, "type": "INT", "type_generic": 0, "uuid": "944a52a6-d593-4ca9-ac7f-f18babae207e",
+  "verbose_name": null}, "datasourceWarning": false, "expressionType": "SIMPLE", "hasCustomLabel":
+  true, "label": "\u062a\u0639\u062f\u0627\u062f \u062a\u0645\u0627\u0633", "optionName":
+  "metric_tkqzl77tewn_buen9w4ltr9", "sqlExpression": null}], "groupby": [], "adhoc_filters":
+  [{"clause": "WHERE", "comparator": "No filter", "expressionType": "SIMPLE", "operator":
+  "TEMPORAL_RANGE", "subject": "LastVisitDate"}], "row_limit": 10, "truncate_metric":
+  true, "show_empty_columns": true, "annotation_layers": [], "orientation": "vertical",
+  "x_axis_title_margin": 15, "y_axis_title_margin": 30, "y_axis_title_position": "Left",
+  "sort_series_type": "sum", "color_scheme": "redToYellow", "time_shift_color": true,
+  "show_value": true, "only_total": true, "show_legend": true, "legendType": "scroll",
+  "legendOrientation": "top", "x_axis_time_format": "smart_date", "y_axis_format":
+  ",d", "logAxis": true, "y_axis_bounds": [null, null], "truncateXAxis": true, "rich_tooltip":
+  true, "showTooltipTotal": true, "tooltipTimeFormat": "smart_date", "extra_form_data":
+  {}, "dashboards": [15], "force": false, "result_format": "json", "result_type":
+  "full"}, "result_format": "json", "result_type": "full"}'
 cache_timeout: null
-uuid: d931df59-1f45-4502-a20f-6c1e852f1b29
+uuid: f2c58633-6552-4b51-ba56-f41367ffc606
 version: 1.0.0
-dataset_uuid: 66e2f11c-dd3f-4e05-ab35-4b5f7840a297
+dataset_uuid: 54b5fdc2-4255-449e-914c-d81aec2ca1ae

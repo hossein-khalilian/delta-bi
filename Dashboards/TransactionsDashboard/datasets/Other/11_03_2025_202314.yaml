@@ -60,6 +60,19 @@ metrics:
     warning_markdown: ''
   warning_text: null
 columns:
+- column_name: AgencyLink
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: null
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: "'<a href=\"https://delta.ir/agency/' + CAST(AgencyId AS VARCHAR) \n\
+    + '\" target=\"_blank\">' + AgencyName + '</a>'"
+  description: null
+  python_date_format: null
+  extra: {}
 - column_name: FullName
   verbose_name: null
   is_dttm: false
@@ -71,7 +84,8 @@ columns:
   expression: Name + ' ' + FamilyName
   description: null
   python_date_format: null
-  extra: {}
+  extra:
+    warning_markdown: null
 - column_name: IntAgencyId
   verbose_name: null
   is_dttm: false
@@ -83,7 +97,8 @@ columns:
   expression: CAST(AgencyId AS INT)
   description: null
   python_date_format: null
-  extra: {}
+  extra:
+    warning_markdown: null
 - column_name: CreatedTime
   verbose_name: null
   is_dttm: true
@@ -95,7 +110,8 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra: {}
+  extra:
+    warning_markdown: null
 - column_name: AgencyName
   verbose_name: null
   is_dttm: false
@@ -107,7 +123,8 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra: {}
+  extra:
+    warning_markdown: null
 - column_name: AgencyId
   verbose_name: null
   is_dttm: false
@@ -119,7 +136,8 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra: {}
+  extra:
+    warning_markdown: null
 - column_name: ChangeStatusId
   verbose_name: null
   is_dttm: false
@@ -131,7 +149,8 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra: {}
+  extra:
+    warning_markdown: null
 - column_name: TransactionDescription
   verbose_name: null
   is_dttm: false
@@ -143,7 +162,8 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra: {}
+  extra:
+    warning_markdown: null
 - column_name: FamilyName
   verbose_name: null
   is_dttm: false
@@ -155,7 +175,8 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra: {}
+  extra:
+    warning_markdown: null
 - column_name: PhoneNumber
   verbose_name: null
   is_dttm: false
@@ -167,7 +188,8 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra: {}
+  extra:
+    warning_markdown: null
 - column_name: UserName
   verbose_name: null
   is_dttm: false
@@ -179,7 +201,8 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra: {}
+  extra:
+    warning_markdown: null
 - column_name: Name
   verbose_name: null
   is_dttm: false
@@ -191,7 +214,8 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra: {}
+  extra:
+    warning_markdown: null
 - column_name: OwnerTypeId
   verbose_name: null
   is_dttm: false
@@ -203,7 +227,8 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra: {}
+  extra:
+    warning_markdown: null
 - column_name: OwnerId
   verbose_name: null
   is_dttm: false
@@ -215,7 +240,8 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra: {}
+  extra:
+    warning_markdown: null
 - column_name: TransactionTypeId
   verbose_name: null
   is_dttm: false
@@ -227,7 +253,8 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra: {}
+  extra:
+    warning_markdown: null
 - column_name: TransactionId
   verbose_name: null
   is_dttm: false
@@ -239,7 +266,8 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra: {}
+  extra:
+    warning_markdown: null
 - column_name: TransactionAmount
   verbose_name: null
   is_dttm: false
@@ -251,7 +279,8 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra: {}
+  extra:
+    warning_markdown: null
 - column_name: Balance
   verbose_name: null
   is_dttm: false
@@ -263,7 +292,8 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra: {}
+  extra:
+    warning_markdown: null
 - column_name: UserId
   verbose_name: null
   is_dttm: false
@@ -275,6 +305,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra: {}
+  extra:
+    warning_markdown: null
 version: 1.0.0
 database_uuid: f4e48a97-c7df-4d67-a5cd-961d0435e140

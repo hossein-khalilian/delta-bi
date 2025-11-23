@@ -20,11 +20,10 @@ sql: "WITH NewDeposits AS (\n    SELECT *,\n           ROW_NUMBER() OVER (ORDER 
   \    ) dc\n    GROUP BY DepositId\n)\nSELECT\n    d.Id AS DepositId,\n    a.Name\
   \  AS AgencyName,\n    a.Phone,\n    u.UserId,\n    u.AgencyId,\n    u.Name AS FirstName,\n\
   \    u.FamilyName AS LastName,\n    ISNULL(v.VisitSum, 0) AS VisitSum,\n    ISNULL(c.CallSum,\
-  \ 0) AS CallSum,\n    '<a href=\"https://delta.ir/agency/' + CAST(u.AgencyId AS\
-  \ VARCHAR) \n+ '\" target=\"_blank\">' + a.Name + '</a>' AS AgencyLink,\n\n    v.LastVisitDate,\n\
-  \    c.LastCallDate\nFROM NewDeposits d\nLEFT JOIN VisitAgg v ON d.Id = v.DepositId\n\
-  LEFT JOIN CallAgg c ON d.Id = c.DepositId\nLEFT JOIN usr.Users u ON u.UserId = d.UserId\n\
-  LEFT JOIN Agencies a ON u.AgencyId= a.Id;\n\n"
+  \ 0) AS CallSum,\n    v.LastVisitDate,\n    c.LastCallDate\nFROM NewDeposits d\n\
+  LEFT JOIN VisitAgg v ON d.Id = v.DepositId\nLEFT JOIN CallAgg c ON d.Id = c.DepositId\n\
+  LEFT JOIN usr.Users u ON u.UserId = d.UserId\nLEFT JOIN Agencies a ON u.AgencyId=\
+  \ a.Id;\n\n"
 params: null
 template_params: null
 filter_select_enabled: true
@@ -45,6 +44,58 @@ metrics:
     warning_markdown: ''
   warning_text: null
 columns:
+- column_name: AgencyLink
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: null
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: "'<a href=\"https://delta.ir/agency/' + CAST(AgencyId AS VARCHAR) \n\
+    + '\" target=\"_blank\">' + AgencyName + '</a>'"
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: LastVisitDate
+  verbose_name: null
+  is_dttm: true
+  is_active: true
+  type: DATETIME
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: AgencyName
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: AgencyId
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: INT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
 - column_name: CallSum
   verbose_name: null
   is_dttm: false
@@ -56,7 +107,8 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra: {}
+  extra:
+    warning_markdown: null
 - column_name: DepositId
   verbose_name: null
   is_dttm: false
@@ -68,7 +120,8 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra: {}
+  extra:
+    warning_markdown: null
 - column_name: FirstName
   verbose_name: null
   is_dttm: false
@@ -80,7 +133,8 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra: {}
+  extra:
+    warning_markdown: null
 - column_name: LastName
   verbose_name: null
   is_dttm: false
@@ -92,7 +146,21 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra: {}
+  extra:
+    warning_markdown: null
+- column_name: Phone
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
 - column_name: UserId
   verbose_name: null
   is_dttm: false
@@ -104,7 +172,8 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra: {}
+  extra:
+    warning_markdown: null
 - column_name: VisitSum
   verbose_name: null
   is_dttm: false
@@ -116,43 +185,8 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra: {}
-- column_name: AgencyId
-  verbose_name: null
-  is_dttm: false
-  is_active: true
-  type: null
-  advanced_data_type: null
-  groupby: true
-  filterable: true
-  expression: null
-  description: null
-  python_date_format: null
-  extra: {}
-- column_name: AgencyLink
-  verbose_name: null
-  is_dttm: false
-  is_active: true
-  type: null
-  advanced_data_type: null
-  groupby: true
-  filterable: true
-  expression: null
-  description: null
-  python_date_format: null
-  extra: {}
-- column_name: AgencyName
-  verbose_name: null
-  is_dttm: false
-  is_active: true
-  type: null
-  advanced_data_type: null
-  groupby: true
-  filterable: true
-  expression: null
-  description: null
-  python_date_format: null
-  extra: {}
+  extra:
+    warning_markdown: null
 - column_name: LastCallDate
   verbose_name: null
   is_dttm: true
@@ -164,30 +198,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra: {}
-- column_name: LastVisitDate
-  verbose_name: null
-  is_dttm: true
-  is_active: true
-  type: null
-  advanced_data_type: null
-  groupby: true
-  filterable: true
-  expression: null
-  description: null
-  python_date_format: null
-  extra: {}
-- column_name: Phone
-  verbose_name: null
-  is_dttm: false
-  is_active: true
-  type: null
-  advanced_data_type: null
-  groupby: true
-  filterable: true
-  expression: null
-  description: null
-  python_date_format: null
-  extra: {}
+  extra:
+    warning_markdown: null
 version: 1.0.0
 database_uuid: f4e48a97-c7df-4d67-a5cd-961d0435e140

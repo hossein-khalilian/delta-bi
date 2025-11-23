@@ -38,6 +38,19 @@ metrics:
     warning_markdown: ''
   warning_text: null
 columns:
+- column_name: AgencyLink
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: null
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: "'<a href=\"https://delta.ir/agency/' + CAST(AgencyId AS VARCHAR) \n\
+    + '\" target=\"_blank\">' + AgencyName + '</a>'\n"
+  description: null
+  python_date_format: null
+  extra: {}
 - column_name: LastDepositDate
   verbose_name: null
   is_dttm: true
@@ -49,8 +62,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: AgencyName
   verbose_name: null
   is_dttm: false
@@ -62,8 +74,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: AgencyPhone
   verbose_name: null
   is_dttm: false
@@ -75,8 +86,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: AgencyId
   verbose_name: null
   is_dttm: false
@@ -88,8 +98,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: DepositCount
   verbose_name: null
   is_dttm: false
@@ -101,8 +110,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: ManagerPhone
   verbose_name: null
   is_dttm: false
@@ -114,8 +122,7 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 - column_name: AgencyWalletBalance
   verbose_name: null
   is_dttm: false
@@ -127,7 +134,6 @@ columns:
   expression: null
   description: null
   python_date_format: null
-  extra:
-    warning_markdown: null
+  extra: {}
 version: 1.0.0
 database_uuid: f4e48a97-c7df-4d67-a5cd-961d0435e140

@@ -1,0 +1,166 @@
+slice_name: "\u0646\u0645\u0648\u062F\u0627\u0631 \u0641\u0639\u0627\u0644\u06CC\u062A\
+  \ \u0645\u0634\u0627\u0648\u0631\u0627\u0646 \u0622\u0698\u0627\u0646\u0633 \u062F\
+  \u0631 \u06CC\u06A9 \u0633\u0627\u0644 \u0627\u062E\u06CC\u0631"
+description: null
+certified_by: null
+certification_details: null
+viz_type: echarts_timeseries_bar
+params:
+  datasource: 6__table
+  viz_type: echarts_timeseries_bar
+  slice_id: 17
+  x_axis:
+    label: "\u0646\u0627\u0645"
+    sqlExpression: username+' '+FamilyName
+    expressionType: SQL
+  x_axis_sort: COUNT_DISTINCT(Id)
+  x_axis_sort_asc: false
+  x_axis_sort_series: name
+  x_axis_sort_series_ascending: true
+  metrics:
+  - expressionType: SIMPLE
+    column:
+      advanced_data_type: null
+      certification_details: null
+      certified_by: null
+      column_name: Id
+      description: null
+      expression: null
+      filterable: true
+      groupby: true
+      id: 353
+      is_certified: false
+      is_dttm: false
+      python_date_format: null
+      type: INT
+      type_generic: 0
+      verbose_name: null
+      warning_markdown: null
+    aggregate: COUNT_DISTINCT
+    sqlExpression: null
+    datasourceWarning: false
+    hasCustomLabel: false
+    label: COUNT_DISTINCT(Id)
+    optionName: metric_43964jjejun_4w9qf7gz6u6
+  groupby: []
+  adhoc_filters:
+  - clause: WHERE
+    comparator: No filter
+    datasourceWarning: false
+    expressionType: SIMPLE
+    filterOptionName: filter_btr2cwpn679_s80ylft7zw
+    isExtra: false
+    isNew: false
+    operator: TEMPORAL_RANGE
+    sqlExpression: null
+    subject: CreatedTime
+  - clause: WHERE
+    comparator: '11'
+    datasourceWarning: false
+    expressionType: SIMPLE
+    filterOptionName: filter_4s1gk1j9ghx_hvw0ycc0f0w
+    isExtra: false
+    isNew: false
+    operator: ==
+    operatorId: EQUALS
+    sqlExpression: null
+    subject: RoleId
+  order_desc: true
+  row_limit: 10
+  truncate_metric: true
+  show_empty_columns: true
+  comparison_type: values
+  annotation_layers: []
+  forecastPeriods: 10
+  forecastInterval: 0.8
+  orientation: vertical
+  x_axis_title: ''
+  x_axis_title_margin: 30
+  y_axis_title: "\u062A\u0639\u062F\u0627\u062F \u0622\u06AF\u0647\u06CC \u0647\u0627\
+    \u06CC \u062B\u0628\u062A \u0634\u062F\u0647"
+  y_axis_title_margin: 30
+  y_axis_title_position: Top
+  sort_series_type: sum
+  sort_series_ascending: false
+  color_scheme: redToYellow
+  time_shift_color: true
+  show_value: true
+  only_total: true
+  zoomable: false
+  show_legend: false
+  legendType: scroll
+  legendOrientation: top
+  x_axis_time_format: smart_date
+  xAxisLabelRotation: 45
+  y_axis_format: ',d'
+  y_axis_bounds:
+  - null
+  - null
+  truncateXAxis: true
+  rich_tooltip: true
+  showTooltipTotal: true
+  showTooltipPercentage: false
+  tooltipTimeFormat: smart_date
+  extra_form_data: {}
+  dashboards:
+  - 6
+  - 9
+query_context: '{"datasource": {"id": 6, "type": "table"}, "force": false, "queries":
+  [{"filters": [{"col": "CreatedTime", "op": "TEMPORAL_RANGE", "val": "No filter"},
+  {"col": "RoleId", "op": "==", "val": "11"}], "extras": {"having": "", "where": ""},
+  "applied_time_extras": {}, "columns": [{"columnType": "BASE_AXIS", "label": "\u0646\u0627\u0645",
+  "sqlExpression": "username+'' ''+FamilyName", "expressionType": "SQL"}], "metrics":
+  [{"expressionType": "SIMPLE", "column": {"advanced_data_type": null, "certification_details":
+  null, "certified_by": null, "column_name": "Id", "description": null, "expression":
+  null, "filterable": true, "groupby": true, "id": 353, "is_certified": false, "is_dttm":
+  false, "python_date_format": null, "type": "INT", "type_generic": 0, "verbose_name":
+  null, "warning_markdown": null}, "aggregate": "COUNT_DISTINCT", "sqlExpression":
+  null, "datasourceWarning": false, "hasCustomLabel": false, "label": "COUNT_DISTINCT(Id)",
+  "optionName": "metric_43964jjejun_4w9qf7gz6u6"}], "orderby": [[{"expressionType":
+  "SIMPLE", "column": {"advanced_data_type": null, "certification_details": null,
+  "certified_by": null, "column_name": "Id", "description": null, "expression": null,
+  "filterable": true, "groupby": true, "id": 353, "is_certified": false, "is_dttm":
+  false, "python_date_format": null, "type": "INT", "type_generic": 0, "verbose_name":
+  null, "warning_markdown": null}, "aggregate": "COUNT_DISTINCT", "sqlExpression":
+  null, "datasourceWarning": false, "hasCustomLabel": false, "label": "COUNT_DISTINCT(Id)",
+  "optionName": "metric_43964jjejun_4w9qf7gz6u6"}, false]], "annotation_layers": [],
+  "row_limit": 10, "series_columns": [], "series_limit": 0, "order_desc": true, "url_params":
+  {}, "custom_params": {}, "custom_form_data": {}, "time_offsets": [], "post_processing":
+  [{"operation": "pivot", "options": {"index": ["\u0646\u0627\u0645"], "columns":
+  [], "aggregates": {"COUNT_DISTINCT(Id)": {"operator": "mean"}}, "drop_missing_columns":
+  false}}, {"operation": "sort", "options": {"by": "COUNT_DISTINCT(Id)", "ascending":
+  false}}, {"operation": "flatten"}]}], "form_data": {"datasource": "6__table", "viz_type":
+  "echarts_timeseries_bar", "slice_id": 17, "x_axis": {"label": "\u0646\u0627\u0645",
+  "sqlExpression": "username+'' ''+FamilyName", "expressionType": "SQL"}, "x_axis_sort":
+  "COUNT_DISTINCT(Id)", "x_axis_sort_asc": false, "x_axis_sort_series": "name", "x_axis_sort_series_ascending":
+  true, "metrics": [{"expressionType": "SIMPLE", "column": {"advanced_data_type":
+  null, "certification_details": null, "certified_by": null, "column_name": "Id",
+  "description": null, "expression": null, "filterable": true, "groupby": true, "id":
+  353, "is_certified": false, "is_dttm": false, "python_date_format": null, "type":
+  "INT", "type_generic": 0, "verbose_name": null, "warning_markdown": null}, "aggregate":
+  "COUNT_DISTINCT", "sqlExpression": null, "datasourceWarning": false, "hasCustomLabel":
+  false, "label": "COUNT_DISTINCT(Id)", "optionName": "metric_43964jjejun_4w9qf7gz6u6"}],
+  "groupby": [], "adhoc_filters": [{"clause": "WHERE", "comparator": "No filter",
+  "datasourceWarning": false, "expressionType": "SIMPLE", "filterOptionName": "filter_btr2cwpn679_s80ylft7zw",
+  "isExtra": false, "isNew": false, "operator": "TEMPORAL_RANGE", "sqlExpression":
+  null, "subject": "CreatedTime"}, {"clause": "WHERE", "comparator": "11", "datasourceWarning":
+  false, "expressionType": "SIMPLE", "filterOptionName": "filter_4s1gk1j9ghx_hvw0ycc0f0w",
+  "isExtra": false, "isNew": false, "operator": "==", "operatorId": "EQUALS", "sqlExpression":
+  null, "subject": "RoleId"}], "order_desc": true, "row_limit": 10, "truncate_metric":
+  true, "show_empty_columns": true, "comparison_type": "values", "annotation_layers":
+  [], "forecastPeriods": 10, "forecastInterval": 0.8, "orientation": "vertical", "x_axis_title":
+  "", "x_axis_title_margin": 30, "y_axis_title": "\u062a\u0639\u062f\u0627\u062f \u0622\u06af\u0647\u06cc
+  \u0647\u0627\u06cc \u062b\u0628\u062a \u0634\u062f\u0647", "y_axis_title_margin":
+  30, "y_axis_title_position": "Top", "sort_series_type": "sum", "sort_series_ascending":
+  false, "color_scheme": "redToYellow", "time_shift_color": true, "show_value": true,
+  "only_total": true, "zoomable": false, "show_legend": false, "legendType": "scroll",
+  "legendOrientation": "top", "x_axis_time_format": "smart_date", "xAxisLabelRotation":
+  45, "y_axis_format": ",d", "y_axis_bounds": [null, null], "truncateXAxis": true,
+  "rich_tooltip": true, "showTooltipTotal": true, "showTooltipPercentage": false,
+  "tooltipTimeFormat": "smart_date", "extra_form_data": {}, "dashboards": [6, 9],
+  "force": false, "result_format": "json", "result_type": "full"}, "result_format":
+  "json", "result_type": "full"}'
+cache_timeout: null
+uuid: 2c9c7c7e-e82b-43d7-b817-0b0c700d94b4
+version: 1.0.0
+dataset_uuid: f8fd952f-9757-420e-b885-3cc2c0d622f1

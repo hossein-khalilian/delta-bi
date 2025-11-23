@@ -1,0 +1,150 @@
+slice_name: "\u06AF\u0632\u0627\u0631\u0634 \u0645\u0627\u0647\u0627\u0646\u0647 \u0645\
+  \u06CC\u0627\u0646\u06AF\u06CC\u0646 \u0628\u0627\u0632\u062F\u06CC\u062F \u0648\
+  \ \u062A\u0645\u0627\u0633 \u0622\u0698\u0627\u0646\u0633\u200C\u0647\u0627"
+description: null
+certified_by: null
+certification_details: null
+viz_type: table
+params:
+  datasource: 7__table
+  viz_type: table
+  slice_id: 78
+  query_mode: aggregate
+  groupby:
+  - AgencyLink
+  temporal_columns_lookup:
+    LastVisitDate: true
+    LastCallDate: true
+  metrics:
+  - aggregate: AVG
+    column:
+      advanced_data_type: null
+      changed_on: '2025-11-10T16:28:00.532349'
+      column_name: VisitSum
+      created_on: '2025-11-10T16:28:00.532348'
+      description: null
+      expression: null
+      extra: '{}'
+      filterable: true
+      groupby: true
+      id: 669
+      is_active: true
+      is_dttm: false
+      python_date_format: null
+      type: INT
+      type_generic: 0
+      uuid: c4758aa4-b182-4f67-88b8-44820464d635
+      verbose_name: null
+    datasourceWarning: false
+    expressionType: SIMPLE
+    hasCustomLabel: true
+    label: "\u0645\u06CC\u0627\u0646\u06AF\u06CC\u0646 \u0628\u0627\u0632\u062F\u06CC\
+      \u062F "
+    optionName: metric_xm6l1qcns5_fu6n9b8l10b
+    sqlExpression: null
+  - aggregate: AVG
+    column:
+      advanced_data_type: null
+      changed_on: '2025-11-10T16:28:00.532368'
+      column_name: CallSum
+      created_on: '2025-11-10T16:28:00.532367'
+      description: null
+      expression: null
+      extra: '{}'
+      filterable: true
+      groupby: true
+      id: 670
+      is_active: true
+      is_dttm: false
+      python_date_format: null
+      type: INT
+      type_generic: 0
+      uuid: 03b8aa9f-1e3d-4c87-b38b-2fa255c90eb3
+      verbose_name: null
+    datasourceWarning: false
+    expressionType: SIMPLE
+    hasCustomLabel: true
+    label: "\u0645\u06CC\u0627\u0646\u06AF\u06CC\u0646 \u062A\u0645\u0627\u0633"
+    optionName: metric_921il7wa3wg_bl3nmmqv2j
+    sqlExpression: null
+  all_columns: []
+  percent_metrics: []
+  adhoc_filters:
+  - clause: WHERE
+    comparator: No filter
+    expressionType: SIMPLE
+    operator: TEMPORAL_RANGE
+    subject: LastVisitDate
+  order_by_cols: []
+  row_limit: 10
+  table_timestamp_format: smart_date
+  allow_render_html: true
+  show_cell_bars: true
+  color_pn: true
+  comparison_color_scheme: Green
+  comparison_type: values
+  extra_form_data: {}
+  dashboards:
+  - 13
+query_context: "{\"datasource\":{\"id\":7,\"type\":\"table\"},\"force\":false,\"queries\"\
+  :[{\"filters\":[{\"col\":\"LastVisitDate\",\"op\":\"TEMPORAL_RANGE\",\"val\":\"\
+  No filter\"}],\"extras\":{\"having\":\"\",\"where\":\"\"},\"applied_time_extras\"\
+  :{},\"columns\":[\"AgencyLink\"],\"metrics\":[{\"aggregate\":\"AVG\",\"column\"\
+  :{\"advanced_data_type\":null,\"changed_on\":\"2025-11-10T16:28:00.532349\",\"column_name\"\
+  :\"VisitSum\",\"created_on\":\"2025-11-10T16:28:00.532348\",\"description\":null,\"\
+  expression\":null,\"extra\":\"{}\",\"filterable\":true,\"groupby\":true,\"id\":669,\"\
+  is_active\":true,\"is_dttm\":false,\"python_date_format\":null,\"type\":\"INT\"\
+  ,\"type_generic\":0,\"uuid\":\"c4758aa4-b182-4f67-88b8-44820464d635\",\"verbose_name\"\
+  :null},\"datasourceWarning\":false,\"expressionType\":\"SIMPLE\",\"hasCustomLabel\"\
+  :true,\"label\":\"\u0645\u06CC\u0627\u0646\u06AF\u06CC\u0646 \u0628\u0627\u0632\u062F\
+  \u06CC\u062F \",\"optionName\":\"metric_xm6l1qcns5_fu6n9b8l10b\",\"sqlExpression\"\
+  :null},{\"aggregate\":\"AVG\",\"column\":{\"advanced_data_type\":null,\"changed_on\"\
+  :\"2025-11-10T16:28:00.532368\",\"column_name\":\"CallSum\",\"created_on\":\"2025-11-10T16:28:00.532367\"\
+  ,\"description\":null,\"expression\":null,\"extra\":\"{}\",\"filterable\":true,\"\
+  groupby\":true,\"id\":670,\"is_active\":true,\"is_dttm\":false,\"python_date_format\"\
+  :null,\"type\":\"INT\",\"type_generic\":0,\"uuid\":\"03b8aa9f-1e3d-4c87-b38b-2fa255c90eb3\"\
+  ,\"verbose_name\":null},\"datasourceWarning\":false,\"expressionType\":\"SIMPLE\"\
+  ,\"hasCustomLabel\":true,\"label\":\"\u0645\u06CC\u0627\u0646\u06AF\u06CC\u0646\
+  \ \u062A\u0645\u0627\u0633\",\"optionName\":\"metric_921il7wa3wg_bl3nmmqv2j\",\"\
+  sqlExpression\":null}],\"orderby\":[[{\"aggregate\":\"AVG\",\"column\":{\"advanced_data_type\"\
+  :null,\"changed_on\":\"2025-11-10T16:28:00.532349\",\"column_name\":\"VisitSum\"\
+  ,\"created_on\":\"2025-11-10T16:28:00.532348\",\"description\":null,\"expression\"\
+  :null,\"extra\":\"{}\",\"filterable\":true,\"groupby\":true,\"id\":669,\"is_active\"\
+  :true,\"is_dttm\":false,\"python_date_format\":null,\"type\":\"INT\",\"type_generic\"\
+  :0,\"uuid\":\"c4758aa4-b182-4f67-88b8-44820464d635\",\"verbose_name\":null},\"datasourceWarning\"\
+  :false,\"expressionType\":\"SIMPLE\",\"hasCustomLabel\":true,\"label\":\"\u0645\u06CC\
+  \u0627\u0646\u06AF\u06CC\u0646 \u0628\u0627\u0632\u062F\u06CC\u062F \",\"optionName\"\
+  :\"metric_xm6l1qcns5_fu6n9b8l10b\",\"sqlExpression\":null},false]],\"annotation_layers\"\
+  :[],\"row_limit\":10,\"series_limit\":0,\"order_desc\":true,\"url_params\":{},\"\
+  custom_params\":{},\"custom_form_data\":{},\"post_processing\":[],\"time_offsets\"\
+  :[]}],\"form_data\":{\"datasource\":\"7__table\",\"viz_type\":\"table\",\"slice_id\"\
+  :78,\"query_mode\":\"aggregate\",\"groupby\":[\"AgencyLink\"],\"temporal_columns_lookup\"\
+  :{\"LastVisitDate\":true,\"LastCallDate\":true},\"metrics\":[{\"aggregate\":\"AVG\"\
+  ,\"column\":{\"advanced_data_type\":null,\"changed_on\":\"2025-11-10T16:28:00.532349\"\
+  ,\"column_name\":\"VisitSum\",\"created_on\":\"2025-11-10T16:28:00.532348\",\"description\"\
+  :null,\"expression\":null,\"extra\":\"{}\",\"filterable\":true,\"groupby\":true,\"\
+  id\":669,\"is_active\":true,\"is_dttm\":false,\"python_date_format\":null,\"type\"\
+  :\"INT\",\"type_generic\":0,\"uuid\":\"c4758aa4-b182-4f67-88b8-44820464d635\",\"\
+  verbose_name\":null},\"datasourceWarning\":false,\"expressionType\":\"SIMPLE\",\"\
+  hasCustomLabel\":true,\"label\":\"\u0645\u06CC\u0627\u0646\u06AF\u06CC\u0646 \u0628\
+  \u0627\u0632\u062F\u06CC\u062F \",\"optionName\":\"metric_xm6l1qcns5_fu6n9b8l10b\"\
+  ,\"sqlExpression\":null},{\"aggregate\":\"AVG\",\"column\":{\"advanced_data_type\"\
+  :null,\"changed_on\":\"2025-11-10T16:28:00.532368\",\"column_name\":\"CallSum\"\
+  ,\"created_on\":\"2025-11-10T16:28:00.532367\",\"description\":null,\"expression\"\
+  :null,\"extra\":\"{}\",\"filterable\":true,\"groupby\":true,\"id\":670,\"is_active\"\
+  :true,\"is_dttm\":false,\"python_date_format\":null,\"type\":\"INT\",\"type_generic\"\
+  :0,\"uuid\":\"03b8aa9f-1e3d-4c87-b38b-2fa255c90eb3\",\"verbose_name\":null},\"datasourceWarning\"\
+  :false,\"expressionType\":\"SIMPLE\",\"hasCustomLabel\":true,\"label\":\"\u0645\u06CC\
+  \u0627\u0646\u06AF\u06CC\u0646 \u062A\u0645\u0627\u0633\",\"optionName\":\"metric_921il7wa3wg_bl3nmmqv2j\"\
+  ,\"sqlExpression\":null}],\"all_columns\":[],\"percent_metrics\":[],\"adhoc_filters\"\
+  :[{\"clause\":\"WHERE\",\"comparator\":\"No filter\",\"expressionType\":\"SIMPLE\"\
+  ,\"operator\":\"TEMPORAL_RANGE\",\"subject\":\"LastVisitDate\"}],\"order_by_cols\"\
+  :[],\"row_limit\":10,\"table_timestamp_format\":\"smart_date\",\"allow_render_html\"\
+  :true,\"show_cell_bars\":true,\"color_pn\":true,\"comparison_color_scheme\":\"Green\"\
+  ,\"comparison_type\":\"values\",\"extra_form_data\":{},\"dashboards\":[13],\"force\"\
+  :false,\"result_format\":\"json\",\"result_type\":\"full\"},\"result_format\":\"\
+  json\",\"result_type\":\"full\"}"
+cache_timeout: null
+uuid: dc33dd2c-1e6d-441f-9779-d7bd566f0f25
+version: 1.0.0
+dataset_uuid: 9724153b-c798-4450-b049-7c58b6dec247

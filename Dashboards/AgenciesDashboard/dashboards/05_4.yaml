@@ -4,8 +4,8 @@ dashboard_title: "05) \u062F\u0627\u0634\u0628\u0648\u0631\u062F \u062A\u062D\u0
 description: null
 css: ''
 slug: null
-certified_by: ''
-certification_details: ''
+certified_by: null
+certification_details: null
 published: false
 uuid: 9ac5311c-8b9e-488a-af95-58ed0fd45474
 position:
@@ -307,6 +307,7 @@ position:
     - DIVIDER-mQc7IS8Ua6h9kvhFaKDnX
     - ROW-fYvkWf-hAR4h4eioCe3sU
     - ROW-JuLMRN52X8LxFCLeWltkB
+    - ROW-N-GRZQK18O
     id: GRID_ID
     parents:
     - ROOT_ID
@@ -429,6 +430,32 @@ position:
     - ROOT_ID
     - GRID_ID
     type: ROW
+  ROW-N-GRZQK18O:
+    children:
+    - CHART-FMPP47G9
+    id: ROW-N-GRZQK18O
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    type: ROW
+    parents:
+    - ROOT_ID
+    - GRID_ID
+  CHART-FMPP47G9:
+    children: []
+    id: CHART-FMPP47G9
+    meta:
+      chartId: 82
+      height: 50
+      sliceName: "\u0622\u0698\u0627\u0646\u0633 \u0647\u0627\u06CC \u0641\u0639\u0627\
+        \u0644 \u06CC\u06A9 \u0633\u0627\u0644 \u0627\u062E\u06CC\u0631"
+      uuid: e2cdc5a2-aa5f-40e7-a5f1-c43f1ad1198c
+      width: 4
+    type: CHART
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-N-GRZQK18O
 metadata:
   chart_configuration:
     '6':
@@ -449,6 +476,7 @@ metadata:
         - 43
         - 44
         - 45
+        - 82
     '8':
       id: 8
       crossFilters:
@@ -467,6 +495,7 @@ metadata:
         - 43
         - 44
         - 45
+        - 82
     '9':
       id: 9
       crossFilters:
@@ -485,6 +514,7 @@ metadata:
         - 43
         - 44
         - 45
+        - 82
     '15':
       id: 15
       crossFilters:
@@ -503,6 +533,7 @@ metadata:
         - 43
         - 44
         - 45
+        - 82
     '24':
       id: 24
       crossFilters:
@@ -521,6 +552,7 @@ metadata:
         - 43
         - 44
         - 45
+        - 82
     '30':
       id: 30
       crossFilters:
@@ -539,6 +571,7 @@ metadata:
         - 43
         - 44
         - 45
+        - 82
     '32':
       id: 32
       crossFilters:
@@ -557,6 +590,7 @@ metadata:
         - 43
         - 44
         - 45
+        - 82
     '39':
       id: 39
       crossFilters:
@@ -575,6 +609,7 @@ metadata:
         - 43
         - 44
         - 45
+        - 82
     '40':
       id: 40
       crossFilters:
@@ -593,6 +628,7 @@ metadata:
         - 43
         - 44
         - 45
+        - 82
     '41':
       id: 41
       crossFilters:
@@ -611,6 +647,7 @@ metadata:
         - 43
         - 44
         - 45
+        - 82
     '42':
       id: 42
       crossFilters:
@@ -629,6 +666,7 @@ metadata:
         - 43
         - 44
         - 45
+        - 82
     '43':
       id: 43
       crossFilters:
@@ -647,6 +685,7 @@ metadata:
         - 42
         - 44
         - 45
+        - 82
     '44':
       id: 44
       crossFilters:
@@ -665,6 +704,7 @@ metadata:
         - 42
         - 43
         - 45
+        - 82
     '45':
       id: 45
       crossFilters:
@@ -683,6 +723,26 @@ metadata:
         - 42
         - 43
         - 44
+        - 82
+    '82':
+      id: 82
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 6
+        - 8
+        - 9
+        - 15
+        - 24
+        - 30
+        - 32
+        - 39
+        - 40
+        - 41
+        - 42
+        - 43
+        - 44
+        - 45
   global_chart_configuration:
     scope:
       rootPath:
@@ -703,34 +763,118 @@ metadata:
     - 43
     - 44
     - 45
-  color_scheme: ''
+    - 82
+  color_scheme: redToYellow
   refresh_frequency: 0
   expanded_slices: {}
   label_colors: {}
   timed_refresh_immune_slices: []
-  cross_filters_enabled: true
-  native_filter_configuration: []
+  cross_filters_enabled: false
+  native_filter_configuration:
+  - id: NATIVE_FILTER-0AWC7Si6Ft5s_mg-dspJX
+    controlValues:
+      enableEmptyFilter: false
+      defaultToFirstItem: false
+      multiSelect: true
+      searchAllOptions: false
+      inverseSelection: false
+    name: "\u0646\u0627\u0645 \u0622\u0698\u0627\u0646\u0633"
+    filterType: filter_select
+    targets:
+    - column:
+        name: Name
+      datasetUuid: 7d463411-4c7d-4db7-8a59-56e4b33d2cf7
+    defaultDataMask:
+      extraFormData: {}
+      filterState: {}
+      ownState: {}
+    cascadeParentIds: []
+    scope:
+      excluded:
+      - 8
+      - 9
+      - 30
+      - 32
+      - 39
+      - 40
+      - 41
+      - 42
+      - 43
+      - 44
+      - 45
+      rootPath:
+      - ROOT_ID
+    type: NATIVE_FILTER
+    description: ''
+  - id: NATIVE_FILTER-VsSarzyq5pQpg0AEY6TKN
+    controlValues:
+      enableEmptyFilter: false
+    name: "\u0628\u0627\u0632\u0647\u200C\u06CC \u0632\u0645\u0627\u0646\u06CC"
+    filterType: filter_time
+    targets:
+    - {}
+    defaultDataMask:
+      extraFormData:
+        time_range: Last year
+      filterState:
+        value: Last year
+    cascadeParentIds: []
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded:
+      - 8
+      - 9
+      - 30
+      - 32
+      - 39
+      - 40
+      - 41
+      - 42
+      - 43
+      - 44
+      - 45
+    type: NATIVE_FILTER
+    description: ''
+  - id: NATIVE_FILTER-vl0-92g9oUfpxbb90dE1P
+    controlValues:
+      enableEmptyFilter: false
+    name: "\u062D\u062F\u0627\u0642\u0644 \u062A\u0639\u062F\u0627\u062F \u0622\u06AF\
+      \u0647\u06CC \u062B\u0628\u062A \u0634\u062F\u0647"
+    filterType: filter_range
+    targets:
+    - column:
+        name: DepositCount
+      datasetUuid: 10682820-4427-48f9-a872-28ab22e34d4b
+    defaultDataMask:
+      extraFormData: {}
+      filterState: {}
+      ownState: {}
+    cascadeParentIds: []
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded:
+      - 6
+      - 8
+      - 9
+      - 15
+      - 24
+      - 30
+      - 32
+      - 39
+      - 40
+      - 42
+      - 43
+      - 44
+      - 45
+      - 82
+    type: NATIVE_FILTER
+    description: ''
+  default_filters: '{}'
   shared_label_colors:
   - "\u062A\u0639\u062F\u0627\u062F \u0622\u06AF\u0647\u06CC \u062B\u0628\u062A \u0634\
     \u062F\u0647"
-  map_label_colors:
-    "\u062A\u0639\u062F\u0627\u062F \u0622\u06AF\u0647\u06CC \u062B\u0628\u062A \u0634\u062F\u0647": '#90042A'
-    COUNT_DISTINCT(Id): '#90042A'
-    MAX(TotalDeposits): '#90042A'
-    "\u0646\u0627\u0635\u0631 \u0646\u0627\u062F\u0631\u06CC, \u0627\u0645\u0644\u0627\u06A9 \u0635\u062F\u0642\u06CC": '#90042A'
-    "\u06CC\u0627\u0633\u06CC\u0646, \u0627\u0645\u0644\u0627\u06A9 \u0628\u0632\u0631\u06AF \u0646\u06AF\u06CC\u0646 \u0628\u0648\u06A9\u0627\u0646": '#D60039'
-    "\u0627\u0633\u0645\u0627\u0639\u06CC\u0644 \u067E\u0648\u0631, \u0627\u0645\u0644\u0627\u06A9 \u0628\u0632\u0631\u06AF \u0646\u06AF\u06CC\u0646 \u0628\u0648\u06A9\u0627\u0646": '#D1353B'
-    "\u0633\u0648\u0631\u0627\u0646, \u0627\u0645\u0644\u0627\u06A9 \u0628\u0632\u0631\u06AF \u0646\u06AF\u06CC\u0646 \u0628\u0648\u06A9\u0627\u0646": '#E45233'
-    "\u0634\u06CC\u0646\u0627 \u0628\u06CC\u0631\u0627\u0646\u0648\u0646\u062F, \u0622\u0698\u0627\u0646\u0633 \u062F\u0644\u062A\u0627 5": '#F47028'
-    "\u0622\u0698\u0627\u0646\u0633 \u062F\u0644\u062A\u0627 5": '#90042A'
-    "\u0627\u0645\u0644\u0627\u06A9 \u0628\u0632\u0631\u06AF \u0646\u06AF\u06CC\u0646 \u0628\u0648\u06A9\u0627\u0646": '#D60039'
-    "\u0627\u0645\u0644\u0627\u06A9 \u0635\u062F\u0642\u06CC": '#D1353B'
-    "\u0627\u0645\u0644\u0627\u0643 \u0631\u0627\u062F\u0645\u0627\u0646": '#E45233'
-    "\u062F\u067E\u0627\u0631\u062A\u0645\u0627\u0646 \u0645\u0644\u06A9 \u0686\u06CC": '#F47028'
-    "\u062A\u0639\u062F\u0627\u062F \u06A9\u0627\u0631\u0628\u0631 \u062B\u0628\u062A \u0646\u0627\u0645\u06CC": '#90042A'
-    "\u062A\u0639\u062F\u0627\u062F \u0622\u0698\u0627\u0646\u0633 \u062B\u0628\u062A\u200C\u0646\u0627\u0645\u06CC": '#90042A'
-    "\u062A\u0639\u062F\u0627\u062F \u0627\u0645\u0644\u0627\u06A9 \u062B\u0628\u062A \u0634\u062F\u0647": '#90042A'
-    "\u0645\u0648\u062C\u0648\u062F\u06CC": '#90042A'
+  map_label_colors: {}
   color_scheme_domain: []
-  default_filters: '{}'
 version: 1.0.0

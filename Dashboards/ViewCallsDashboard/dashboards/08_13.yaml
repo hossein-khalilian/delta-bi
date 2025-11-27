@@ -1529,24 +1529,8 @@ metadata:
   label_colors: {}
   timed_refresh_immune_slices: []
   cross_filters_enabled: true
-  shared_label_colors:
-  - "\u062A\u0639\u062F\u0627\u062F \u0628\u0627\u0632\u062F\u06CC\u062F"
-  - "\u062A\u0639\u062F\u0627\u062F \u062A\u0645\u0627\u0633"
-  - "\u0645\u062C\u0645\u0648\u0639 \u0628\u0627\u0632\u062F\u06CC\u062F"
-  - "\u0645\u062C\u0645\u0648\u0639 \u062A\u0645\u0627\u0633"
-  - "\u0645\u06CC\u0627\u0646\u06AF\u06CC\u0646 \u0628\u0627\u0632\u062F\u06CC\u062F"
-  - "\u0645\u06CC\u0627\u0646\u06AF\u06CC\u0646 \u062A\u0645\u0627\u0633"
-  map_label_colors: {}
-  color_scheme_domain:
-  - '#90042A'
-  - '#D60039'
-  - '#D1353B'
-  - '#E45233'
-  - '#F47028'
-  - '#FE8E17'
-  - '#FFAD00'
-  - '#FFCC00'
-  - '#FFE601'
-  - '#FFF46D'
   native_filter_configuration: []
+  shared_label_colors: []
+  map_label_colors: {}
+  color_scheme_domain: []
 version: 1.0.0

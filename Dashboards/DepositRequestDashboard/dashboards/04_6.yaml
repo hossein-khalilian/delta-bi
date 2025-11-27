@@ -263,65 +263,84 @@ position:
     type: ROW
 metadata:
   chart_configuration:
-    '39':
-      id: 39
+    '4':
+      id: 4
       crossFilters:
         scope: global
         chartsInScope:
-        - 40
-        - 41
-        - 70
-        - 72
-        - 81
-    '40':
-      id: 40
+        - 27
+        - 28
+        - 46
+        - 47
+        - 48
+    '27':
+      id: 27
       crossFilters:
         scope: global
         chartsInScope:
-        - 39
-        - 41
-        - 70
-        - 72
-        - 81
-    '70':
-      id: 70
+        - 4
+        - 28
+        - 46
+        - 47
+        - 48
+    '47':
+      id: 47
       crossFilters:
         scope: global
         chartsInScope:
-        - 39
-        - 40
-        - 41
-        - 72
-        - 81
-    '81':
-      id: 81
+        - 4
+        - 27
+        - 28
+        - 46
+        - 48
+    '48':
+      id: 48
       crossFilters:
         scope: global
         chartsInScope:
-        - 39
-        - 40
-        - 41
-        - 70
-        - 72
+        - 4
+        - 27
+        - 28
+        - 46
+        - 47
   global_chart_configuration:
     scope:
       rootPath:
       - ROOT_ID
       excluded: []
     chartsInScope:
-    - 39
-    - 40
-    - 41
-    - 70
-    - 72
-    - 81
+    - 4
+    - 27
+    - 28
+    - 46
+    - 47
+    - 48
   color_scheme: redToYellow
   refresh_frequency: 0
   expanded_slices: {}
   label_colors: {}
   timed_refresh_immune_slices: []
-  cross_filters_enabled: true
-  native_filter_configuration: []
+  cross_filters_enabled: false
+  native_filter_configuration:
+  - id: NATIVE_FILTER-UcZ-3jcJ6CWqdXtwbiOYP
+    controlValues:
+      enableEmptyFilter: false
+    name: "\u062A\u0627\u0631\u06CC\u062E \u062B\u0628\u062A"
+    filterType: filter_time
+    targets:
+    - {}
+    defaultDataMask:
+      extraFormData:
+        time_range: Last year
+      filterState:
+        value: Last year
+    cascadeParentIds: []
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    type: NATIVE_FILTER
+    description: ''
   shared_label_colors:
   - "\u062A\u0639\u062F\u0627\u062F \u062F\u0631\u062E\u0648\u0627\u0633\u062A"
   map_label_colors: {}

@@ -63,7 +63,22 @@ columns:
     \            + '\" target=\"_blank\">' + Name + ' ' + FamilyName + '</a>' "
   description: null
   python_date_format: null
-  extra: {}
+  extra:
+    warning_markdown: null
+- column_name: AgencyLink
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: null
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: "'<a href=\"https://delta.ir/agency/' + CAST(AgencyId AS VARCHAR) \n\
+    + '\" target=\"_blank\">' + Name + '</a>'\n"
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
 - column_name: FullName
   verbose_name: null
   is_dttm: false
@@ -82,6 +97,32 @@ columns:
   is_dttm: true
   is_active: true
   type: DATETIME
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: ModifiedDate
+  verbose_name: null
+  is_dttm: true
+  is_active: true
+  type: DATETIME
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: AgencyId
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: INT
   advanced_data_type: null
   groupby: true
   filterable: true
@@ -195,6 +236,19 @@ columns:
   extra:
     warning_markdown: null
 - column_name: MainStreet
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: Name
   verbose_name: null
   is_dttm: false
   is_active: true
@@ -337,19 +391,6 @@ columns:
   python_date_format: null
   extra:
     warning_markdown: null
-- column_name: AgencyId
-  verbose_name: null
-  is_dttm: false
-  is_active: true
-  type: null
-  advanced_data_type: null
-  groupby: true
-  filterable: true
-  expression: null
-  description: null
-  python_date_format: null
-  extra:
-    warning_markdown: null
 - column_name: CreatedBy
   verbose_name: null
   is_dttm: false
@@ -377,32 +418,6 @@ columns:
   extra:
     warning_markdown: null
 - column_name: Coordinates
-  verbose_name: null
-  is_dttm: false
-  is_active: true
-  type: null
-  advanced_data_type: null
-  groupby: true
-  filterable: true
-  expression: null
-  description: null
-  python_date_format: null
-  extra:
-    warning_markdown: null
-- column_name: ModifiedDate
-  verbose_name: null
-  is_dttm: true
-  is_active: true
-  type: null
-  advanced_data_type: null
-  groupby: true
-  filterable: true
-  expression: null
-  description: null
-  python_date_format: null
-  extra:
-    warning_markdown: null
-- column_name: Name
   verbose_name: null
   is_dttm: false
   is_active: true

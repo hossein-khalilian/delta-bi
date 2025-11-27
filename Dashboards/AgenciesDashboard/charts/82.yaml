@@ -1,0 +1,193 @@
+slice_name: "\u0622\u0698\u0627\u0646\u0633 \u0647\u0627\u06CC \u0641\u0639\u0627\u0644\
+  \ \u06CC\u06A9 \u0633\u0627\u0644 \u0627\u062E\u06CC\u0631"
+description: null
+certified_by: null
+certification_details: null
+viz_type: echarts_timeseries_bar
+params:
+  datasource: 6__table
+  viz_type: echarts_timeseries_bar
+  slice_id: 6
+  x_axis: Name
+  x_axis_sort: "\u062A\u0639\u062F\u0627\u062F \u0622\u06AF\u0647\u06CC \u062B\u0628\
+    \u062A \u0634\u062F\u0647"
+  x_axis_sort_asc: false
+  metrics:
+  - aggregate: COUNT_DISTINCT
+    column:
+      advanced_data_type: null
+      certification_details: null
+      certified_by: null
+      column_name: Id
+      description: null
+      expression: null
+      filterable: true
+      groupby: true
+      id: 353
+      is_certified: false
+      is_dttm: false
+      python_date_format: null
+      type: INT
+      type_generic: 0
+      verbose_name: null
+      warning_markdown: null
+    datasourceWarning: false
+    expressionType: SIMPLE
+    hasCustomLabel: true
+    label: "\u062A\u0639\u062F\u0627\u062F \u0622\u06AF\u0647\u06CC \u062B\u0628\u062A\
+      \ \u0634\u062F\u0647"
+    optionName: metric_dyejr89d674_q19wyqmb2lo
+    sqlExpression: null
+  groupby: []
+  adhoc_filters:
+  - clause: WHERE
+    comparator: No filter
+    datasourceWarning: false
+    expressionType: SIMPLE
+    filterOptionName: filter_6tg4i3z6hvp_yca3ib03ft
+    isExtra: false
+    isNew: false
+    operator: TEMPORAL_RANGE
+    sqlExpression: null
+    subject: CreatedTime
+  - clause: WHERE
+    comparator: 'Null'
+    datasourceWarning: false
+    expressionType: SIMPLE
+    filterOptionName: filter_k4anwk9qtgn_r0gyw8wsmc
+    isExtra: false
+    isNew: false
+    operator: '!='
+    operatorId: NOT_EQUALS
+    sqlExpression: null
+    subject: AgencyLink
+  timeseries_limit_metric:
+    aggregate: COUNT_DISTINCT
+    column:
+      advanced_data_type: null
+      changed_on: '2025-11-01T13:35:22.833494'
+      column_name: Id
+      created_on: '2025-11-01T13:35:22.833487'
+      description: null
+      expression: null
+      extra: '{"warning_markdown":null}'
+      filterable: true
+      groupby: true
+      id: 353
+      is_active: true
+      is_dttm: false
+      python_date_format: null
+      type: INT
+      type_generic: 0
+      uuid: 09aeb3df-03b6-4e68-9f8b-2b2a26472811
+      verbose_name: null
+    datasourceWarning: false
+    expressionType: SIMPLE
+    hasCustomLabel: false
+    label: COUNT_DISTINCT(Id)
+    optionName: metric_jxg2f1a1lo_9u8kj6q076u
+    sqlExpression: null
+  order_desc: true
+  row_limit: 10
+  truncate_metric: true
+  show_empty_columns: true
+  annotation_layers: []
+  orientation: vertical
+  x_axis_title_margin: 15
+  y_axis_title_margin: 30
+  y_axis_title_position: Left
+  sort_series_type: sum
+  color_scheme: redToYellow
+  show_legend: true
+  legendType: scroll
+  legendOrientation: top
+  x_axis_time_format: smart_date
+  xAxisLabelRotation: 45
+  y_axis_format: SMART_NUMBER
+  y_axis_bounds:
+  - null
+  - null
+  truncateXAxis: true
+  rich_tooltip: true
+  showTooltipTotal: true
+  tooltipTimeFormat: smart_date
+  extra_form_data: {}
+  dashboards:
+  - 4
+query_context: "{\"datasource\":{\"id\":6,\"type\":\"table\"},\"force\":false,\"queries\"\
+  :[{\"filters\":[{\"col\":\"CreatedTime\",\"op\":\"TEMPORAL_RANGE\",\"val\":\"No\
+  \ filter\"},{\"col\":\"AgencyLink\",\"op\":\"!=\",\"val\":\"Null\"}],\"extras\"\
+  :{\"having\":\"\",\"where\":\"\"},\"applied_time_extras\":{},\"columns\":[{\"columnType\"\
+  :\"BASE_AXIS\",\"sqlExpression\":\"Name\",\"label\":\"Name\",\"expressionType\"\
+  :\"SQL\"}],\"metrics\":[{\"aggregate\":\"COUNT_DISTINCT\",\"column\":{\"advanced_data_type\"\
+  :null,\"certification_details\":null,\"certified_by\":null,\"column_name\":\"Id\"\
+  ,\"description\":null,\"expression\":null,\"filterable\":true,\"groupby\":true,\"\
+  id\":353,\"is_certified\":false,\"is_dttm\":false,\"python_date_format\":null,\"\
+  type\":\"INT\",\"type_generic\":0,\"verbose_name\":null,\"warning_markdown\":null},\"\
+  datasourceWarning\":false,\"expressionType\":\"SIMPLE\",\"hasCustomLabel\":true,\"\
+  label\":\"\u062A\u0639\u062F\u0627\u062F \u0622\u06AF\u0647\u06CC \u062B\u0628\u062A\
+  \ \u0634\u062F\u0647\",\"optionName\":\"metric_dyejr89d674_q19wyqmb2lo\",\"sqlExpression\"\
+  :null}],\"orderby\":[[{\"aggregate\":\"COUNT_DISTINCT\",\"column\":{\"advanced_data_type\"\
+  :null,\"changed_on\":\"2025-11-01T13:35:22.833494\",\"column_name\":\"Id\",\"created_on\"\
+  :\"2025-11-01T13:35:22.833487\",\"description\":null,\"expression\":null,\"extra\"\
+  :\"{\\\"warning_markdown\\\":null}\",\"filterable\":true,\"groupby\":true,\"id\"\
+  :353,\"is_active\":true,\"is_dttm\":false,\"python_date_format\":null,\"type\":\"\
+  INT\",\"type_generic\":0,\"uuid\":\"09aeb3df-03b6-4e68-9f8b-2b2a26472811\",\"verbose_name\"\
+  :null},\"datasourceWarning\":false,\"expressionType\":\"SIMPLE\",\"hasCustomLabel\"\
+  :false,\"label\":\"COUNT_DISTINCT(Id)\",\"optionName\":\"metric_jxg2f1a1lo_9u8kj6q076u\"\
+  ,\"sqlExpression\":null},false]],\"annotation_layers\":[],\"row_limit\":10,\"series_columns\"\
+  :[],\"series_limit\":0,\"series_limit_metric\":{\"aggregate\":\"COUNT_DISTINCT\"\
+  ,\"column\":{\"advanced_data_type\":null,\"changed_on\":\"2025-11-01T13:35:22.833494\"\
+  ,\"column_name\":\"Id\",\"created_on\":\"2025-11-01T13:35:22.833487\",\"description\"\
+  :null,\"expression\":null,\"extra\":\"{\\\"warning_markdown\\\":null}\",\"filterable\"\
+  :true,\"groupby\":true,\"id\":353,\"is_active\":true,\"is_dttm\":false,\"python_date_format\"\
+  :null,\"type\":\"INT\",\"type_generic\":0,\"uuid\":\"09aeb3df-03b6-4e68-9f8b-2b2a26472811\"\
+  ,\"verbose_name\":null},\"datasourceWarning\":false,\"expressionType\":\"SIMPLE\"\
+  ,\"hasCustomLabel\":false,\"label\":\"COUNT_DISTINCT(Id)\",\"optionName\":\"metric_jxg2f1a1lo_9u8kj6q076u\"\
+  ,\"sqlExpression\":null},\"order_desc\":true,\"url_params\":{},\"custom_params\"\
+  :{},\"custom_form_data\":{},\"time_offsets\":[],\"post_processing\":[{\"operation\"\
+  :\"pivot\",\"options\":{\"index\":[\"Name\"],\"columns\":[],\"aggregates\":{\"\u062A\
+  \u0639\u062F\u0627\u062F \u0622\u06AF\u0647\u06CC \u062B\u0628\u062A \u0634\u062F\
+  \u0647\":{\"operator\":\"mean\"}},\"drop_missing_columns\":false}},{\"operation\"\
+  :\"sort\",\"options\":{\"by\":\"\u062A\u0639\u062F\u0627\u062F \u0622\u06AF\u0647\
+  \u06CC \u062B\u0628\u062A \u0634\u062F\u0647\",\"ascending\":false}},{\"operation\"\
+  :\"flatten\"}]}],\"form_data\":{\"datasource\":\"6__table\",\"viz_type\":\"echarts_timeseries_bar\"\
+  ,\"slice_id\":6,\"x_axis\":\"Name\",\"x_axis_sort\":\"\u062A\u0639\u062F\u0627\u062F\
+  \ \u0622\u06AF\u0647\u06CC \u062B\u0628\u062A \u0634\u062F\u0647\",\"x_axis_sort_asc\"\
+  :false,\"metrics\":[{\"aggregate\":\"COUNT_DISTINCT\",\"column\":{\"advanced_data_type\"\
+  :null,\"certification_details\":null,\"certified_by\":null,\"column_name\":\"Id\"\
+  ,\"description\":null,\"expression\":null,\"filterable\":true,\"groupby\":true,\"\
+  id\":353,\"is_certified\":false,\"is_dttm\":false,\"python_date_format\":null,\"\
+  type\":\"INT\",\"type_generic\":0,\"verbose_name\":null,\"warning_markdown\":null},\"\
+  datasourceWarning\":false,\"expressionType\":\"SIMPLE\",\"hasCustomLabel\":true,\"\
+  label\":\"\u062A\u0639\u062F\u0627\u062F \u0622\u06AF\u0647\u06CC \u062B\u0628\u062A\
+  \ \u0634\u062F\u0647\",\"optionName\":\"metric_dyejr89d674_q19wyqmb2lo\",\"sqlExpression\"\
+  :null}],\"groupby\":[],\"adhoc_filters\":[{\"clause\":\"WHERE\",\"comparator\":\"\
+  No filter\",\"datasourceWarning\":false,\"expressionType\":\"SIMPLE\",\"filterOptionName\"\
+  :\"filter_6tg4i3z6hvp_yca3ib03ft\",\"isExtra\":false,\"isNew\":false,\"operator\"\
+  :\"TEMPORAL_RANGE\",\"sqlExpression\":null,\"subject\":\"CreatedTime\"},{\"clause\"\
+  :\"WHERE\",\"comparator\":\"Null\",\"datasourceWarning\":false,\"expressionType\"\
+  :\"SIMPLE\",\"filterOptionName\":\"filter_k4anwk9qtgn_r0gyw8wsmc\",\"isExtra\":false,\"\
+  isNew\":false,\"operator\":\"!=\",\"operatorId\":\"NOT_EQUALS\",\"sqlExpression\"\
+  :null,\"subject\":\"AgencyLink\"}],\"timeseries_limit_metric\":{\"aggregate\":\"\
+  COUNT_DISTINCT\",\"column\":{\"advanced_data_type\":null,\"changed_on\":\"2025-11-01T13:35:22.833494\"\
+  ,\"column_name\":\"Id\",\"created_on\":\"2025-11-01T13:35:22.833487\",\"description\"\
+  :null,\"expression\":null,\"extra\":\"{\\\"warning_markdown\\\":null}\",\"filterable\"\
+  :true,\"groupby\":true,\"id\":353,\"is_active\":true,\"is_dttm\":false,\"python_date_format\"\
+  :null,\"type\":\"INT\",\"type_generic\":0,\"uuid\":\"09aeb3df-03b6-4e68-9f8b-2b2a26472811\"\
+  ,\"verbose_name\":null},\"datasourceWarning\":false,\"expressionType\":\"SIMPLE\"\
+  ,\"hasCustomLabel\":false,\"label\":\"COUNT_DISTINCT(Id)\",\"optionName\":\"metric_jxg2f1a1lo_9u8kj6q076u\"\
+  ,\"sqlExpression\":null},\"order_desc\":true,\"row_limit\":10,\"truncate_metric\"\
+  :true,\"show_empty_columns\":true,\"annotation_layers\":[],\"orientation\":\"vertical\"\
+  ,\"x_axis_title_margin\":15,\"y_axis_title_margin\":30,\"y_axis_title_position\"\
+  :\"Left\",\"sort_series_type\":\"sum\",\"color_scheme\":\"redToYellow\",\"show_legend\"\
+  :true,\"legendType\":\"scroll\",\"legendOrientation\":\"top\",\"x_axis_time_format\"\
+  :\"smart_date\",\"xAxisLabelRotation\":45,\"y_axis_format\":\"SMART_NUMBER\",\"\
+  y_axis_bounds\":[null,null],\"truncateXAxis\":true,\"rich_tooltip\":true,\"showTooltipTotal\"\
+  :true,\"tooltipTimeFormat\":\"smart_date\",\"extra_form_data\":{},\"dashboards\"\
+  :[4],\"force\":false,\"result_format\":\"json\",\"result_type\":\"full\"},\"result_format\"\
+  :\"json\",\"result_type\":\"full\"}"
+cache_timeout: null
+uuid: e2cdc5a2-aa5f-40e7-a5f1-c43f1ad1198c
+version: 1.0.0
+dataset_uuid: f8fd952f-9757-420e-b885-3cc2c0d622f1

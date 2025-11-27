@@ -345,20 +345,14 @@ metadata:
     - 76
     - 77
     - 103
-  color_scheme: ''
+  color_scheme: redToYellow
   refresh_frequency: 0
   expanded_slices: {}
   label_colors: {}
   timed_refresh_immune_slices: []
   cross_filters_enabled: true
   native_filter_configuration: []
-  shared_label_colors:
-  - DepositRequest
-  - Renewal
-  - SalesAdvertisement
-  - ShowCase
-  - SpecialAndUpdate
-  - Update
+  shared_label_colors: []
   map_label_colors: {}
   color_scheme_domain: []
 version: 1.0.0

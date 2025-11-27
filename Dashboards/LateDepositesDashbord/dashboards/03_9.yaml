@@ -719,13 +719,32 @@ metadata:
     - 94
     - 96
     - 97
-  color_scheme: ''
+  color_scheme: redToYellow
   refresh_frequency: 0
   expanded_slices: {}
   label_colors: {}
   timed_refresh_immune_slices: []
   cross_filters_enabled: true
-  native_filter_configuration: []
+  native_filter_configuration:
+  - id: NATIVE_FILTER-5BoSOv0IPySjBpfNlacqa
+    controlValues:
+      enableEmptyFilter: false
+    name: "\u062A\u0627\u0631\u06CC\u062E \u062B\u0628\u062A"
+    filterType: filter_time
+    targets:
+    - {}
+    defaultDataMask:
+      extraFormData:
+        time_range: Last year
+      filterState:
+        value: Last year
+    cascadeParentIds: []
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    type: NATIVE_FILTER
+    description: ''
   shared_label_colors:
   - "\u0627\u0635\u0641\u0647\u0627\u0646"
   - "\u062A\u0646\u06A9\u0627\u0628\u0646"
@@ -738,6 +757,7 @@ metadata:
   - "\u0633\u0627\u0631\u06CC"
   - "\u0634\u06CC\u0631\u0627\u0632"
   - "\u0642\u0627\u0626\u0645 \u0634\u0647\u0631"
+  - "\u0642\u0645"
   - "\u0645\u0634\u0647\u062F"
   - "\u067E\u0631\u062F\u06CC\u0633"
   - "\u067E\u0631\u0646\u062F"
